@@ -1,0 +1,938 @@
+"mat_head",
+  cullFace: "DISABLE",
+  id: "5675e545-bc72-4d72-aff9-c40d110e7714",
+  name: "mat_head",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 3,
+  version: 3
+}
+"cornea",
+  cullFace: "DISABLE",
+  id: "6de630fb-a63a-420f-bf5a-b5c2f7b58a43",
+  name: "cornea",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 5,
+  version: 3
+}
+"mat_body1",
+  cullFace: "DISABLE",
+  id: "7291d12e-c236-4f03-89e4-814aa2143a63",
+  name: "mat_body1",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 1,
+  version: 3
+}
+"Default_Material",
+  cullFace: "DISABLE",
+  id: "7d30ab87-952b-45a1-872a-c8527155b136",
+  name: "Default_Material",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 4,
+  version: 3
+}
+"mat_headAlpha",
+  cullFace: "DISABLE",
+  id: "a500aa5d-7ced-411d-9d1e-1ae1f2308436",
+  name: "mat_headAlpha",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 6,
+  version: 3
+}
+"mat_body",
+  cullFace: "DISABLE",
+  id: "b72ce2fe-e7ba-4ad8-98b9-8e57b6bb6b76",
+  name: "mat_body",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 2,
+  version: 3
+}
+"m: 6de630fb-a63a-420f-bf5a-b5c2f7b58a43"
+"m: 7291d12e-c236-4f03-89e4-814aa2143a63"
+"m: 7d30ab87-952b-45a1-872a-c8527155b136"
+"m: a500aa5d-7ced-411d-9d1e-1ae1f2308436"
+"m: b72ce2fe-e7ba-4ad8-98b9-8e57b6bb6b76"
+"m: 6de630fb-a63a-420f-bf5a-b5c2f7b58a43"
+"m: 7291d12e-c236-4f03-89e4-814aa2143a63"
+"m: 7d30ab87-952b-45a1-872a-c8527155b136"
+"m: a500aa5d-7ced-411d-9d1e-1ae1f2308436"
+"m: b72ce2fe-e7ba-4ad8-98b9-8e57b6bb6b76"
+☁️ "Running fiddle"
+"<a class='gotoLine' href='#245:16'>245:16</a> Uncaught TypeError: Cannot read properties of null (reading 'addEventListener')"
+"mat_head",
+  cullFace: "DISABLE",
+  id: "5675e545-bc72-4d72-aff9-c40d110e7714",
+  name: "mat_head",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 3,
+  version: 3
+}
+"cornea",
+  cullFace: "DISABLE",
+  id: "6de630fb-a63a-420f-bf5a-b5c2f7b58a43",
+  name: "cornea",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 5,
+  version: 3
+}
+"mat_body1",
+  cullFace: "DISABLE",
+  id: "7291d12e-c236-4f03-89e4-814aa2143a63",
+  name: "mat_body1",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 1,
+  version: 3
+}
+"Default_Material",
+  cullFace: "DISABLE",
+  id: "7d30ab87-952b-45a1-872a-c8527155b136",
+  name: "Default_Material",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 4,
+  version: 3
+}
+"mat_headAlpha",
+  cullFace: "DISABLE",
+  id: "a500aa5d-7ced-411d-9d1e-1ae1f2308436",
+  name: "mat_headAlpha",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 6,
+  version: 3
+}
+"mat_body",
+  cullFace: "DISABLE",
+  id: "b72ce2fe-e7ba-4ad8-98b9-8e57b6bb6b76",
+  name: "mat_body",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 2,
+  version: 3
+}
+☁️ "Running fiddle"
+☁️ "Running fiddle"
+"<a class='gotoLine' href='#245:16'>245:16</a> Uncaught TypeError: Cannot read properties of null (reading 'addEventListener')"
+"Console Cabin",
+  cullFace: "DISABLE",
+  id: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 7,
+  version: 3
+}
+"anchor",
+  cullFace: "DISABLE",
+  id: "0c121c6b-8388-4515-858a-0f9cabd5cb37",
+  name: "anchor",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 33,
+  version: 3
+}
+"deck ring",
+  cullFace: "DISABLE",
+  id: "116b70a0-b795-4e29-a3ad-ce8ad3cb128c",
+  name: "deck ring",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 8,
+  version: 3
+}
+"Mercedes 600 set 5",
+  cullFace: "DISABLE",
+  id: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 23,
+  version: 3
+}
+"windshield",
+  cullFace: "DISABLE",
+  id: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 19,
+  version: 3
+}
+"Chairs",
+  cullFace: "DISABLE",
+  id: "1eb6c258-f3fe-423d-a67a-83f5d9126171",
+  name: "Chairs",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 27,
+  version: 3
+}
+"sleigh seat table Upper",
+  cullFace: "DISABLE",
+  id: "1f01ece7-9a0a-4cd0-9f46-92f9c971f65a",
+  name: "sleigh seat table Upper",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 13,
+  version: 3
+}
+"hardtop ",
+  cullFace: "DISABLE",
+  id: "2ee94080-f45c-4312-968e-f19464eb78ac",
+  name: "hardtop ",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 17,
+  version: 3
+}
+"Sleigh Seat",
+  cullFace: "DISABLE",
+  id: "37c386f0-5c4e-4f2a-ba52-2968fc1e08bc",
+  name: "Sleigh Seat",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 10,
+  version: 3
+}
+"Cabin Door",
+  cullFace: "DISABLE",
+  id: "37f570c1-048e-46a3-9d50-81f67436bcc7",
+  name: "Cabin Door",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 2,
+  version: 3
+}
+"Hull",
+  cullFace: "DISABLE",
+  id: "3b479f2f-923b-445b-a4f3-0717c3af676e",
+  name: "Hull",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 9,
+  version: 3
+}
+"Mercedes 450 Set 4",
+  cullFace: "DISABLE",
+  id: "5382750e-e0c8-44f9-82bf-8956238fe547",
+  name: "Mercedes 450 Set 4",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 24,
+  version: 3
+}
+"floor planks",
+  cullFace: "DISABLE",
+  id: "61fa7ece-481a-41bf-9015-fdf6f1f1f336",
+  name: "floor planks",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 15,
+  version: 3
+}
+"Chair Base",
+  cullFace: "DISABLE",
+  id: "6314f6ba-c25f-45a7-a57e-9ee19f72256b",
+  name: "Chair Base",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 28,
+  version: 3
+}
+"yamaha set 5",
+  cullFace: "DISABLE",
+  id: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 21,
+  version: 3
+}
+"hatch planks",
+  cullFace: "DISABLE",
+  id: "6e2fffd0-1e9f-438b-bd7d-619d47ba0786",
+  name: "hatch planks",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 16,
+  version: 3
+}
+"bait well glass",
+  cullFace: "DISABLE",
+  id: "89cf36fa-1b1f-4f63-a4ed-6de9b5d53662",
+  name: "bait well glass",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 34,
+  version: 3
+}
+"floor plank liner",
+  cullFace: "DISABLE",
+  id: "94213e24-87a6-457c-9f4a-a18536e05fc4",
+  name: "floor plank liner",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 36,
+  version: 3
+}
+"cleat_gasscap_pulls_hawser_hinges_pole holders_hardware",
+  cullFace: "DISABLE",
+  id: "944f8a0b-17ff-4820-856f-2ab7454b3a5c",
+  name: "cleat_gasscap_pulls_hawser_hinges_pole holders_hardware",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 32,
+  version: 3
+}
+"sleigh seat table top 1",
+  cullFace: "DISABLE",
+  id: "9bbfcd48-942f-4f6e-9339-d2198ee8b3e5",
+  name: "sleigh seat table top 1",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 11,
+  version: 3
+}
+"throttle",
+  cullFace: "DISABLE",
+  id: "9c949fc6-3fee-41c1-9d1e-0c1e2fe5b780",
+  name: "throttle",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 5,
+  version: 3
+}
+"Faucets",
+  cullFace: "DISABLE",
+  id: "9ec23304-c846-411f-bdc3-9b7491c0ab7e",
+  name: "Faucets",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 12,
+  version: 3
+}
+"Mercedes 450 Set 5",
+  cullFace: "DISABLE",
+  id: "a963bd43-67e6-4a93-8ef2-21c3099b5a9e",
+  name: "Mercedes 450 Set 5",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 25,
+  version: 3
+}
+"tiltheim",
+  cullFace: "DISABLE",
+  id: "ab0a7519-ed31-4739-b772-016859613bfe",
+  name: "tiltheim",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 3,
+  version: 3
+}
+"Liner",
+  cullFace: "DISABLE",
+  id: "adb5a729-f2b5-4071-9b23-6c0bb3d245e9",
+  name: "Liner",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 14,
+  version: 3
+}
+"radar",
+  cullFace: "DISABLE",
+  id: "b44e1e0f-fefc-42d1-b0c6-3f6d20e893e3",
+  name: "radar",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 18,
+  version: 3
+}
+"upholstery",
+  cullFace: "DISABLE",
+  id: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 26,
+  version: 3
+}
+"helm screens",
+  cullFace: "DISABLE",
+  id: "c0b0eb7a-1f8e-4855-9c77-fd2a617d3d44",
+  name: "helm screens",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 6,
+  version: 3
+}
+"cup holders",
+  cullFace: "DISABLE",
+  id: "c303a449-5dbd-4000-8376-554734d20f32",
+  name: "cup holders",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 31,
+  version: 3
+}
+"Steering Wheel",
+  cullFace: "DISABLE",
+  id: "c69e3694-685d-4d4e-a87c-521b6d5d99c0",
+  name: "Steering Wheel",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 1,
+  version: 3
+}
+"yamaha set 4",
+  cullFace: "DISABLE",
+  id: "cf5087c1-b755-4aa5-9ce4-198be6e6f7e8",
+  name: "yamaha set 4",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 20,
+  version: 3
+}
+"Hatches",
+  cullFace: "DISABLE",
+  id: "d6ed269f-6297-4f01-97b1-56e1b043228d",
+  name: "Hatches",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 30,
+  version: 3
+}
+"Baitwell",
+  cullFace: "DISABLE",
+  id: "e4b2b759-dcc5-4195-8b5e-0dac90c156a7",
+  name: "Baitwell",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 35,
+  version: 3
+}
+"Foot Rest",
+  cullFace: "DISABLE",
+  id: "e667b399-343a-4739-9d8d-c0864c6dd5f9",
+  name: "Foot Rest",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 29,
+  version: 3
+}
+"Joy Stick",
+  cullFace: "DISABLE",
+  id: "e9218a62-7a7e-448b-8ee7-b332c50a4e87",
+  name: "Joy Stick",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 4,
+  version: 3
+}
+"Mercedes 600 set 4",
+  cullFace: "DISABLE",
+  id: "ff0040ab-be2f-4647-b106-f7aa7722b63c",
+  name: "Mercedes 600 set 4",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 22,
+  version: 3
+}
+"m: 03fd4243-2fd5-4337-ac2e-edaf187df58e"
+"m: 0c121c6b-8388-4515-858a-0f9cabd5cb37"
+"m: 116b70a0-b795-4e29-a3ad-ce8ad3cb128c"
+"m: 11f3160a-15e0-4980-9538-202ae4a5b28d"
+"m: 19153d45-cdfe-4d47-8858-6e83eb863c89"
+"m: 1eb6c258-f3fe-423d-a67a-83f5d9126171"
+"m: 1f01ece7-9a0a-4cd0-9f46-92f9c971f65a"
+"m: 2ee94080-f45c-4312-968e-f19464eb78ac"
+"m: 37c386f0-5c4e-4f2a-ba52-2968fc1e08bc"
+"m: 37f570c1-048e-46a3-9d50-81f67436bcc7"
+"m: 3b479f2f-923b-445b-a4f3-0717c3af676e"
+"m: 5382750e-e0c8-44f9-82bf-8956238fe547"
+"m: 61fa7ece-481a-41bf-9015-fdf6f1f1f336"
+"m: 6314f6ba-c25f-45a7-a57e-9ee19f72256b"
+"m: 69e60667-fb5c-4b0c-8c96-7026ff136d47"
+"m: 6e2fffd0-1e9f-438b-bd7d-619d47ba0786"
+"m: 89cf36fa-1b1f-4f63-a4ed-6de9b5d53662"
+"m: 94213e24-87a6-457c-9f4a-a18536e05fc4"
+"m: 944f8a0b-17ff-4820-856f-2ab7454b3a5c"
+"m: 9bbfcd48-942f-4f6e-9339-d2198ee8b3e5"
+"m: 9c949fc6-3fee-41c1-9d1e-0c1e2fe5b780"
+"m: 9ec23304-c846-411f-bdc3-9b7491c0ab7e"
+"m: a963bd43-67e6-4a93-8ef2-21c3099b5a9e"
+"m: ab0a7519-ed31-4739-b772-016859613bfe"
+"m: adb5a729-f2b5-4071-9b23-6c0bb3d245e9"
+"m: b44e1e0f-fefc-42d1-b0c6-3f6d20e893e3"
+"m: be7d5667-cf0e-4683-8876-34e5eb63a4bf"
+"m: c0b0eb7a-1f8e-4855-9c77-fd2a617d3d44"
+"m: c303a449-5dbd-4000-8376-554734d20f32"
+"m: c69e3694-685d-4d4e-a87c-521b6d5d99c0"
+"m: cf5087c1-b755-4aa5-9ce4-198be6e6f7e8"
+"m: d6ed269f-6297-4f01-97b1-56e1b043228d"
+"m: e4b2b759-dcc5-4195-8b5e-0dac90c156a7"
+"m: e667b399-343a-4739-9d8d-c0864c6dd5f9"
+"m: e9218a62-7a7e-448b-8ee7-b332c50a4e87"
+"m: ff0040ab-be2f-4647-b106-f7aa7722b63c"
+"m: 03fd4243-2fd5-4337-ac2e-edaf187df58e"
+"m: 0c121c6b-8388-4515-858a-0f9cabd5cb37"
+"m: 116b70a0-b795-4e29-a3ad-ce8ad3cb128c"
+"m: 11f3160a-15e0-4980-9538-202ae4a5b28d"
+"m: 19153d45-cdfe-4d47-8858-6e83eb863c89"
+"m: 1eb6c258-f3fe-423d-a67a-83f5d9126171"
+"m: 1f01ece7-9a0a-4cd0-9f46-92f9c971f65a"
+"m: 2ee94080-f45c-4312-968e-f19464eb78ac"
+"m: 37c386f0-5c4e-4f2a-ba52-2968fc1e08bc"
+"m: 37f570c1-048e-46a3-9d50-81f67436bcc7"
+"m: 3b479f2f-923b-445b-a4f3-0717c3af676e"
+"m: 5382750e-e0c8-44f9-82bf-8956238fe547"
+"m: 61fa7ece-481a-41bf-9015-fdf6f1f1f336"
+"m: 6314f6ba-c25f-45a7-a57e-9ee19f72256b"
+"m: 69e60667-fb5c-4b0c-8c96-7026ff136d47"
+"m: 6e2fffd0-1e9f-438b-bd7d-619d47ba0786"
+"m: 89cf36fa-1b1f-4f63-a4ed-6de9b5d53662"
+"m: 94213e24-87a6-457c-9f4a-a18536e05fc4"
+"m: 944f8a0b-17ff-4820-856f-2ab7454b3a5c"
+"m: 9bbfcd48-942f-4f6e-9339-d2198ee8b3e5"
+"m: 9c949fc6-3fee-41c1-9d1e-0c1e2fe5b780"
+"m: 9ec23304-c846-411f-bdc3-9b7491c0ab7e"
+"m: a963bd43-67e6-4a93-8ef2-21c3099b5a9e"
+"m: ab0a7519-ed31-4739-b772-016859613bfe"
+"m: adb5a729-f2b5-4071-9b23-6c0bb3d245e9"
+"m: b44e1e0f-fefc-42d1-b0c6-3f6d20e893e3"
+"m: be7d5667-cf0e-4683-8876-34e5eb63a4bf"
+"m: c0b0eb7a-1f8e-4855-9c77-fd2a617d3d44"
+"m: c303a449-5dbd-4000-8376-554734d20f32"
+"m: c69e3694-685d-4d4e-a87c-521b6d5d99c0"
+"m: cf5087c1-b755-4aa5-9ce4-198be6e6f7e8"
+"m: d6ed269f-6297-4f01-97b1-56e1b043228d"
+"m: e4b2b759-dcc5-4195-8b5e-0dac90c156a7"
+"m: e667b399-343a-4739-9d8d-c0864c6dd5f9"
+"m: e9218a62-7a7e-448b-8ee7-b332c50a4e87"
+"m: ff0040ab-be2f-4647-b106-f7aa7722b63c"
+
+"Console Cabin",
+  cullFace: "DISABLE",
+  id: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 7,
+  version: 3
+}
+"anchor",
+  cullFace: "DISABLE",
+  id: "0c121c6b-8388-4515-858a-0f9cabd5cb37",
+  name: "anchor",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 33,
+  version: 3
+}
+"deck ring",
+  cullFace: "DISABLE",
+  id: "116b70a0-b795-4e29-a3ad-ce8ad3cb128c",
+  name: "deck ring",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 8,
+  version: 3
+}
+"Mercedes 600 set 5",
+  cullFace: "DISABLE",
+  id: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 23,
+  version: 3
+}
+"windshield",
+  cullFace: "DISABLE",
+  id: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 19,
+  version: 3
+}
+"Chairs",
+  cullFace: "DISABLE",
+  id: "1eb6c258-f3fe-423d-a67a-83f5d9126171",
+  name: "Chairs",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 27,
+  version: 3
+}
+"sleigh seat table Upper",
+  cullFace: "DISABLE",
+  id: "1f01ece7-9a0a-4cd0-9f46-92f9c971f65a",
+  name: "sleigh seat table Upper",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 13,
+  version: 3
+}
+"hardtop ",
+  cullFace: "DISABLE",
+  id: "2ee94080-f45c-4312-968e-f19464eb78ac",
+  name: "hardtop ",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 17,
+  version: 3
+}
+"Sleigh Seat",
+  cullFace: "DISABLE",
+  id: "37c386f0-5c4e-4f2a-ba52-2968fc1e08bc",
+  name: "Sleigh Seat",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 10,
+  version: 3
+}
+"Cabin Door",
+  cullFace: "DISABLE",
+  id: "37f570c1-048e-46a3-9d50-81f67436bcc7",
+  name: "Cabin Door",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 2,
+  version: 3
+}
+"Hull",
+  cullFace: "DISABLE",
+  id: "3b479f2f-923b-445b-a4f3-0717c3af676e",
+  name: "Hull",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 9,
+  version: 3
+}
+"Mercedes 450 Set 4",
+  cullFace: "DISABLE",
+  id: "5382750e-e0c8-44f9-82bf-8956238fe547",
+  name: "Mercedes 450 Set 4",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 24,
+  version: 3
+}
+"floor planks",
+  cullFace: "DISABLE",
+  id: "61fa7ece-481a-41bf-9015-fdf6f1f1f336",
+  name: "floor planks",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 15,
+  version: 3
+}
+"Chair Base",
+  cullFace: "DISABLE",
+  id: "6314f6ba-c25f-45a7-a57e-9ee19f72256b",
+  name: "Chair Base",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 28,
+  version: 3
+}
+"yamaha set 5",
+  cullFace: "DISABLE",
+  id: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 21,
+  version: 3
+}
+"hatch planks",
+  cullFace: "DISABLE",
+  id: "6e2fffd0-1e9f-438b-bd7d-619d47ba0786",
+  name: "hatch planks",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 16,
+  version: 3
+}
+"bait well glass",
+  cullFace: "DISABLE",
+  id: "89cf36fa-1b1f-4f63-a4ed-6de9b5d53662",
+  name: "bait well glass",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 34,
+  version: 3
+}
+"floor plank liner",
+  cullFace: "DISABLE",
+  id: "94213e24-87a6-457c-9f4a-a18536e05fc4",
+  name: "floor plank liner",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 36,
+  version: 3
+}
+"cleat_gasscap_pulls_hawser_hinges_pole holders_hardware",
+  cullFace: "DISABLE",
+  id: "944f8a0b-17ff-4820-856f-2ab7454b3a5c",
+  name: "cleat_gasscap_pulls_hawser_hinges_pole holders_hardware",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 32,
+  version: 3
+}
+"sleigh seat table top 1",
+  cullFace: "DISABLE",
+  id: "9bbfcd48-942f-4f6e-9339-d2198ee8b3e5",
+  name: "sleigh seat table top 1",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 11,
+  version: 3
+}
+"throttle",
+  cullFace: "DISABLE",
+  id: "9c949fc6-3fee-41c1-9d1e-0c1e2fe5b780",
+  name: "throttle",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 5,
+  version: 3
+}
+"Faucets",
+  cullFace: "DISABLE",
+  id: "9ec23304-c846-411f-bdc3-9b7491c0ab7e",
+  name: "Faucets",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 12,
+  version: 3
+}
+"Mercedes 450 Set 5",
+  cullFace: "DISABLE",
+  id: "a963bd43-67e6-4a93-8ef2-21c3099b5a9e",
+  name: "Mercedes 450 Set 5",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 25,
+  version: 3
+}
+"tiltheim",
+  cullFace: "DISABLE",
+  id: "ab0a7519-ed31-4739-b772-016859613bfe",
+  name: "tiltheim",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 3,
+  version: 3
+}
+"Liner",
+  cullFace: "DISABLE",
+  id: "adb5a729-f2b5-4071-9b23-6c0bb3d245e9",
+  name: "Liner",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 14,
+  version: 3
+}
+"radar",
+  cullFace: "DISABLE",
+  id: "b44e1e0f-fefc-42d1-b0c6-3f6d20e893e3",
+  name: "radar",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 18,
+  version: 3
+}
+"upholstery",
+  cullFace: "DISABLE",
+  id: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 26,
+  version: 3
+}
+"helm screens",
+  cullFace: "DISABLE",
+  id: "c0b0eb7a-1f8e-4855-9c77-fd2a617d3d44",
+  name: "helm screens",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 6,
+  version: 3
+}
+"cup holders",
+  cullFace: "DISABLE",
+  id: "c303a449-5dbd-4000-8376-554734d20f32",
+  name: "cup holders",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 31,
+  version: 3
+}
+"Steering Wheel",
+  cullFace: "DISABLE",
+  id: "c69e3694-685d-4d4e-a87c-521b6d5d99c0",
+  name: "Steering Wheel",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 1,
+  version: 3
+}
+"yamaha set 4",
+  cullFace: "DISABLE",
+  id: "cf5087c1-b755-4aa5-9ce4-198be6e6f7e8",
+  name: "yamaha set 4",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 20,
+  version: 3
+}
+"Hatches",
+  cullFace: "DISABLE",
+  id: "d6ed269f-6297-4f01-97b1-56e1b043228d",
+  name: "Hatches",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 30,
+  version: 3
+}
+"Baitwell",
+  cullFace: "DISABLE",
+  id: "e4b2b759-dcc5-4195-8b5e-0dac90c156a7",
+  name: "Baitwell",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 35,
+  version: 3
+}
+"Foot Rest",
+  cullFace: "DISABLE",
+  id: "e667b399-343a-4739-9d8d-c0864c6dd5f9",
+  name: "Foot Rest",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 29,
+  version: 3
+}
+"Joy Stick",
+  cullFace: "DISABLE",
+  id: "e9218a62-7a7e-448b-8ee7-b332c50a4e87",
+  name: "Joy Stick",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 4,
+  version: 3
+}
+"Mercedes 600 set 4",
+  cullFace: "DISABLE",
+  id: "ff0040ab-be2f-4647-b106-f7aa7722b63c",
+  name: "Mercedes 600 set 4",
+  reflection: 0.1,
+  shadeless: false,
+  stateSetID: 22,
+  version: 3
+}
+
+Bait well
+Cabin Door
+Chair Base
+Chairs
+Console Cabin
+Deck Ring
+Floor Plank Liner
+Hardtop
+Hull
+Joy Stick
+Liner
+Radar
+Sleigh Seat
+Throttle
+Tiltheim
+Upholstery
+Engine Color
+
+            <option value="1" selected="">yamaha set 4</option>
+            <option value="2">yamaha set 5</option>
+            <option value="3">Mercedes 450 Set 4</option>
+            <option value="4">Mercedes 450 Set 5</option>
+            <option value="5">Mercedes 600 set 4</option>
+            <option value="6">Mercedes 600 set 5</option>
+
+            {
+                "color": "#CDCDCD",
+                "name": "HCB Wite"
+                },
+                {
+                    "color": "#a4373e",
+                    "name": "Viper Red"
+                },
+                {
+                    "color": "#39414c",
+                    "name": "Navy"
+                },
+                {
+                    "color": "#5e5e5e",
+                    "name": "Destroyer"
+                },
+                {
+                    "color": "#225a81",
+                    "name": "Mediterranean Blue"
+                },
+                {
+                    "color": "#4691c0",
+                    "name": "Admiral Blue"
+                },
+                {
+                    "color": "#bfb8aa",
+                    "name": "Sand"
+                },
+                {
+                    "color": "#978270",
+                    "name": "Bronze"
+                },
+                {
+                    "color": "#65a4be",
+                    "name": "Sky Blue"
+                },
+                {
+                    "color": "#393939",
+                    "name": "Jet Black"
+                },
+                {
+                    "color": "#546f7e",
+                    "name": "Steel Blue"
+                },
+                {
+                    "color": "#1381b0",
+                    "name": "Jet Stream Blue"
+                },
+                {
+                    "color": "#daf0eb",
+                    "name": "Aqua Mist"
+                },
+                {
+                    "color": "#67c7d9",
+                    "name": "Bimini Blue"
+                },
+                {
+                    "color": "#8e8b83",
+                    "name": "Storm Gray"
+                },
+                {
+                    "color": "#e3ceb5",
+                    "name": "San Mateo"
+                },
+                {
+                    "color": "#87d3dc",
+                    "name": "Caribbean Blue"
+                }
