@@ -1,0 +1,1969 @@
+{
+  children: [{
+  children: [{
+  children: [{
+  children: [{
+  instanceID: 5,
+  materialID: "c69e3694-685d-4d4e-a87c-521b6d5d99c0",
+  name: "Steering Wheel_Steering Wheel_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 4,
+  materialID: null,
+  name: "Steering Wheel",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 3,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Steering Wheel",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 22,
+  materialID: "37f570c1-048e-46a3-9d50-81f67436bcc7",
+  name: "Cabin Door_Cabin Door_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 21,
+  materialID: null,
+  name: "Cabin Door",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 20,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Cabin Door",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 39,
+  materialID: "ab0a7519-ed31-4739-b772-016859613bfe",
+  name: "tiltheim_tiltheim_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 38,
+  materialID: null,
+  name: "tiltheim",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 37,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "tiltheim",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 56,
+  materialID: "e9218a62-7a7e-448b-8ee7-b332c50a4e87",
+  name: "Joy Stick_Joy Stick_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 67,
+  materialID: "e9218a62-7a7e-448b-8ee7-b332c50a4e87",
+  name: "Joy Stick_Joy Stick_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 55,
+  materialID: null,
+  name: "Joy Stick",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 54,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Joy Stick",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 85,
+  materialID: "9c949fc6-3fee-41c1-9d1e-0c1e2fe5b780",
+  name: "throttle_throttle_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 96,
+  materialID: "9c949fc6-3fee-41c1-9d1e-0c1e2fe5b780",
+  name: "throttle_throttle_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 104,
+  materialID: "9c949fc6-3fee-41c1-9d1e-0c1e2fe5b780",
+  name: "throttle_throttle_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 112,
+  materialID: "9c949fc6-3fee-41c1-9d1e-0c1e2fe5b780",
+  name: "throttle_throttle_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 84,
+  materialID: null,
+  name: "throttle",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 83,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "throttle",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 138,
+  materialID: "c0b0eb7a-1f8e-4855-9c77-fd2a617d3d44",
+  name: "helm screens_helm screens_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 137,
+  materialID: null,
+  name: "helm screens",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 136,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "helm screens",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 155,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 164,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 170,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 176,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 182,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 188,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 194,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 200,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 206,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 212,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 218,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 224,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 230,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 236,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 242,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 248,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 254,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 260,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 266,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 272,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 278,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 284,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 290,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 296,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 302,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 308,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 314,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 320,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 326,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 332,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 338,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 344,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 350,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 356,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 362,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 368,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 374,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 380,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 386,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 392,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 398,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 404,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 410,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 416,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 422,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 428,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 434,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 440,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 446,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 452,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 458,
+  materialID: "03fd4243-2fd5-4337-ac2e-edaf187df58e",
+  name: "Console Cabin_Console Cabin_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 154,
+  materialID: null,
+  name: "Console Cabin",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 153,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Console Cabin",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 670,
+  materialID: "116b70a0-b795-4e29-a3ad-ce8ad3cb128c",
+  name: "deck ring_deck ring_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 681,
+  materialID: "116b70a0-b795-4e29-a3ad-ce8ad3cb128c",
+  name: "deck ring_deck ring_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 689,
+  materialID: "116b70a0-b795-4e29-a3ad-ce8ad3cb128c",
+  name: "deck ring_deck ring_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 669,
+  materialID: null,
+  name: "deck ring",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 668,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "deck ring",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 711,
+  materialID: "3b479f2f-923b-445b-a4f3-0717c3af676e",
+  name: "Hull_Hull_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 722,
+  materialID: "3b479f2f-923b-445b-a4f3-0717c3af676e",
+  name: "Hull_Hull_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 730,
+  materialID: "3b479f2f-923b-445b-a4f3-0717c3af676e",
+  name: "Hull_Hull_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 738,
+  materialID: "3b479f2f-923b-445b-a4f3-0717c3af676e",
+  name: "Hull_Hull_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 746,
+  materialID: "3b479f2f-923b-445b-a4f3-0717c3af676e",
+  name: "Hull_Hull_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 710,
+  materialID: null,
+  name: "Hull",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 709,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Hull",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 776,
+  materialID: "37c386f0-5c4e-4f2a-ba52-2968fc1e08bc",
+  name: "Sleigh Seat_Sleigh Seat_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 775,
+  materialID: null,
+  name: "Sleigh Seat",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 774,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Sleigh Seat",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 793,
+  materialID: "9bbfcd48-942f-4f6e-9339-d2198ee8b3e5",
+  name: "sleigh seat table Lower_sleigh seat table top 1_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 792,
+  materialID: null,
+  name: "sleigh seat table Lower",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 791,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "sleigh seat table Lower",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 810,
+  materialID: "9ec23304-c846-411f-bdc3-9b7491c0ab7e",
+  name: "Faucets_Faucets_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 809,
+  materialID: null,
+  name: "Faucets",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 808,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Faucets",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 827,
+  materialID: "1f01ece7-9a0a-4cd0-9f46-92f9c971f65a",
+  name: "sleigh seat table Upper_sleigh seat table Upper_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 826,
+  materialID: null,
+  name: "sleigh seat table Upper",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 825,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "sleigh seat table Upper",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 844,
+  materialID: "adb5a729-f2b5-4071-9b23-6c0bb3d245e9",
+  name: "Liner_Liner_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 855,
+  materialID: "adb5a729-f2b5-4071-9b23-6c0bb3d245e9",
+  name: "Liner_Liner_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 863,
+  materialID: "adb5a729-f2b5-4071-9b23-6c0bb3d245e9",
+  name: "Liner_Liner_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 871,
+  materialID: "adb5a729-f2b5-4071-9b23-6c0bb3d245e9",
+  name: "Liner_Liner_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 879,
+  materialID: "adb5a729-f2b5-4071-9b23-6c0bb3d245e9",
+  name: "Liner_Liner_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 887,
+  materialID: "adb5a729-f2b5-4071-9b23-6c0bb3d245e9",
+  name: "Liner_Liner_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 895,
+  materialID: "adb5a729-f2b5-4071-9b23-6c0bb3d245e9",
+  name: "Liner_Liner_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 903,
+  materialID: "adb5a729-f2b5-4071-9b23-6c0bb3d245e9",
+  name: "Liner_Liner_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 911,
+  materialID: "adb5a729-f2b5-4071-9b23-6c0bb3d245e9",
+  name: "Liner_Liner_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 843,
+  materialID: null,
+  name: "Liner",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 842,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Liner",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 957,
+  materialID: "61fa7ece-481a-41bf-9015-fdf6f1f1f336",
+  name: "floor planks_floor planks_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 956,
+  materialID: null,
+  name: "floor planks",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 955,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "floor planks",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 974,
+  materialID: "6e2fffd0-1e9f-438b-bd7d-619d47ba0786",
+  name: "hatch planks_hatch planks_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 973,
+  materialID: null,
+  name: "hatch planks",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 972,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "hatch planks",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 991,
+  materialID: "2ee94080-f45c-4312-968e-f19464eb78ac",
+  name: "hardtop _hardtop _0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1002,
+  materialID: "2ee94080-f45c-4312-968e-f19464eb78ac",
+  name: "hardtop _hardtop _0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 990,
+  materialID: null,
+  name: "hardtop ",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 989,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "hardtop ",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 1020,
+  materialID: "b44e1e0f-fefc-42d1-b0c6-3f6d20e893e3",
+  name: "radar_radar_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 1019,
+  materialID: null,
+  name: "radar",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 1018,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "radar",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 1037,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1048,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1056,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1064,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1072,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1080,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1088,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1096,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1104,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1112,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1120,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1128,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1136,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1144,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1152,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1160,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1168,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1176,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1184,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1192,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1200,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1208,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1216,
+  materialID: "19153d45-cdfe-4d47-8858-6e83eb863c89",
+  name: "windshield_windshield_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 1036,
+  materialID: null,
+  name: "windshield",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 1035,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "windshield",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 1318,
+  materialID: "cf5087c1-b755-4aa5-9ce4-198be6e6f7e8",
+  name: "yamaha set 4_yamaha set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1329,
+  materialID: "cf5087c1-b755-4aa5-9ce4-198be6e6f7e8",
+  name: "yamaha set 4_yamaha set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1337,
+  materialID: "cf5087c1-b755-4aa5-9ce4-198be6e6f7e8",
+  name: "yamaha set 4_yamaha set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1345,
+  materialID: "cf5087c1-b755-4aa5-9ce4-198be6e6f7e8",
+  name: "yamaha set 4_yamaha set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 1317,
+  materialID: null,
+  name: "yamaha set 4",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 1316,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "yamaha set 4",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 1371,
+  materialID: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5_yamaha set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1382,
+  materialID: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5_yamaha set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1390,
+  materialID: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5_yamaha set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1398,
+  materialID: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5_yamaha set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1406,
+  materialID: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5_yamaha set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1414,
+  materialID: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5_yamaha set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1422,
+  materialID: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5_yamaha set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1430,
+  materialID: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5_yamaha set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1438,
+  materialID: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5_yamaha set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1446,
+  materialID: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5_yamaha set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1454,
+  materialID: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5_yamaha set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1462,
+  materialID: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5_yamaha set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1470,
+  materialID: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5_yamaha set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1478,
+  materialID: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5_yamaha set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1486,
+  materialID: "69e60667-fb5c-4b0c-8c96-7026ff136d47",
+  name: "yamaha set 5_yamaha set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 1370,
+  materialID: null,
+  name: "yamaha set 5",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 1369,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "yamaha set 5",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 1556,
+  materialID: "ff0040ab-be2f-4647-b106-f7aa7722b63c",
+  name: "Mercedes 600 set 4_Mercedes 600 set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1567,
+  materialID: "ff0040ab-be2f-4647-b106-f7aa7722b63c",
+  name: "Mercedes 600 set 4_Mercedes 600 set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1575,
+  materialID: "ff0040ab-be2f-4647-b106-f7aa7722b63c",
+  name: "Mercedes 600 set 4_Mercedes 600 set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1583,
+  materialID: "ff0040ab-be2f-4647-b106-f7aa7722b63c",
+  name: "Mercedes 600 set 4_Mercedes 600 set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1591,
+  materialID: "ff0040ab-be2f-4647-b106-f7aa7722b63c",
+  name: "Mercedes 600 set 4_Mercedes 600 set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1599,
+  materialID: "ff0040ab-be2f-4647-b106-f7aa7722b63c",
+  name: "Mercedes 600 set 4_Mercedes 600 set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1607,
+  materialID: "ff0040ab-be2f-4647-b106-f7aa7722b63c",
+  name: "Mercedes 600 set 4_Mercedes 600 set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1615,
+  materialID: "ff0040ab-be2f-4647-b106-f7aa7722b63c",
+  name: "Mercedes 600 set 4_Mercedes 600 set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1623,
+  materialID: "ff0040ab-be2f-4647-b106-f7aa7722b63c",
+  name: "Mercedes 600 set 4_Mercedes 600 set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1631,
+  materialID: "ff0040ab-be2f-4647-b106-f7aa7722b63c",
+  name: "Mercedes 600 set 4_Mercedes 600 set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1639,
+  materialID: "ff0040ab-be2f-4647-b106-f7aa7722b63c",
+  name: "Mercedes 600 set 4_Mercedes 600 set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1647,
+  materialID: "ff0040ab-be2f-4647-b106-f7aa7722b63c",
+  name: "Mercedes 600 set 4_Mercedes 600 set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 1555,
+  materialID: null,
+  name: "Mercedes 600 set 4",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 1554,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Mercedes 600 set 4",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 1705,
+  materialID: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5_Mercedes 600 set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1716,
+  materialID: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5_Mercedes 600 set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1724,
+  materialID: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5_Mercedes 600 set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1732,
+  materialID: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5_Mercedes 600 set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1740,
+  materialID: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5_Mercedes 600 set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1748,
+  materialID: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5_Mercedes 600 set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1756,
+  materialID: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5_Mercedes 600 set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1764,
+  materialID: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5_Mercedes 600 set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1772,
+  materialID: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5_Mercedes 600 set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1780,
+  materialID: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5_Mercedes 600 set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1788,
+  materialID: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5_Mercedes 600 set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1796,
+  materialID: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5_Mercedes 600 set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1804,
+  materialID: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5_Mercedes 600 set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1812,
+  materialID: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5_Mercedes 600 set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1820,
+  materialID: "11f3160a-15e0-4980-9538-202ae4a5b28d",
+  name: "Mercedes 600 set 5_Mercedes 600 set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 1704,
+  materialID: null,
+  name: "Mercedes 600 set 5",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 1703,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Mercedes 600 set 5",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 1890,
+  materialID: "5382750e-e0c8-44f9-82bf-8956238fe547",
+  name: "Mercedes 450 Set 4_Mercedes 450 Set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1901,
+  materialID: "5382750e-e0c8-44f9-82bf-8956238fe547",
+  name: "Mercedes 450 Set 4_Mercedes 450 Set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1909,
+  materialID: "5382750e-e0c8-44f9-82bf-8956238fe547",
+  name: "Mercedes 450 Set 4_Mercedes 450 Set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1917,
+  materialID: "5382750e-e0c8-44f9-82bf-8956238fe547",
+  name: "Mercedes 450 Set 4_Mercedes 450 Set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1925,
+  materialID: "5382750e-e0c8-44f9-82bf-8956238fe547",
+  name: "Mercedes 450 Set 4_Mercedes 450 Set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1933,
+  materialID: "5382750e-e0c8-44f9-82bf-8956238fe547",
+  name: "Mercedes 450 Set 4_Mercedes 450 Set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1941,
+  materialID: "5382750e-e0c8-44f9-82bf-8956238fe547",
+  name: "Mercedes 450 Set 4_Mercedes 450 Set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1949,
+  materialID: "5382750e-e0c8-44f9-82bf-8956238fe547",
+  name: "Mercedes 450 Set 4_Mercedes 450 Set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1957,
+  materialID: "5382750e-e0c8-44f9-82bf-8956238fe547",
+  name: "Mercedes 450 Set 4_Mercedes 450 Set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1965,
+  materialID: "5382750e-e0c8-44f9-82bf-8956238fe547",
+  name: "Mercedes 450 Set 4_Mercedes 450 Set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 1973,
+  materialID: "5382750e-e0c8-44f9-82bf-8956238fe547",
+  name: "Mercedes 450 Set 4_Mercedes 450 Set 4_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 1889,
+  materialID: null,
+  name: "Mercedes 450 Set 4",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 1888,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Mercedes 450 Set 4",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 2027,
+  materialID: "a963bd43-67e6-4a93-8ef2-21c3099b5a9e",
+  name: "Mercedes 450 Set 5_Mercedes 450 Set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2038,
+  materialID: "a963bd43-67e6-4a93-8ef2-21c3099b5a9e",
+  name: "Mercedes 450 Set 5_Mercedes 450 Set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2046,
+  materialID: "a963bd43-67e6-4a93-8ef2-21c3099b5a9e",
+  name: "Mercedes 450 Set 5_Mercedes 450 Set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2054,
+  materialID: "a963bd43-67e6-4a93-8ef2-21c3099b5a9e",
+  name: "Mercedes 450 Set 5_Mercedes 450 Set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2062,
+  materialID: "a963bd43-67e6-4a93-8ef2-21c3099b5a9e",
+  name: "Mercedes 450 Set 5_Mercedes 450 Set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2070,
+  materialID: "a963bd43-67e6-4a93-8ef2-21c3099b5a9e",
+  name: "Mercedes 450 Set 5_Mercedes 450 Set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2078,
+  materialID: "a963bd43-67e6-4a93-8ef2-21c3099b5a9e",
+  name: "Mercedes 450 Set 5_Mercedes 450 Set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2086,
+  materialID: "a963bd43-67e6-4a93-8ef2-21c3099b5a9e",
+  name: "Mercedes 450 Set 5_Mercedes 450 Set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2094,
+  materialID: "a963bd43-67e6-4a93-8ef2-21c3099b5a9e",
+  name: "Mercedes 450 Set 5_Mercedes 450 Set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2102,
+  materialID: "a963bd43-67e6-4a93-8ef2-21c3099b5a9e",
+  name: "Mercedes 450 Set 5_Mercedes 450 Set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2110,
+  materialID: "a963bd43-67e6-4a93-8ef2-21c3099b5a9e",
+  name: "Mercedes 450 Set 5_Mercedes 450 Set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2118,
+  materialID: "a963bd43-67e6-4a93-8ef2-21c3099b5a9e",
+  name: "Mercedes 450 Set 5_Mercedes 450 Set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2126,
+  materialID: "a963bd43-67e6-4a93-8ef2-21c3099b5a9e",
+  name: "Mercedes 450 Set 5_Mercedes 450 Set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2134,
+  materialID: "a963bd43-67e6-4a93-8ef2-21c3099b5a9e",
+  name: "Mercedes 450 Set 5_Mercedes 450 Set 5_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 2026,
+  materialID: null,
+  name: "Mercedes 450 Set 5",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 2025,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Mercedes 450 Set 5",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 2200,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2211,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2219,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2227,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2235,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2243,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2251,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2259,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2267,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2275,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2283,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2291,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2299,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2307,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2315,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2323,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2331,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2339,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2347,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2355,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2363,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2371,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2379,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2387,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2395,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2403,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2411,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2419,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2427,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2435,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2443,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2451,
+  materialID: "be7d5667-cf0e-4683-8876-34e5eb63a4bf",
+  name: "upholstery_upholstery_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 2199,
+  materialID: null,
+  name: "upholstery",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 2198,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "upholstery",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 2589,
+  materialID: "1eb6c258-f3fe-423d-a67a-83f5d9126171",
+  name: "Chairs_Chairs_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2600,
+  materialID: "1eb6c258-f3fe-423d-a67a-83f5d9126171",
+  name: "Chairs_Chairs_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 2588,
+  materialID: null,
+  name: "Chairs",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 2587,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Chairs",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 2618,
+  materialID: "6314f6ba-c25f-45a7-a57e-9ee19f72256b",
+  name: "Chair Base_Chair Base_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 2617,
+  materialID: null,
+  name: "Chair Base",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 2616,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Chair Base",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 2635,
+  materialID: "e667b399-343a-4739-9d8d-c0864c6dd5f9",
+  name: "Foot Rest_Foot Rest_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2646,
+  materialID: "e667b399-343a-4739-9d8d-c0864c6dd5f9",
+  name: "Foot Rest_Foot Rest_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2654,
+  materialID: "e667b399-343a-4739-9d8d-c0864c6dd5f9",
+  name: "Foot Rest_Foot Rest_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 2634,
+  materialID: null,
+  name: "Foot Rest",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 2633,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Foot Rest",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 2676,
+  materialID: "d6ed269f-6297-4f01-97b1-56e1b043228d",
+  name: "Hatches_Hatches_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 2675,
+  materialID: null,
+  name: "Hatches",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 2674,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Hatches",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 2693,
+  materialID: "c303a449-5dbd-4000-8376-554734d20f32",
+  name: "cup holders_cup holders_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 2692,
+  materialID: null,
+  name: "cup holders",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 2691,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "cup holders",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 2710,
+  materialID: "944f8a0b-17ff-4820-856f-2ab7454b3a5c",
+  name: "cleat_gasscap_pulls_hawser_hinges_pole holders_hardware_cleat_gasscap_pulls_hawser_hinges_pole holders_hardware_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2721,
+  materialID: "944f8a0b-17ff-4820-856f-2ab7454b3a5c",
+  name: "cleat_gasscap_pulls_hawser_hinges_pole holders_hardware_cleat_gasscap_pulls_hawser_hinges_pole holders_hardware_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2729,
+  materialID: "944f8a0b-17ff-4820-856f-2ab7454b3a5c",
+  name: "cleat_gasscap_pulls_hawser_hinges_pole holders_hardware_cleat_gasscap_pulls_hawser_hinges_pole holders_hardware_0",
+  nodeMask: -1,
+  type: "Geometry"
+}, {
+  instanceID: 2737,
+  materialID: "944f8a0b-17ff-4820-856f-2ab7454b3a5c",
+  name: "cleat_gasscap_pulls_hawser_hinges_pole holders_hardware_cleat_gasscap_pulls_hawser_hinges_pole holders_hardware_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 2709,
+  materialID: null,
+  name: "cleat_gasscap_pulls_hawser_hinges_pole holders_hardware",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 2708,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "cleat_gasscap_pulls_hawser_hinges_pole holders_hardware",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 2763,
+  materialID: "0c121c6b-8388-4515-858a-0f9cabd5cb37",
+  name: "anchor_anchor_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 2762,
+  materialID: null,
+  name: "anchor",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 2761,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "anchor",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 2780,
+  materialID: "89cf36fa-1b1f-4f63-a4ed-6de9b5d53662",
+  name: "bait well glass_bait well glass_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 2779,
+  materialID: null,
+  name: "bait well glass",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 2778,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "bait well glass",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 2797,
+  materialID: "e4b2b759-dcc5-4195-8b5e-0dac90c156a7",
+  name: "Baitwell_Baitwell_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 2796,
+  materialID: null,
+  name: "Baitwell",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 2795,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Baitwell",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}, {
+  children: [{
+  children: [{
+  instanceID: 2814,
+  materialID: "94213e24-87a6-457c-9f4a-a18536e05fc4",
+  name: "Floor liner (bare floor)_floor plank liner_0",
+  nodeMask: -1,
+  type: "Geometry"
+}],
+  instanceID: 2813,
+  materialID: null,
+  name: "Floor liner (bare floor)",
+  nodeMask: -1,
+  type: "Group"
+}],
+  instanceID: 2812,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "Floor liner (bare floor)",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}],
+  instanceID: 2,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "RootNode",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}],
+  instanceID: 0,
+  localMatrix: [object Float64Array],
+  materialID: null,
+  name: "254455606c194edcbd3a325f85dbde07.fbx",
+  nodeMask: -1,
+  type: "MatrixTransform",
+  worldMatrix: [object Float64Array]
+}

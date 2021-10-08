@@ -119,6 +119,7 @@ button.disabled {
 }
 
 .options {
+  /*display: none;*/
   list-style: none;
   color: #ffffff;
   margin: 0;
@@ -179,10 +180,29 @@ img.item-icon.item-x-icon {
   margin-bottom: 8px;
 }
 
+#engines {
+  display: none;
+}
+
 .engine {
   color: #225a81;
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+.item-title-17,
+.item-title-18,
+.item-title-19,
+.item-title-20,
+.item-title-21,
+.item-title-22,
+.color-block-section-17,
+.color-block-section-18,
+.color-block-section-19,
+.color-block-section-20,
+.color-block-section-21,
+.color-block-section-22 {
+  border-left: 10px solid rgba(255, 255, 255, 0.2);
 }
 
 .color-block-section {
@@ -209,7 +229,12 @@ li.color-block-section.color-block-section-13,
 li.color-block-section.color-block-section-14,
 li.color-block-section.color-block-section-15,
 li.color-block-section.color-block-section-16,
-li.color-block-section.color-block-section-17 {
+li.color-block-section.color-block-section-17,
+li.color-block-section.color-block-section-18,
+li.color-block-section.color-block-section-19,
+li.color-block-section.color-block-section-20,
+li.color-block-section.color-block-section-21,
+li.color-block-section.color-block-section-22 {
   display: none;
 }
 
@@ -234,72 +259,105 @@ li.color-block-section.color-block-section-17 {
 .block-1 {
   /* HCB White */
   background-color: #cdcdcd;
+  /* rgb(205, 205, 205) */
 }
 .block-2 {
   /* Viper Red */
   background-color: #a4373e;
+  /* rgb(164, 55, 62) */
 }
 .block-3 {
   /* Navy */
   background-color: #39414c;
+  /* rgb(57, 65, 76) */
 }
 .block-4 {
   /* Destroyer */
   background-color: #5e5e5e;
+  /* rgb(94, 94, 94) */
 }
 .block-5 {
   /* Mediterranean Blue */
   background-color: #225a81;
+  /* rgb(34, 90, 129) */
 }
 .block-6 {
   /* Admiral Blue */
   background-color: #4691c0;
+  /* rgb(70, 145, 192) */
 }
 .block-7 {
   /* Sand */
   background-color: #bfb8aa;
+  /* rgb(191, 184, 170) */
 }
 .block-8 {
   /* Bronze */
   background-color: #978270;
+  /* rgb(151, 130, 112) */
 }
 .block-9 {
   /* Sky Blue */
   background-color: #65a4be;
+  /* rgb(101, 164, 190) */
 }
 .block-10 {
   /* Jet Black */
   background-color: #393939;
+  /* rgb(57, 57, 57) */
 }
 .block-11 {
   /* Steel Blue */
   background-color: #546f7e;
+  /* rgb(84, 111, 126) */
 }
 .block-12 {
   /* Jet Stream Blue */
   background-color: #1381b0;
+  /* rgb(19, 129, 176) */
 }
 .block-13 {
   /* Aqua Mist */
   background-color: #daf0eb;
+  /* rgb(218, 240, 235) */
 }
 .block-14 {
   /* Bimini Blue */
   background-color: #67c7d9;
+  /* rgb(103, 199, 217) */
 }
 .block-15 {
   /* Storm Gray */
   background-color: #8e8b83;
+  /* rgb(142, 139, 131) */
 }
 .block-16 {
   /* San Mateo */
   background-color: #e3ceb5;
+  /* rgb(227, 206, 181) */
 }
 .block-17 {
   /* Caribbean Blue */
   background-color: #87d3dc;
+  /* rgb(135, 211, 220) */
 }
 .block-18 {
   /* needs to be color selector */
   background-image: linear-gradient(130deg, #87d3dc, #1381b0);
+}
+
+.popup-kelly-color-custom {
+  position: absolute;
+  display: none;
+  background-color: rgb(225, 225, 225, 0.5);
+  border: 1px solid rgb(191, 191, 191);
+  box-shadow: rgba(0, 0, 0, 0.24) 7px 7px 14px -3px;
+  border-radius: 4px;
+  padding: 12px;
+  box-sizing: content-box;
+  left: 0px;
+  bottom: 0px;
+  border-radius: 110px;
+  margin-left: 72px;
+  margin-top: 67px;
 }
