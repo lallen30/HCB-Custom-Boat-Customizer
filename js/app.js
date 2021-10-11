@@ -10,6 +10,8 @@ canvas.height = 2;
 var myMaterials;
 var colorSection = '';
 var colorBlock = '';
+var absoluteColor = '#000000';
+var colorWheel;
 
 var getColorAsTextureURL = function getColorAsTextureURL(color) {
   ctx.fillStyle = color;
@@ -32,7 +34,7 @@ var success = function success(api) {
         for (var i = 0; i < myMaterials.length; i++) {
           var m = myMaterials[i];
           textures[m.name] = m.channels.AlbedoPBR.texture;
-          console.log(m.name, m);
+          // console.log(m.name, m);
         }
         document.querySelector(".options").style.display = 'block';
       });
@@ -105,19 +107,21 @@ var success = function success(api) {
         for (var i = 0; i < myMaterials.length; i++) {
           var m = myMaterials[i]; // here change only the channel you need to change
           if(m.id == itemId) {
-            console.log("color: "+color);
-            console.log("name: " + m.name + " " + m.id);
-            console.log("itemId: "+itemId);
+            // console.log("color: "+color);
+            // console.log("name: " + m.name + " " + m.id);
+            // console.log("itemId: "+itemId);
             if(color == 'HCB White') {
               m.channels.EmitColor.color    = [0.6104955708078648, 0.6104955708078648, 0.6104955708078648];
               m.channels.AlbedoPBR.color    = [0.6104955708078648, 0.6104955708078648, 0.6104955708078648];
               m.channels.DiffusePBR.color   = [0.6104955708078648, 0.6104955708078648, 0.6104955708078648];
               m.channels.DiffuseColor.color = [0.6104955708078648, 0.6104955708078648, 0.6104955708078648];
             } else if(color == 'Viper Red') {
-              m.channels.EmitColor.color    = [0.3712376804741491, 0.03820437159534648, 0.048171824226889426];
-              m.channels.AlbedoPBR.color    = [0.3712376804741491, 0.03820437159534648, 0.048171824226889426];
-              m.channels.DiffusePBR.color   = [0.3712376804741491, 0.03820437159534648, 0.048171824226889426];
-              m.channels.DiffuseColor.color = [0.3712376804741491, 0.03820437159534648, 0.048171824226889426];
+              m.channels.EmitColor.color    = [0.37867625092984036,0.03423020656508195,0.04455262731642138];
+              m.channels.AlbedoPBR.color    = [0.37867625092984036,0.03423020656508195,0.04455262731642138];
+              m.channels.DiffusePBR.color   = [0.37867625092984036,0.03423020656508195,0.04455262731642138];
+              m.channels.DiffuseColor.color = [0.37867625092984036,0.03423020656508195,0.04455262731642138];
+              // console.log("Viper Red: "+m.channels.DiffuseColor.color);
+              // console.log("Viper Red m: "+JSON.stringify(m));
             } else if(color == 'Navy') {
               m.channels.EmitColor.color    = [0.04091519690685319, 0.052860647023180246, 0.07227185068231748];
               m.channels.AlbedoPBR.color    = [0.04091519690685319, 0.052860647023180246, 0.07227185068231748];
@@ -193,6 +197,14 @@ var success = function success(api) {
               m.channels.AlbedoPBR.color    = [0.24228112246555486, 0.6514056374198239, 0.7156935005064807];
               m.channels.DiffusePBR.color   = [0.24228112246555486, 0.6514056374198239, 0.7156935005064807];
               m.channels.DiffuseColor.color = [0.24228112246555486, 0.6514056374198239, 0.7156935005064807];
+              // console.log("Caribeean Blue: "+m.channels.DiffuseColor.color);
+            } else if(color == 'Color Wheel'){
+              m.channels.EmitColor.color    = colorWheel;
+              m.channels.AlbedoPBR.color    = colorWheel;
+              m.channels.DiffusePBR.color   = colorWheel;
+              m.channels.DiffuseColor.color = colorWheel;
+             // console.log("colorWheel: "+m.channels.DiffuseColor.color);
+             // console.log("colorWheel m: "+JSON.stringify(m));
             }
             api.setMaterial(m);
           }
@@ -223,170 +235,122 @@ var success = function success(api) {
       var section22 = "11f3160a-15e0-4980-9538-202ae4a5b28d";
       
   var sectionList = 23;
-  var blockList = 18;
+  var blockList = 19;
   for(let i = 1; i < sectionList; i++) {
   
   for(let b = 1; b < blockList; b++) {
-    console.log("section: "+i+" block: "+b);
+    // console.log("section: "+i+" block: "+b);
       document.querySelector('.color-block.section-'+i+'.block-'+b).addEventListener('click', function () {
         if(i == 1) {
+          // Bait Well
           thisSection = section1;
         } else if(i == 2) {
+          // Cabin Door
           thisSection = section2;
         } else if(i == 3) {
+          // Chair Base
           thisSection = section3;
         } else if(i == 4) {
+          // Chairs
           thisSection = section4;
         } else if(i == 5) {
+          // Console Cabin
           thisSection = section5;
         } else if(i == 6) {
+          // Deck Ring
           thisSection = section6;
         } else if(i == 7) {
+          // Floor Plank Liner
           thisSection = section7;
         } else if(i == 8) {
+          // Hard Top
           thisSection = section8;
         } else if(i == 9) {
+          // Hull
           thisSection = section9;
         } else if(i == 10) {
+          // Joy Stick
           thisSection = section10;
         } else if(i == 11) {
+          // Liner
           thisSection = section11;
         } else if(i == 12) {
+          // Radar
           thisSection = section12;
         } else if(i == 13) {
+          // Sleigh Seat
           thisSection = section13;
         } else if(i == 14) {
+          // Throttle
           thisSection = section14;
         } else if(i == 15) {
+          // Tiltheim
           thisSection = section15;
         } else if(i == 16) {
+          // Upholstery
           thisSection = section16;
         }  else if(i == 17) {
+          // Yamaha Set 4
           thisSection = section17;
         }  else if(i == 18) {
+          // Yamaha Set 5
           thisSection = section18;
         }  else if(i == 19) {
+          // Mercedes 450 Set 4
           thisSection = section19;
         }  else if(i == 20) {
+          // Mercedes 450 Set 5
           thisSection = section20;
         }  else if(i == 21) {
+          // Mercedes 600 Set 4
           thisSection = section21;
         }  else if(i == 22) {
+          // Mercedes 600 Set 5
           thisSection = section22;
         }
         
         
         if(b == 1) {
-          thisBlock = "HCB White";
+          hcbColor = "HCB White";
         } else if(b == 2) {
-          thisBlock = "Viper Red";
+          hcbColor = "Viper Red";
         } else if(b == 3) {
-          thisBlock = "Navy";
+          hcbColor = "Navy";
         } else if(b == 4) {
-          thisBlock = "Destroyer";
+          hcbColor = "Destroyer";
         } else if(b == 5) {
-          thisBlock = "Mediterranean Blue";
+          hcbColor = "Mediterranean Blue";
         } else if(b == 6) {
-          thisBlock = "Admiral Blue";
+          hcbColor = "Admiral Blue";
         } else if(b == 7) {
-          thisBlock = "Sand";
+          hcbColor = "Sand";
         } else if(b == 8) {
-          thisBlock = "Bronze";
+          hcbColor = "Bronze";
         } else if(b == 9) {
-          thisBlock = "Sky Blue";
+          hcbColor = "Sky Blue";
         } else if(b == 10) {
-          thisBlock = "Jet Black";
+          hcbColor = "Jet Black";
         } else if(b == 11) {
-          thisBlock = "Steel Blue";
+          hcbColor = "Steel Blue";
         } else if(b == 12) {
-          thisBlock = "Jet Stream Blue";
+          hcbColor = "Jet Stream Blue";
         } else if(b == 13) {
-          thisBlock = "Aqua Mist";
+          hcbColor = "Aqua Mist";
         } else if(b == 14) {
-          thisBlock = "Bimini Blue";
+          hcbColor = "Bimini Blue";
         } else if(b == 15) {
-          thisBlock = "Storm Gray";
+          hcbColor = "Storm Gray";
         } else if(b == 16) {
-          thisBlock = "San Mateo";
+          hcbColor = "San Mateo";
         }  else if(b == 17) {
-          thisBlock = "Caribbean Blue";
-        } 
-        makeMyModelBlue(thisBlock, thisSection);
+          hcbColor = "Caribbean Blue";
+        } else if(b == 18){
+          hcbColor = "Color Wheel";
+        }
+        makeMyModelBlue(hcbColor, thisSection);
       });
     }
   }
-
-
-/*
-      document.querySelector('.color-block.section-'+i+'.block-1').addEventListener('click', function () {
-        makeMyModelBlue("HCB White","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-
-      document.querySelector('.color-block.section-'+i+'.block-2').addEventListener('click', function () {
-        makeMyModelBlue("Viper Red","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-
-      document.querySelector('.color-block.section-'+i+'.block-3').addEventListener('click', function () {
-        makeMyModelBlue("Navy","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-
-      document.querySelector('.color-block.section-'+i+'.block-4').addEventListener('click', function () {
-        makeMyModelBlue("Destroyer","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-
-      document.querySelector('.color-block.section-'+i+'.block-5').addEventListener('click', function () {
-        makeMyModelBlue("Mediterranean Blue","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-
-      document.querySelector('.color-block.section-'+i+'.block-6').addEventListener('click', function () {
-        makeMyModelBlue("Admiral Blue","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-
-      document.querySelector('.color-block.section-'+i+'.block-7').addEventListener('click', function () {
-        makeMyModelBlue("Sand","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-
-      document.querySelector('.color-block.section-'+i+'.block-8').addEventListener('click', function () {
-        makeMyModelBlue("Bronze","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-
-      document.querySelector('.color-block.section-'+i+'.block-9').addEventListener('click', function () {
-        makeMyModelBlue("Sky Blue","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-
-      document.querySelector('.color-block.section-'+i+'.block-10').addEventListener('click', function () {
-        makeMyModelBlue("Jet Black","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-
-      document.querySelector('.color-block.section-'+i+'.block-11').addEventListener('click', function () {
-        makeMyModelBlue("Steel Blue","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-
-      document.querySelector('.color-block.section-'+i+'.block-12').addEventListener('click', function () {
-        makeMyModelBlue("Jet Stream Blue","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-
-      document.querySelector('.color-block.section-'+i+'.block-13').addEventListener('click', function () {
-        makeMyModelBlue("Aqua Mist","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-
-      document.querySelector('.color-block.section-'+i+'.block-14').addEventListener('click', function () {
-        makeMyModelBlue("Bimini Blue","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-
-      document.querySelector('.color-block.section-'+i+'.block-15').addEventListener('click', function () {
-        makeMyModelBlue("Storm Gray","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-
-      document.querySelector('.color-block.section-'+i+'.block-16').addEventListener('click', function () {
-        makeMyModelBlue("San Mateo","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-
-      document.querySelector('.color-block.section-'+i+'.block-17').addEventListener('click', function () {
-        makeMyModelBlue("Caribbean Blue","e4b2b759-dcc5-4195-8b5e-0dac90c156a7");
-      });
-    */
-
 
       
     });
@@ -436,7 +400,7 @@ function showColors (elementClass, elementTitle, icon) {
   document.querySelector(".item-title."+elementTitle+"").style.backgroundColor = 'rgb(255,255,255,0.5)';
   itemTitle = elementTitle
   // console.log("itemTitle: "+itemTitle+" | colorSectionClass: "+colorSectionClass)
-  console.log("icon: "+icon);
+  // console.log("icon: "+icon);
   } else {
     document.querySelector(".item-icon.item-x-icon.item-x-"+icon+"").style.display = 'none';
     sectionXIcon = '';
@@ -502,9 +466,8 @@ function changeColor(section, block) {
   } else if(block == "block-17") {
     title = "Caribbean Blue";
   } else if(block == "block-18") {
-    title = "Color Wheel";
+    title = "Color Wheel";    
   }
-
   // console.log("title: "+title);
 
   changeBorderColor(section, block)
@@ -519,6 +482,11 @@ function changeBorderColor(section, block) {
     document.querySelector(".color-block."+section+"."+block+"").style.borderColor = "white";
     } else {
       document.querySelector(".color-block."+section+".block-"+i+"").style.borderColor = "#707070";
+    }
+    if(absoluteColor != '#000000'){
+      document.querySelector(".color-block.section-"+i+".block-18").style.backgroundColor = absoluteColor;
+      document.querySelector("span.custom").style.color = absoluteColor;
+      
     }
   }
 }
@@ -540,7 +508,7 @@ var engines = 8;
   for(let i = 1; i < engines; i++) {
     if(engine == "engine-"+i){
       test = ".engine."+engine+"";
-      console.log('engine test: '+test);
+      // console.log('engine test: '+test);
       document.querySelector("."+engine+"").style.color = "#cdcdcd";
     } else {
       document.querySelector(".engine-"+i+"").style.color = "#225a81";
@@ -550,7 +518,7 @@ var engines = 8;
 
 function showEngines() {
 if(showTheEngines == false) {
-  console.log("Show engines");
+  // console.log("Show engines");
   document.querySelector("#engines").style.display = 'block';
   document.querySelector(".item-icon.item-down-icon.item-down-icon-engines").style.display = 'none';
   document.querySelector(".item-icon.item-x-icon.item-x-icon-engines").style.display = 'block';
@@ -561,4 +529,24 @@ if(showTheEngines == false) {
   document.querySelector(".item-icon.item-x-icon.item-x-icon-engines").style.display = 'none';
   showTheEngines = false;
 }
+}
+
+function sendColor(color){
+  absoluteColor = color;
+  // console.log("color: "+color);
+
+  // var rgbColor = Math.pow(hexToRgb(color) / 255, 2.2);
+  var rgbColor = hexToRgb(color);
+  
+  colorWheel = rgbColor;
+  // console.log("rgbColor: "+rgbColor);
+}
+
+function hexToRgb(hex) {
+  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return rgb = [
+    Math.pow(parseInt(result[1], 16) / 255, 2.2),
+    Math.pow(parseInt(result[2], 16) / 255, 2.2),
+    Math.pow(parseInt(result[3], 16) / 255, 2.2)
+ ];
 }

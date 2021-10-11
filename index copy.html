@@ -2,6 +2,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.1.0.js"></script>
+    <script src="js/html5kellycolorpicker.js"></script>
 </head>
 <body>
 
@@ -42,7 +43,7 @@
             <div class="color-block section-1 block-15" onclick="changeColor('section-1','block-15')"></div>
             <div class="color-block section-1 block-16" onclick="changeColor('section-1','block-16')"></div>
             <div class="color-block section-1 block-17" onclick="changeColor('section-1','block-17')"></div>
-            <div class="color-block section-1 block-18" onclick="changeColor('section-1','block-18')"></div>
+            <div class="color-block section-1 block-18 colorpicker" onclick="changeColor('section-1','block-18')"><span class="custom">Custom</span></div>
           </div>
         </li>
         
@@ -76,7 +77,7 @@
             <div class="color-block section-2 block-15" onclick="changeColor('section-2','block-15')"></div>
             <div class="color-block section-2 block-16" onclick="changeColor('section-2','block-16')"></div>
             <div class="color-block section-2 block-17" onclick="changeColor('section-2','block-17')"></div>
-            <div class="color-block section-2 block-18" onclick="changeColor('section-2','block-18')"></div>
+            <div class="color-block section-2 block-18 colorpicker" onclick="changeColor('section-2','block-18')"><span class="custom">Custom</span></div>
           </div>
         </li>
         
@@ -110,7 +111,7 @@
           <div class="color-block section-3 block-15" onclick="changeColor('section-3','block-15')"></div>
           <div class="color-block section-3 block-16" onclick="changeColor('section-3','block-16')"></div>
           <div class="color-block section-3 block-17" onclick="changeColor('section-3','block-17')"></div>
-          <div class="color-block section-3 block-18" onclick="changeColor('section-3','block-18')"></div>
+          <div class="color-block section-3 block-18 colorpicker" onclick="changeColor('section-3','block-18')"><span class="custom">Custom</span></div>
         </div>
       </li>
       
@@ -143,7 +144,7 @@
           <div class="color-block section-4 block-15" onclick="changeColor('section-4','block-15')"></div>
           <div class="color-block section-4 block-16" onclick="changeColor('section-4','block-16')"></div>
           <div class="color-block section-4 block-17" onclick="changeColor('section-4','block-17')"></div>
-          <div class="color-block section-4 block-18" onclick="changeColor('section-4','block-18')"></div>
+          <div class="color-block section-4 block-18 colorpicker" onclick="changeColor('section-4','block-18')"><span class="custom">Custom</span></div>
         </div>
       </li>
       
@@ -176,7 +177,7 @@
           <div class="color-block section-5 block-15" onclick="changeColor('section-5','block-15')"></div>
           <div class="color-block section-5 block-16" onclick="changeColor('section-5','block-16')"></div>
           <div class="color-block section-5 block-17" onclick="changeColor('section-5','block-17')"></div>
-          <div class="color-block section-5 block-18" onclick="changeColor('section-5','block-18')"></div>
+          <div class="color-block section-5 block-18 colorpicker" onclick="changeColor('section-5','block-18')"><span class="custom">Custom</span></div>
         </div>
       </li>
       
@@ -209,7 +210,7 @@
           <div class="color-block section-6 block-15" onclick="changeColor('section-6','block-15')"></div>
           <div class="color-block section-6 block-16" onclick="changeColor('section-6','block-16')"></div>
           <div class="color-block section-6 block-17" onclick="changeColor('section-6','block-17')"></div>
-          <div class="color-block section-6 block-18" onclick="changeColor('section-6','block-18')"></div>
+          <div class="color-block section-6 block-18 colorpicker" onclick="changeColor('section-6','block-18')"><span class="custom">Custom</span></div>
         </div>
       </li>
       
@@ -242,7 +243,7 @@
           <div class="color-block section-7 block-15" onclick="changeColor('section-7','block-15')"></div>
           <div class="color-block section-7 block-16" onclick="changeColor('section-7','block-16')"></div>
           <div class="color-block section-7 block-17" onclick="changeColor('section-7','block-17')"></div>
-          <div class="color-block section-7 block-18" onclick="changeColor('section-7','block-18')"></div>
+          <div class="color-block section-7 block-18 colorpicker" onclick="changeColor('section-7','block-18')"><span class="custom">Custom</span></div>
         </div>
       </li>
 
@@ -275,7 +276,7 @@
           <div class="color-block section-8 block-15" onclick="changeColor('section-8','block-15')"></div>
           <div class="color-block section-8 block-16" onclick="changeColor('section-8','block-16')"></div>
           <div class="color-block section-8 block-17" onclick="changeColor('section-8','block-17')"></div>
-          <div class="color-block section-8 block-18" onclick="changeColor('section-8','block-18')"></div>
+          <div class="color-block section-8 block-18 colorpicker" onclick="changeColor('section-8','block-18')"><span class="custom">Custom</span></div>
         </div>
       </li>
       
@@ -308,7 +309,7 @@
           <div class="color-block section-9 block-15" onclick="changeColor('section-9','block-15')"></div>
           <div class="color-block section-9 block-16" onclick="changeColor('section-9','block-16')"></div>
           <div class="color-block section-9 block-17" onclick="changeColor('section-9','block-17')"></div>
-          <div class="color-block section-9 block-18" onclick="changeColor('section-9','block-18')"></div>
+          <div class="color-block section-9 block-18 colorpicker" onclick="changeColor('section-9','block-18')"><span class="custom">Custom</span></div>
         </div>
       </li>
       
@@ -341,7 +342,7 @@
           <div class="color-block section-10 block-15" onclick="changeColor('section-10','block-15')"></div>
           <div class="color-block section-10 block-16" onclick="changeColor('section-10','block-16')"></div>
           <div class="color-block section-10 block-17" onclick="changeColor('section-10','block-17')"></div>
-          <div class="color-block section-10 block-18" onclick="changeColor('section-10','block-18')"></div>
+          <div class="color-block section-10 block-18 colorpicker" onclick="changeColor('section-10','block-18')"><span class="custom">Custom</span></div>
         </div>
       </li>
       
@@ -374,7 +375,7 @@
           <div class="color-block section-11 block-15" onclick="changeColor('section-11','block-15')"></div>
           <div class="color-block section-11 block-16" onclick="changeColor('section-11','block-16')"></div>
           <div class="color-block section-11 block-17" onclick="changeColor('section-11','block-17')"></div>
-          <div class="color-block section-11 block-18" onclick="changeColor('section-11','block-18')"></div>
+          <div class="color-block section-11 block-18 colorpicker" onclick="changeColor('section-11','block-18')"><span class="custom">Custom</span></div>
         </div>
       </li>
       
@@ -407,7 +408,7 @@
           <div class="color-block section-12 block-15" onclick="changeColor('section-12','block-15')"></div>
           <div class="color-block section-12 block-16" onclick="changeColor('section-12','block-16')"></div>
           <div class="color-block section-12 block-17" onclick="changeColor('section-12','block-17')"></div>
-          <div class="color-block section-12 block-18" onclick="changeColor('section-1','block-18')"></div>
+          <div class="color-block section-12 block-18 colorpicker" onclick="changeColor('section-1','block-18')"><span class="custom">Custom</span></div>
         </div>
       </li>
       
@@ -440,7 +441,7 @@
           <div class="color-block section-13 block-15" onclick="changeColor('section-13','block-15')"></div>
           <div class="color-block section-13 block-16" onclick="changeColor('section-13','block-16')"></div>
           <div class="color-block section-13 block-17" onclick="changeColor('section-13','block-17')"></div>
-          <div class="color-block section-13 block-18" onclick="changeColor('section-13','block-18')"></div>
+          <div class="color-block section-13 block-18 colorpicker" onclick="changeColor('section-13','block-18')"><span class="custom">Custom</span></div>
         </div>
       </li>
       
@@ -473,7 +474,7 @@
           <div class="color-block section-14 block-15" onclick="changeColor('section-14','block-15')"></div>
           <div class="color-block section-14 block-16" onclick="changeColor('section-14','block-16')"></div>
           <div class="color-block section-14 block-17" onclick="changeColor('section-14','block-17')"></div>
-          <div class="color-block section-14 block-18" onclick="changeColor('section-14','block-18')"></div>
+          <div class="color-block section-14 block-18 colorpicker" onclick="changeColor('section-14','block-18')"><span class="custom">Custom</span></div>
         </div>
       </li>
       
@@ -506,7 +507,7 @@
           <div class="color-block section-15 block-15" onclick="changeColor('section-15','block-15')"></div>
           <div class="color-block section-15 block-16" onclick="changeColor('section-15','block-16')"></div>
           <div class="color-block section-15 block-17" onclick="changeColor('section-15','block-17')"></div>
-          <div class="color-block section-15 block-18" onclick="changeColor('section-15','block-18')"></div>
+          <div class="color-block section-15 block-18 colorpicker" onclick="changeColor('section-15','block-18')"><span class="custom">Custom</span></div>
         </div>
       </li>
       
@@ -539,29 +540,229 @@
           <div class="color-block section-16 block-15" onclick="changeColor('section-16','block-15')"></div>
           <div class="color-block section-16 block-16" onclick="changeColor('section-16','block-16')"></div>
           <div class="color-block section-16 block-17" onclick="changeColor('section-16','block-17')"></div>
-          <div class="color-block section-16 block-18" onclick="changeColor('section-16','block-18')"></div>
+          <div class="color-block section-16 block-18 colorpicker" onclick="changeColor('section-16','block-18')"><span class="custom">Custom</span></div>
+        </div>
+      </li>
+
+
+      <li class="item-title item-title-engines" onclick="showEngines();">Engines
+        <img class="item-icon item-down-icon item-down-icon-engines" src="./images/down_arrow.png" />
+        <img class="item-icon item-x-icon item-x-icon-engines" src="./images/x-icon.png" />
+      </li>
+
+<div id="engines">
+
+      <li class="item-title item-title-17" onclick="showColors('color-block-section-17', 'item-title-17', 'icon-17');">Yamaha Set 4
+        <img class="item-icon item-down-icon item-down-icon-17" src="./images/down_arrow.png" />
+        <img class="item-icon item-x-icon item-x-icon-17" src="./images/x-icon.png" />
+      </li>
+      
+      <li class="color-block-section color-block-section-17">
+        <div class="color-header-section color-header-section-17">Choose a Color</div>
+        <div class="flex-grid"> 
+          <div class="color-block section-17 block-1" onclick="changeColor('section-17','block-1')"></div>
+          <div class="color-block section-17 block-2" onclick="changeColor('section-17','block-2')"></div>
+          <div class="color-block section-17 block-3" onclick="changeColor('section-17','block-3')"></div>
+          <div class="color-block section-17 block-4" onclick="changeColor('section-17','block-4')"></div>
+          <div class="color-block section-17 block-5" onclick="changeColor('section-17','block-5')"></div>
+          <div class="color-block section-17 block-6" onclick="changeColor('section-17','block-6')"></div>
+        </div>
+        <div class="flex-grid"> 
+          <div class="color-block section-17 block-7" onclick="changeColor('section-17','block-7')"></div>
+          <div class="color-block section-17 block-8" onclick="changeColor('section-17','block-8')"></div>
+          <div class="color-block section-17 block-9" onclick="changeColor('section-17','block-9')"></div>
+          <div class="color-block section-17 block-10" onclick="changeColor('section-17','block-10')"></div>
+          <div class="color-block section-17 block-11" onclick="changeColor('section-17','block-11')"></div>
+          <div class="color-block section-17 block-12" onclick="changeColor('section-17','block-12')"></div>
+        </div>
+        <div class="flex-grid"> 
+          <div class="color-block section-17 block-13" onclick="changeColor('section-17','block-13')"></div>
+          <div class="color-block section-17 block-14" onclick="changeColor('section-17','block-14')"></div>
+          <div class="color-block section-17 block-15" onclick="changeColor('section-17','block-15')"></div>
+          <div class="color-block section-17 block-16" onclick="changeColor('section-17','block-16')"></div>
+          <div class="color-block section-17 block-17" onclick="changeColor('section-17','block-17')"></div>
+          <div class="color-block section-17 block-18 colorpicker" onclick="changeColor('section-17','block-18')"><span class="custom">Custom</span></div>
+        </div>
+      </li>
+
+      
+
+      <li class="item-title item-title-18" onclick="showColors('color-block-section-18', 'item-title-18', 'icon-18');">Yamaha Set 5
+        <img class="item-icon item-down-icon item-down-icon-18" src="./images/down_arrow.png" />
+        <img class="item-icon item-x-icon item-x-icon-18" src="./images/x-icon.png" />
+      </li>
+      
+      <li class="color-block-section color-block-section-18">
+        <div class="color-header-section color-header-section-18">Choose a Color</div>
+        <div class="flex-grid"> 
+          <div class="color-block section-18 block-1" onclick="changeColor('section-18','block-1')"></div>
+          <div class="color-block section-18 block-2" onclick="changeColor('section-18','block-2')"></div>
+          <div class="color-block section-18 block-3" onclick="changeColor('section-18','block-3')"></div>
+          <div class="color-block section-18 block-4" onclick="changeColor('section-18','block-4')"></div>
+          <div class="color-block section-18 block-5" onclick="changeColor('section-18','block-5')"></div>
+          <div class="color-block section-18 block-6" onclick="changeColor('section-18','block-6')"></div>
+        </div>
+        <div class="flex-grid"> 
+          <div class="color-block section-18 block-7" onclick="changeColor('section-18','block-7')"></div>
+          <div class="color-block section-18 block-8" onclick="changeColor('section-18','block-8')"></div>
+          <div class="color-block section-18 block-9" onclick="changeColor('section-18','block-9')"></div>
+          <div class="color-block section-18 block-10" onclick="changeColor('section-18','block-10')"></div>
+          <div class="color-block section-18 block-11" onclick="changeColor('section-18','block-11')"></div>
+          <div class="color-block section-18 block-12" onclick="changeColor('section-18','block-12')"></div>
+        </div>
+        <div class="flex-grid"> 
+          <div class="color-block section-18 block-13" onclick="changeColor('section-18','block-13')"></div>
+          <div class="color-block section-18 block-14" onclick="changeColor('section-18','block-14')"></div>
+          <div class="color-block section-18 block-15" onclick="changeColor('section-18','block-15')"></div>
+          <div class="color-block section-18 block-16" onclick="changeColor('section-18','block-16')"></div>
+          <div class="color-block section-18 block-17" onclick="changeColor('section-18','block-17')"></div>
+          <div class="color-block section-18 block-18 colorpicker" onclick="changeColor('section-18','block-18')"><span class="custom">Custom</span></div>
+        </div>
+      </li>
+
+      
+
+      <li class="item-title item-title-19" onclick="showColors('color-block-section-19', 'item-title-19', 'icon-19');">Mercedes 450 Set 4
+        <img class="item-icon item-down-icon item-down-icon-19" src="./images/down_arrow.png" />
+        <img class="item-icon item-x-icon item-x-icon-19" src="./images/x-icon.png" />
+      </li>
+      
+      <li class="color-block-section color-block-section-19">
+        <div class="color-header-section color-header-section-19">Choose a Color</div>
+        <div class="flex-grid"> 
+          <div class="color-block section-19 block-1" onclick="changeColor('section-19','block-1')"></div>
+          <div class="color-block section-19 block-2" onclick="changeColor('section-19','block-2')"></div>
+          <div class="color-block section-19 block-3" onclick="changeColor('section-19','block-3')"></div>
+          <div class="color-block section-19 block-4" onclick="changeColor('section-19','block-4')"></div>
+          <div class="color-block section-19 block-5" onclick="changeColor('section-19','block-5')"></div>
+          <div class="color-block section-19 block-6" onclick="changeColor('section-19','block-6')"></div>
+        </div>
+        <div class="flex-grid"> 
+          <div class="color-block section-19 block-7" onclick="changeColor('section-19','block-7')"></div>
+          <div class="color-block section-19 block-8" onclick="changeColor('section-19','block-8')"></div>
+          <div class="color-block section-19 block-9" onclick="changeColor('section-19','block-9')"></div>
+          <div class="color-block section-19 block-10" onclick="changeColor('section-19','block-10')"></div>
+          <div class="color-block section-19 block-11" onclick="changeColor('section-19','block-11')"></div>
+          <div class="color-block section-19 block-12" onclick="changeColor('section-19','block-12')"></div>
+        </div>
+        <div class="flex-grid"> 
+          <div class="color-block section-19 block-13" onclick="changeColor('section-19','block-13')"></div>
+          <div class="color-block section-19 block-14" onclick="changeColor('section-19','block-14')"></div>
+          <div class="color-block section-19 block-15" onclick="changeColor('section-19','block-15')"></div>
+          <div class="color-block section-19 block-16" onclick="changeColor('section-19','block-16')"></div>
+          <div class="color-block section-19 block-17" onclick="changeColor('section-19','block-17')"></div>
+          <div class="color-block section-19 block-18 colorpicker" onclick="changeColor('section-19','block-18')"><span class="custom">Custom</span></div>
         </div>
       </li>
       
 
       
-      <li class="item-title item-title-17" onclick="showColors('color-block-section-17', 'item-title-17', 'icon-17');">Engines
-        <img class="item-icon item-down-icon item-down-icon-17" src="./images/down_arrow.png" />
-        <img class="item-icon item-x-icon item-x-icon-17" src="./images/x-icon.png" />
-      </li>
 
+      <li class="item-title item-title-20" onclick="showColors('color-block-section-20', 'item-title-20', 'icon-20');">Mercedes 450 Set 5
+        <img class="item-icon item-down-icon item-down-icon-20" src="./images/down_arrow.png" />
+        <img class="item-icon item-x-icon item-x-icon-20" src="./images/x-icon.png" />
+      </li>
+      
+      <li class="color-block-section color-block-section-20">
+        <div class="color-header-section color-header-section-20">Choose a Color</div>
+        <div class="flex-grid"> 
+          <div class="color-block section-20 block-1" onclick="changeColor('section-20','block-1')"></div>
+          <div class="color-block section-20 block-2" onclick="changeColor('section-20','block-2')"></div>
+          <div class="color-block section-20 block-3" onclick="changeColor('section-20','block-3')"></div>
+          <div class="color-block section-20 block-4" onclick="changeColor('section-20','block-4')"></div>
+          <div class="color-block section-20 block-5" onclick="changeColor('section-20','block-5')"></div>
+          <div class="color-block section-20 block-6" onclick="changeColor('section-20','block-6')"></div>
+        </div>
+        <div class="flex-grid"> 
+          <div class="color-block section-20 block-7" onclick="changeColor('section-20','block-7')"></div>
+          <div class="color-block section-20 block-8" onclick="changeColor('section-20','block-8')"></div>
+          <div class="color-block section-20 block-9" onclick="changeColor('section-20','block-9')"></div>
+          <div class="color-block section-20 block-10" onclick="changeColor('section-20','block-10')"></div>
+          <div class="color-block section-20 block-11" onclick="changeColor('section-20','block-11')"></div>
+          <div class="color-block section-20 block-12" onclick="changeColor('section-20','block-12')"></div>
+        </div>
+        <div class="flex-grid"> 
+          <div class="color-block section-20 block-13" onclick="changeColor('section-20','block-13')"></div>
+          <div class="color-block section-20 block-14" onclick="changeColor('section-20','block-14')"></div>
+          <div class="color-block section-20 block-15" onclick="changeColor('section-20','block-15')"></div>
+          <div class="color-block section-20 block-16" onclick="changeColor('section-20','block-16')"></div>
+          <div class="color-block section-20 block-17" onclick="changeColor('section-20','block-17')"></div>
+          <div class="color-block section-20 block-18 colorpicker" onclick="changeColor('section-20','block-18')"><span class="custom">Custom</span></div>
+        </div>
+      </li>
+      
 
       
-      
-      <li class="color-block-section color-block-section-17">
-        <div onclick="selectEngine('engine-1')" class="engine engine-1">Hide Engines</div>
-        <div onclick="selectEngine('engine-2')" class="engine engine-2">Yamaha Set 4</div>
-        <div onclick="selectEngine('engine-3')" class="engine engine-3">Yamaha Set 5</div>
-        <div onclick="selectEngine('engine-4')" class="engine engine-4">Mercedes 450 Set 4</div>
-        <div onclick="selectEngine('engine-5')" class="engine engine-5">Mercedes 450 Set 5</div>
-        <div onclick="selectEngine('engine-6')" class="engine engine-6">Mercedes 600 set 4</div>
-        <div onclick="selectEngine('engine-7')" class="engine engine-7">Mercedes 600 set 5</div>
+
+      <li class="item-title item-title-21" onclick="showColors('color-block-section-21', 'item-title-21', 'icon-21');">Mercedes 600 Set 4
+        <img class="item-icon item-down-icon item-down-icon-21" src="./images/down_arrow.png" />
+        <img class="item-icon item-x-icon item-x-icon-21" src="./images/x-icon.png" />
       </li>
+      
+      <li class="color-block-section color-block-section-21">
+        <div class="color-header-section color-header-section-21">Choose a Color</div>
+        <div class="flex-grid"> 
+          <div class="color-block section-21 block-1" onclick="changeColor('section-21','block-1')"></div>
+          <div class="color-block section-21 block-2" onclick="changeColor('section-21','block-2')"></div>
+          <div class="color-block section-21 block-3" onclick="changeColor('section-21','block-3')"></div>
+          <div class="color-block section-21 block-4" onclick="changeColor('section-21','block-4')"></div>
+          <div class="color-block section-21 block-5" onclick="changeColor('section-21','block-5')"></div>
+          <div class="color-block section-21 block-6" onclick="changeColor('section-21','block-6')"></div>
+        </div>
+        <div class="flex-grid"> 
+          <div class="color-block section-21 block-7" onclick="changeColor('section-21','block-7')"></div>
+          <div class="color-block section-21 block-8" onclick="changeColor('section-21','block-8')"></div>
+          <div class="color-block section-21 block-9" onclick="changeColor('section-21','block-9')"></div>
+          <div class="color-block section-21 block-10" onclick="changeColor('section-21','block-10')"></div>
+          <div class="color-block section-21 block-11" onclick="changeColor('section-21','block-11')"></div>
+          <div class="color-block section-21 block-12" onclick="changeColor('section-21','block-12')"></div>
+        </div>
+        <div class="flex-grid"> 
+          <div class="color-block section-21 block-13" onclick="changeColor('section-21','block-13')"></div>
+          <div class="color-block section-21 block-14" onclick="changeColor('section-21','block-14')"></div>
+          <div class="color-block section-21 block-15" onclick="changeColor('section-21','block-15')"></div>
+          <div class="color-block section-21 block-16" onclick="changeColor('section-21','block-16')"></div>
+          <div class="color-block section-21 block-17" onclick="changeColor('section-21','block-17')"></div>
+          <div class="color-block section-21 block-18 colorpicker" onclick="changeColor('section-21','block-18')"><span class="custom">Custom</span></div>
+        </div>
+      </li>
+      
+      
+
+      <li class="item-title item-title-22" onclick="showColors('color-block-section-22', 'item-title-22', 'icon-22');">Mercedes 600 Set 5
+        <img class="item-icon item-down-icon item-down-icon-22" src="./images/down_arrow.png" />
+        <img class="item-icon item-x-icon item-x-icon-22" src="./images/x-icon.png" />
+      </li>
+      
+      <li class="color-block-section color-block-section-22">
+        <div class="color-header-section color-header-section-22">Choose a Color</div>
+        <div class="flex-grid"> 
+          <div class="color-block section-22 block-1" onclick="changeColor('section-22','block-1')"></div>
+          <div class="color-block section-22 block-2" onclick="changeColor('section-22','block-2')"></div>
+          <div class="color-block section-22 block-3" onclick="changeColor('section-22','block-3')"></div>
+          <div class="color-block section-22 block-4" onclick="changeColor('section-22','block-4')"></div>
+          <div class="color-block section-22 block-5" onclick="changeColor('section-22','block-5')"></div>
+          <div class="color-block section-22 block-6" onclick="changeColor('section-22','block-6')"></div>
+        </div>
+        <div class="flex-grid"> 
+          <div class="color-block section-22 block-7" onclick="changeColor('section-22','block-7')"></div>
+          <div class="color-block section-22 block-8" onclick="changeColor('section-22','block-8')"></div>
+          <div class="color-block section-22 block-9" onclick="changeColor('section-22','block-9')"></div>
+          <div class="color-block section-22 block-10" onclick="changeColor('section-22','block-10')"></div>
+          <div class="color-block section-22 block-11" onclick="changeColor('section-22','block-11')"></div>
+          <div class="color-block section-22 block-12" onclick="changeColor('section-22','block-12')"></div>
+        </div>
+        <div class="flex-grid"> 
+          <div class="color-block section-22 block-13" onclick="changeColor('section-22','block-13')"></div>
+          <div class="color-block section-22 block-14" onclick="changeColor('section-22','block-14')"></div>
+          <div class="color-block section-22 block-15" onclick="changeColor('section-22','block-15')"></div>
+          <div class="color-block section-22 block-16" onclick="changeColor('section-22','block-16')"></div>
+          <div class="color-block section-22 block-17" onclick="changeColor('section-22','block-17')"></div>
+          <div class="color-block section-22 block-18 colorpicker" onclick="changeColor('section-22','block-18')"><span class="custom">Custom</span></div>
+        </div>
+      </li>
+    </div>
+
     </ul>
   </div>
 
@@ -572,6 +773,10 @@
        <pre id="Info"></pre>
      </div>
 </div>
+
+<script>
+  var colorpickersCustom = KellyColorPicker.attachToInputByClass('colorpicker', {alpha_slider : false, size : 200, popupClass : 'popup-kelly-color-custom'}); 
+</script>
 
 <script type="text/javascript" src="js/app.js"></script>
 </body>
