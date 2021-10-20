@@ -12,6 +12,50 @@ var colorSection = '';
 var colorBlock = '';
 var absoluteColor = '#000000';
 var colorWheel;
+var menuOptions = 'hide';
+
+var section1 = "e4b2b759-dcc5-4195-8b5e-0dac90c156a7";
+var section2 = "37f570c1-048e-46a3-9d50-81f67436bcc7";
+var section3 = "6314f6ba-c25f-45a7-a57e-9ee19f72256b";
+var section4 = "1eb6c258-f3fe-423d-a67a-83f5d9126171";
+var section5 = "03fd4243-2fd5-4337-ac2e-edaf187df58e";
+var section6 = "116b70a0-b795-4e29-a3ad-ce8ad3cb128c";
+var section7 = "94213e24-87a6-457c-9f4a-a18536e05fc4";
+var section8 = "2ee94080-f45c-4312-968e-f19464eb78ac";
+var section9 = "3b479f2f-923b-445b-a4f3-0717c3af676e";
+var section10 = "adb5a729-f2b5-4071-9b23-6c0bb3d245e9";
+var section11 = "b44e1e0f-fefc-42d1-b0c6-3f6d20e893e3";
+var section12 = "37c386f0-5c4e-4f2a-ba52-2968fc1e08bc";
+var section13 = "be7d5667-cf0e-4683-8876-34e5eb63a4bf";
+var section14 = "cf5087c1-b755-4aa5-9ce4-198be6e6f7e8";
+var section15 = "69e60667-fb5c-4b0c-8c96-7026ff136d47";
+var section16 = "5382750e-e0c8-44f9-82bf-8956238fe547";
+var section17 = "a963bd43-67e6-4a93-8ef2-21c3099b5a9e";
+var section18 = "ff0040ab-be2f-4647-b106-f7aa7722b63c";
+var section19 = "11f3160a-15e0-4980-9538-202ae4a5b28d";
+
+
+var s1 = getParameterByName('s1');
+var s2 = getParameterByName('s2');
+var s3 = getParameterByName('s3');
+var s4 = getParameterByName('s4');
+var s5 = getParameterByName('s5');
+var s6 = getParameterByName('s6');
+var s7 = getParameterByName('s7');
+var s8 = getParameterByName('s8');
+var s9 = getParameterByName('s9');
+var s10 = getParameterByName('s10');
+var s11 = getParameterByName('s11');
+var s12 = getParameterByName('s12');
+var s13 = getParameterByName('s13');
+var s14 = getParameterByName('s14');
+var s15 = getParameterByName('s15');
+var s16 = getParameterByName('s16');
+var s17 = getParameterByName('s17');
+var s18 = getParameterByName('s18');
+var s19 = getParameterByName('s19');
+var eng = getParameterByName('eng');
+
 
 var getColorAsTextureURL = function getColorAsTextureURL(color) {
   ctx.fillStyle = color;
@@ -37,7 +81,73 @@ var success = function success(api) {
           // console.log(m.name, m);
         }
         document.querySelector(".options").style.display = 'block';
+        document.getElementById('hamburger-menu').style.transform = 'rotate(360deg)';
+        getURLCodes();
+        getURLEng();
+
+        // console.log('s1: '+s1);
+        // console.log('s2: '+s2);
+        // console.log('s3: '+s3);
       });
+
+      function getURLEng() {
+        console.log('eng: '+eng);
+          if(eng == '1317') {
+            
+            api.show(1317);
+            api.hide(1370);
+            api.hide(1889);
+            api.hide(2026);
+            api.hide(1555);
+            api.hide(1704);
+          };
+        
+          if(eng == '1370') {
+            api.hide(1317);
+            api.show(1370);
+            api.hide(1889);
+            api.hide(2026);
+            api.hide(1555);
+            api.hide(1704);
+              };
+        
+              if(eng == '1889') {
+            api.hide(1317);
+            api.hide(1370);
+            api.show(1889);
+            api.hide(2026);
+            api.hide(1555);
+            api.hide(1704);
+              };
+        
+              if(eng == '2026') {
+              api.hide(1317);
+              api.hide(1370);
+              api.hide(1889);
+              api.show(2026);
+              api.hide(1555);
+              api.hide(1704);
+                };
+        
+            if(eng == '1555') {
+              api.hide(1317);
+              api.hide(1370);
+              api.hide(1889);
+              api.hide(2026);
+              api.show(1555);
+              api.hide(1704);
+                };
+        
+            if(eng == '1704') {
+              api.hide(1317);
+              api.hide(1370);
+              api.hide(1889);
+              api.hide(2026);
+              api.hide(1555);
+              api.show(1704);
+              };
+        
+        }
 
 
   api.hide(1370);
@@ -48,151 +158,170 @@ var success = function success(api) {
 
   var id = 1317;
 
-  document.querySelector('li.item-title.item-title-17').addEventListener('click', function() {
+  document.querySelector('li.item-title.item-title-14').addEventListener('click', function() {
     api.show(1317);
     api.hide(1370);
     api.hide(1889);
     api.hide(2026);
     api.hide(1555);
     api.hide(1704);
+    eng = '1317';
   });
 
-  document.querySelector('li.item-title.item-title-18').addEventListener('click', function() {
+  document.querySelector('li.item-title.item-title-15').addEventListener('click', function() {
     api.hide(1317);
     api.show(1370);
     api.hide(1889);
     api.hide(2026);
     api.hide(1555);
     api.hide(1704);
+    eng = '1370';
       });
 
-  document.querySelector('li.item-title.item-title-19').addEventListener('click', function() {
+  document.querySelector('li.item-title.item-title-16').addEventListener('click', function() {
     api.hide(1317);
     api.hide(1370);
     api.show(1889);
     api.hide(2026);
     api.hide(1555);
     api.hide(1704);
+    eng = '1889';
       });
 
-    document.querySelector('li.item-title.item-title-20').addEventListener('click', function() {
+    document.querySelector('li.item-title.item-title-17').addEventListener('click', function() {
       api.hide(1317);
       api.hide(1370);
       api.hide(1889);
       api.show(2026);
       api.hide(1555);
       api.hide(1704);
+      eng = '2026';
         });
 
-    document.querySelector('li.item-title.item-title-21').addEventListener('click', function() {
+    document.querySelector('li.item-title.item-title-18').addEventListener('click', function() {
       api.hide(1317);
       api.hide(1370);
       api.hide(1889);
       api.hide(2026);
       api.show(1555);
       api.hide(1704);
+      eng = '1555';
         });
 
-    document.querySelector('li.item-title.item-title-22').addEventListener('click', function() {
+    document.querySelector('li.item-title.item-title-19').addEventListener('click', function() {
       api.hide(1317);
       api.hide(1370);
       api.hide(1889);
       api.hide(2026);
       api.hide(1555);
       api.show(1704);
+      eng = '1704';
         });
-
 
       function makeMyModelBlue(color, itemId) {
         for (var i = 0; i < myMaterials.length; i++) {
           var m = myMaterials[i]; // here change only the channel you need to change
           if(m.id == itemId) {
-            // console.log("color: "+color);
-            // console.log("name: " + m.name + " " + m.id);
-            // console.log("itemId: "+itemId);
-            if(color == 'HCB White') {
+            console.log("color: "+color);
+            console.log("name: " + m.name + " " + m.id);
+            console.log("itemId: "+itemId);
+            if(color == 'cdcdcd') {
               m.channels.EmitColor.color    = [0.6104955708078648, 0.6104955708078648, 0.6104955708078648];
               m.channels.AlbedoPBR.color    = [0.6104955708078648, 0.6104955708078648, 0.6104955708078648];
               m.channels.DiffusePBR.color   = [0.6104955708078648, 0.6104955708078648, 0.6104955708078648];
               m.channels.DiffuseColor.color = [0.6104955708078648, 0.6104955708078648, 0.6104955708078648];
-            } else if(color == 'Viper Red') {
+              setSection(itemId, color);
+            } else if(color == 'a4373e') {
               m.channels.EmitColor.color    = [0.37867625092984036,0.03423020656508195,0.04455262731642138];
               m.channels.AlbedoPBR.color    = [0.37867625092984036,0.03423020656508195,0.04455262731642138];
               m.channels.DiffusePBR.color   = [0.37867625092984036,0.03423020656508195,0.04455262731642138];
               m.channels.DiffuseColor.color = [0.37867625092984036,0.03423020656508195,0.04455262731642138];
-              // console.log("Viper Red: "+m.channels.DiffuseColor.color);
-              // console.log("Viper Red m: "+JSON.stringify(m));
-            } else if(color == 'Navy') {
+              setSection(itemId, color);
+            } else if(color == '39414c') {
               m.channels.EmitColor.color    = [0.04091519690685319, 0.052860647023180246, 0.07227185068231748];
               m.channels.AlbedoPBR.color    = [0.04091519690685319, 0.052860647023180246, 0.07227185068231748];
               m.channels.DiffusePBR.color   = [0.04091519690685319, 0.052860647023180246, 0.07227185068231748];
               m.channels.DiffuseColor.color = [0.04091519690685319, 0.052860647023180246, 0.07227185068231748];
-            } else if(color == 'Destroyer') {
+              setSection(itemId, color);
+            } else if(color == '5e5e5e') {
               m.channels.EmitColor.color    = [0.1119324278369056, 0.1119324278369056, 0.1119324278369056];
               m.channels.AlbedoPBR.color    = [0.1119324278369056, 0.1119324278369056, 0.1119324278369056];
               m.channels.DiffusePBR.color   = [0.1119324278369056, 0.1119324278369056, 0.1119324278369056];
               m.channels.DiffuseColor.color = [0.1119324278369056, 0.1119324278369056, 0.1119324278369056];
-            } else if(color == 'Mediterranean Blue') {
+              setSection(itemId, color);
+            } else if(color == '225a81') {
               m.channels.EmitColor.color    = [0.01599629336550963, 0.1022417330881013, 0.21952619972926923];
               m.channels.AlbedoPBR.color    = [0.01599629336550963, 0.1022417330881013, 0.21952619972926923];
               m.channels.DiffusePBR.color   = [0.01599629336550963, 0.1022417330881013, 0.21952619972926923];
               m.channels.DiffuseColor.color = [0.01599629336550963, 0.1022417330881013, 0.21952619972926923];
-            } else if(color == 'Admiral Blue') {
+              setSection(itemId, color);
+            } else if(color == '4691c0') {
               m.channels.EmitColor.color    = [0.06124605423161761, 0.28314874042999194, 0.5271151257058131];
               m.channels.AlbedoPBR.color    = [0.06124605423161761, 0.28314874042999194, 0.5271151257058131];
               m.channels.DiffusePBR.color   = [0.06124605423161761, 0.28314874042999194, 0.5271151257058131];
               m.channels.DiffuseColor.color = [0.06124605423161761, 0.28314874042999194, 0.5271151257058131];
-            } else if(color == 'Sand') {
+              setSection(itemId, color);
+            } else if(color == 'bfb8aa') {
               m.channels.EmitColor.color    = [0.5209955732043541, 0.4793201831008268, 0.4019777798321956];
               m.channels.AlbedoPBR.color    = [0.5209955732043541, 0.4793201831008268, 0.4019777798321956];
               m.channels.DiffusePBR.color   = [0.5209955732043541, 0.4793201831008268, 0.4019777798321956];
               m.channels.DiffuseColor.color = [0.5209955732043541, 0.4793201831008268, 0.4019777798321956];
-            } else if(color == 'Bronze') {
+              setSection(itemId, color);
+            } else if(color == '978270') {
               m.channels.EmitColor.color    = [0.30946892281750854, 0.2232279573168085, 0.16202937563911096];
               m.channels.AlbedoPBR.color    = [0.30946892281750854, 0.2232279573168085, 0.16202937563911096];
               m.channels.DiffusePBR.color   = [0.30946892281750854, 0.2232279573168085, 0.16202937563911096];
               m.channels.DiffuseColor.color = [0.30946892281750854, 0.2232279573168085, 0.16202937563911096];
-            } else if(color == 'Sky Blue') {
+              setSection(itemId, color);
+            } else if(color == '65a4be') {
               m.channels.EmitColor.color    = [0.13013647669036427, 0.3712376804741491, 0.5149176653765214];
               m.channels.AlbedoPBR.color    = [0.13013647669036427, 0.3712376804741491, 0.5149176653765214];
               m.channels.DiffusePBR.color   = [0.13013647669036427, 0.3712376804741491, 0.5149176653765214];
               m.channels.DiffuseColor.color = [0.13013647669036427, 0.3712376804741491, 0.5149176653765214];
-            } else if(color == 'Jet Black') {
+              setSection(itemId, color);
+            } else if(color == '393939') {
               m.channels.EmitColor.color    = [0.04091519690685319, 0.04091519690685319, 0.04091519690685319];
               m.channels.AlbedoPBR.color    = [0.04091519690685319, 0.04091519690685319, 0.04091519690685319];
               m.channels.DiffusePBR.color   = [0.04091519690685319, 0.04091519690685319, 0.04091519690685319];
               m.channels.DiffuseColor.color = [0.04091519690685319, 0.04091519690685319, 0.04091519690685319];
-            } else if(color == 'Steel Blue') {
+              setSection(itemId, color);
+            } else if(color == '546f7e') {
               m.channels.EmitColor.color    = [0.08865558628577294, 0.15896083506088038, 0.20863687014525575];
               m.channels.AlbedoPBR.color    = [0.08865558628577294, 0.15896083506088038, 0.20863687014525575];
               m.channels.DiffusePBR.color   = [0.08865558628577294, 0.15896083506088038, 0.20863687014525575];
               m.channels.DiffuseColor.color = [0.08865558628577294, 0.15896083506088038, 0.20863687014525575];
-            } else if(color == 'Jet Stream Blue') {
+              setSection(itemId, color);
+            } else if(color == '1381b0') {
               m.channels.EmitColor.color    = [0.006512090792594473, 0.21952619972926923, 0.4341536361747489];
               m.channels.AlbedoPBR.color    = [0.006512090792594473, 0.21952619972926923, 0.4341536361747489];
               m.channels.DiffusePBR.color   = [0.006512090792594473, 0.21952619972926923, 0.4341536361747489];
               m.channels.DiffuseColor.color = [0.006512090792594473, 0.21952619972926923, 0.4341536361747489];
-            } else if(color == 'Aqua Mist') {
+              setSection(itemId, color);
+            } else if(color == 'daf0eb') {
               m.channels.EmitColor.color    = [0.7011018919329731, 0.8713671191987973, 0.8307698767746546];
               m.channels.AlbedoPBR.color    = [0.7011018919329731, 0.8713671191987973, 0.8307698767746546];
               m.channels.DiffusePBR.color   = [0.7011018919329731, 0.8713671191987973, 0.8307698767746546];
               m.channels.DiffuseColor.color = [0.7011018919329731, 0.8713671191987973, 0.8307698767746546];
-            } else if(color == 'Bimini Blue') {
+              setSection(itemId, color);
+            } else if(color == '67c7d9') {
               m.channels.EmitColor.color    = [0.13563332965520566, 0.5711248294648731, 0.6938717612919899];
               m.channels.AlbedoPBR.color    = [0.13563332965520566, 0.5711248294648731, 0.6938717612919899];
               m.channels.DiffusePBR.color   = [0.13563332965520566, 0.5711248294648731, 0.6938717612919899];
               m.channels.DiffuseColor.color = [0.13563332965520566, 0.5711248294648731, 0.6938717612919899];
-            } else if(color == 'Storm Gray') {
+              setSection(itemId, color);
+            } else if(color == '8e8b83') {
               m.channels.EmitColor.color    = [0.2704977910130658, 0.2581828529215958, 0.22696587351009836];
               m.channels.AlbedoPBR.color    = [0.2704977910130658, 0.2581828529215958, 0.22696587351009836];
               m.channels.DiffusePBR.color   = [0.2704977910130658, 0.2581828529215958, 0.22696587351009836];
               m.channels.DiffuseColor.color = [0.2704977910130658, 0.2581828529215958, 0.22696587351009836];
-            } else if(color == 'San Mateo') {
+              setSection(itemId, color);
+            } else if(color == 'e3ceb5') {
               m.channels.EmitColor.color    = [0.7681511472475071, 0.6172065624196509, 0.4620769996544071];
               m.channels.AlbedoPBR.color    = [0.7681511472475071, 0.6172065624196509, 0.4620769996544071];
               m.channels.DiffusePBR.color   = [0.7681511472475071, 0.6172065624196509, 0.4620769996544071];
               m.channels.DiffuseColor.color = [0.7681511472475071, 0.6172065624196509, 0.4620769996544071];
-            } else if(color == 'Caribbean Blue') {
+              setSection(itemId, color);
+            } else if(color == '87d3dc') {
               m.channels.EmitColor.color    = [0.24228112246555486, 0.6514056374198239, 0.7156935005064807];
               m.channels.AlbedoPBR.color    = [0.24228112246555486, 0.6514056374198239, 0.7156935005064807];
               m.channels.DiffusePBR.color   = [0.24228112246555486, 0.6514056374198239, 0.7156935005064807];
@@ -205,36 +334,127 @@ var success = function success(api) {
               m.channels.DiffuseColor.color = colorWheel;
              // console.log("colorWheel: "+m.channels.DiffuseColor.color);
              // console.log("colorWheel m: "+JSON.stringify(m));
+              console.log("pre color changed: "+absoluteColor);
+              var regexp = /#(\S)/g;
+              absoluteColor = absoluteColor.replace(regexp, '$1');
+              console.log("post color changed: "+absoluteColor);
+              setSection(itemId, absoluteColor);
+            } else {
+              thisColor = '#'+color;
+              sendColor(thisColor);
+              m.channels.EmitColor.color    = colorWheel;
+              m.channels.AlbedoPBR.color    = colorWheel;
+              m.channels.DiffusePBR.color   = colorWheel;
+              m.channels.DiffuseColor.color = colorWheel;
+              setSection(itemId, color);
             }
             api.setMaterial(m);
           }
         }
       }
 
-      var section1 = "e4b2b759-dcc5-4195-8b5e-0dac90c156a7";
-      var section2 = "37f570c1-048e-46a3-9d50-81f67436bcc7";
-      var section3 = "6314f6ba-c25f-45a7-a57e-9ee19f72256b";
-      var section4 = "1eb6c258-f3fe-423d-a67a-83f5d9126171";
-      var section5 = "03fd4243-2fd5-4337-ac2e-edaf187df58e";
-      var section6 = "116b70a0-b795-4e29-a3ad-ce8ad3cb128c";
-      var section7 = "94213e24-87a6-457c-9f4a-a18536e05fc4";
-      var section8 = "2ee94080-f45c-4312-968e-f19464eb78ac";
-      var section9 = "3b479f2f-923b-445b-a4f3-0717c3af676e";
-      var section10 = "e9218a62-7a7e-448b-8ee7-b332c50a4e87";
-      var section11 = "adb5a729-f2b5-4071-9b23-6c0bb3d245e9";
-      var section12 = "b44e1e0f-fefc-42d1-b0c6-3f6d20e893e3";
-      var section13 = "37c386f0-5c4e-4f2a-ba52-2968fc1e08bc";
-      var section14 = "9c949fc6-3fee-41c1-9d1e-0c1e2fe5b780";
-      var section15 = "ab0a7519-ed31-4739-b772-016859613bfe";
-      var section16 = "be7d5667-cf0e-4683-8876-34e5eb63a4bf";
-      var section17 = "cf5087c1-b755-4aa5-9ce4-198be6e6f7e8";
-      var section18 = "69e60667-fb5c-4b0c-8c96-7026ff136d47";
-      var section19 = "5382750e-e0c8-44f9-82bf-8956238fe547";
-      var section20 = "a963bd43-67e6-4a93-8ef2-21c3099b5a9e";
-      var section21 = "ff0040ab-be2f-4647-b106-f7aa7722b63c";
-      var section22 = "11f3160a-15e0-4980-9538-202ae4a5b28d";
-      
-  var sectionList = 23;
+
+function getURLCodes() {
+  if(s1 !== null) {
+    // Bait Well
+    makeMyModelBlue(s1, section1);
+    console.log('s1: '+s1+' | section: '+section1)
+  }
+  if(s2 !== null) {
+    // Cabin Door
+    makeMyModelBlue(s2, section2);
+    console.log('s2: '+s2+' | section: '+section2)
+  }
+  if(s3 !== null) {
+    // Chair Base
+    makeMyModelBlue(s3, section3);
+    console.log('s3: '+s3+' | section: '+section3)
+  }
+  if(s4 !== null) {
+    // Chairs
+    makeMyModelBlue(s4, section4);
+    console.log('s4: '+s4+' | section: '+section4)
+  }
+  if(s5 !== null) {
+    // Console Cabin
+    makeMyModelBlue(s5, section5);
+    console.log('s5: '+s5+' | section: '+section5)
+  }
+  if(s6 !== null) {
+    // Deck Ring
+    makeMyModelBlue(s6, section6);
+    console.log('s6: '+s6+' | section: '+section6)
+  }
+  if(s7 !== null) {
+    // Floor Plank Liner
+    makeMyModelBlue(s7, section7);
+    console.log('s7: '+s7+' | section: '+section7)
+  }
+  if(s8 !== null) {
+    // Hard Top
+    setTimeout(() => {  
+      makeMyModelBlue(s8, section8);
+  }, 5000);
+    console.log('s8: '+s8+' | section: '+section8)
+  }
+  if(s9 !== null) {
+    // Hull
+    makeMyModelBlue(s9, section9);
+    console.log('s9: '+s9+' | section: '+section9)
+  }
+  if(s10 !== null) {
+    // Liner
+    makeMyModelBlue(s10, section10);
+    console.log('s10: '+s10+' | section: '+section10)
+  }
+  if(s11 !== null) {
+    // Radar
+    makeMyModelBlue(s11, section11);
+    console.log('s11: '+s11+' | section: '+section11)
+  }
+  if(s12 !== null) {
+    // Sleigh Seat
+    makeMyModelBlue(s12, section12);
+    console.log('s12: '+s12+' | section: '+section12)
+  }
+  if(s13 !== null) {
+    // Upholstery
+    makeMyModelBlue(s13, section13);
+    console.log('s13: '+s13+' | section: '+section13)
+  }
+  if(s14 !== null) {
+    // Yamaha Set 4
+    makeMyModelBlue(s14, section14);
+    console.log('s14: '+s14+' | section: '+section14)
+  }
+  if(s15 !== null) {
+    // Yamaha Set 5
+    makeMyModelBlue(s15, section15);
+    console.log('s15: '+s15+' | section: '+section15)
+  }
+  if(s16 !== null) {
+    // Mercedes 450 Set 4
+    makeMyModelBlue(s16, section16);
+    console.log('s16: '+s16+' | section: '+section16)
+  }
+  if(s17 !== null) {
+    // Mercedes 450 Set 5
+    makeMyModelBlue(s17, section17);
+    console.log('s17: '+s17+' | section: '+section17)
+  }
+  if(s18 !== null) {
+    // Mercedes 600 Set 4
+    makeMyModelBlue(s18, section18);
+    console.log('s18: '+s18+' | section: '+section18)
+  }
+  if(s19 !== null) {
+    // Mercedes 600 Set 5
+    makeMyModelBlue(s19, section19);
+    console.log('s19: '+s19+' | section: '+section19)
+  }
+}
+
+  var sectionList = 20;
   var blockList = 19;
   for(let i = 1; i < sectionList; i++) {
   
@@ -269,81 +489,72 @@ var success = function success(api) {
           // Hull
           thisSection = section9;
         } else if(i == 10) {
-          // Joy Stick
+          // Liner
           thisSection = section10;
         } else if(i == 11) {
-          // Liner
+          // Radar
           thisSection = section11;
         } else if(i == 12) {
-          // Radar
+          // Sleigh Seat
           thisSection = section12;
         } else if(i == 13) {
-          // Sleigh Seat
-          thisSection = section13;
-        } else if(i == 14) {
-          // Throttle
-          thisSection = section14;
-        } else if(i == 15) {
-          // Tiltheim
-          thisSection = section15;
-        } else if(i == 16) {
           // Upholstery
+          thisSection = section13;
+        }  else if(i == 14) {
+          // Yamaha Set 4
+          thisSection = section14;
+        }  else if(i == 15) {
+          // Yamaha Set 5
+          thisSection = section15;
+        }  else if(i == 16) {
+          // Mercedes 450 Set 4
           thisSection = section16;
         }  else if(i == 17) {
-          // Yamaha Set 4
+          // Mercedes 450 Set 5
           thisSection = section17;
         }  else if(i == 18) {
-          // Yamaha Set 5
+          // Mercedes 600 Set 4
           thisSection = section18;
         }  else if(i == 19) {
-          // Mercedes 450 Set 4
-          thisSection = section19;
-        }  else if(i == 20) {
-          // Mercedes 450 Set 5
-          thisSection = section20;
-        }  else if(i == 21) {
-          // Mercedes 600 Set 4
-          thisSection = section21;
-        }  else if(i == 22) {
           // Mercedes 600 Set 5
-          thisSection = section22;
+          thisSection = section19;
         }
         
         
         if(b == 1) {
-          hcbColor = "HCB White";
+          hcbColor = "cdcdcd";
         } else if(b == 2) {
-          hcbColor = "Viper Red";
+          hcbColor = "a4373e";
         } else if(b == 3) {
-          hcbColor = "Navy";
+          hcbColor = "39414c";
         } else if(b == 4) {
-          hcbColor = "Destroyer";
+          hcbColor = "5e5e5e";
         } else if(b == 5) {
-          hcbColor = "Mediterranean Blue";
+          hcbColor = "225a81";
         } else if(b == 6) {
-          hcbColor = "Admiral Blue";
+          hcbColor = "4691c0";
         } else if(b == 7) {
-          hcbColor = "Sand";
+          hcbColor = "bfb8aa";
         } else if(b == 8) {
-          hcbColor = "Bronze";
+          hcbColor = "978270";
         } else if(b == 9) {
-          hcbColor = "Sky Blue";
+          hcbColor = "65a4be";
         } else if(b == 10) {
-          hcbColor = "Jet Black";
+          hcbColor = "393939";
         } else if(b == 11) {
-          hcbColor = "Steel Blue";
+          hcbColor = "546f7e";
         } else if(b == 12) {
-          hcbColor = "Jet Stream Blue";
+          hcbColor = "1381b0";
         } else if(b == 13) {
-          hcbColor = "Aqua Mist";
+          hcbColor = "daf0eb";
         } else if(b == 14) {
-          hcbColor = "Bimini Blue";
+          hcbColor = "67c7d9";
         } else if(b == 15) {
-          hcbColor = "Storm Gray";
+          hcbColor = "8e8b83";
         } else if(b == 16) {
-          hcbColor = "San Mateo";
+          hcbColor = "e3ceb5";
         }  else if(b == 17) {
-          hcbColor = "Caribbean Blue";
+          hcbColor = "87d3dc";
         } else if(b == 18){
           hcbColor = "Color Wheel";
         }
@@ -362,7 +573,9 @@ client.init(uid, {
   error: error,
   autostart: 1,
   preload: 1
-}); //////////////////////////////////
+}); 
+
+//////////////////////////////////
 // GUI Code
 //////////////////////////////////
 
@@ -485,20 +698,25 @@ function changeBorderColor(section, block) {
     }
     if(absoluteColor != '#000000'){
       document.querySelector(".color-block.section-"+i+".block-18").style.backgroundColor = absoluteColor;
-      document.querySelector("span.custom").style.color = absoluteColor;
+      /* document.querySelector("span.custom").style.color = absoluteColor; */
       
     }
   }
 }
 
-function hideOptions() {
-  document.querySelector(".options").style.display = 'none';
-  document.querySelector(".hamburgerIcon").style.display = 'block';
-}
-
 function openOptions() {
-  document.querySelector(".options").style.display = 'block';
-  document.querySelector(".hamburgerIcon").style.display = 'none';
+  if(menuOptions == 'show') {
+    document.querySelector(".options").style.display = 'none'; 
+    /*document.getElementById('hamburger-menu').style.transform = 'scaleY(1)';*/
+    /*document.getElementById('hamburger-menu').style.transform = 'rotate(0deg)';*/
+    menuOptions = 'hide';
+  } else {
+    document.querySelector(".options").style.display = 'block';
+    /*document.getElementById('hamburger-menu').style.transform = 'scaleY(0.6)';*/
+    /*document.getElementById('hamburger-menu').style.transform = 'rotate(90deg)';*/
+    menuOptions = 'show';
+  }
+  /*document.querySelector(".hamburgerIcon").style.display = 'none';*/
 }
 
 
@@ -532,10 +750,9 @@ if(showTheEngines == false) {
 }
 
 function sendColor(color){
+  //console.log("color: "+color);
   absoluteColor = color;
-  // console.log("color: "+color);
-
-  // var rgbColor = Math.pow(hexToRgb(color) / 255, 2.2);
+  
   var rgbColor = hexToRgb(color);
   
   colorWheel = rgbColor;
@@ -550,3 +767,116 @@ function hexToRgb(hex) {
     Math.pow(parseInt(result[3], 16) / 255, 2.2)
  ];
 }
+
+function getParameterByName(name, url = window.location.href) {
+  name = name.replace(/[\[\]]/g, '\\$&');
+  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+function setSection(sec, color) {
+  if(sec == "e4b2b759-dcc5-4195-8b5e-0dac90c156a7") {
+    s1 = color
+  }
+  if(sec == "37f570c1-048e-46a3-9d50-81f67436bcc7") {
+    s2 = color
+  }
+  if(sec == "6314f6ba-c25f-45a7-a57e-9ee19f72256b") {
+      s3 = color
+  }
+  if(sec == "1eb6c258-f3fe-423d-a67a-83f5d9126171") {
+      s4 = color
+  }
+  if(sec == "03fd4243-2fd5-4337-ac2e-edaf187df58e") {
+      s5 = color
+  }
+  if(sec == "116b70a0-b795-4e29-a3ad-ce8ad3cb128c") {
+      s6 = color
+  }
+  if(sec == "94213e24-87a6-457c-9f4a-a18536e05fc4") {
+      s7 = color
+  }
+  if(sec == "2ee94080-f45c-4312-968e-f19464eb78ac") {
+      s8 = color
+  }
+  if(sec == "3b479f2f-923b-445b-a4f3-0717c3af676e") {
+      s9 = color
+  }
+  if(sec == "adb5a729-f2b5-4071-9b23-6c0bb3d245e9") {
+      s10 = color
+  }
+  if(sec == "b44e1e0f-fefc-42d1-b0c6-3f6d20e893e3") {
+      s11 = color
+  }
+  if(sec == "37c386f0-5c4e-4f2a-ba52-2968fc1e08bc") {
+      s12 = color
+  }
+  if(sec == "be7d5667-cf0e-4683-8876-34e5eb63a4bf") {
+      s13 = color
+  }
+  if(sec == "cf5087c1-b755-4aa5-9ce4-198be6e6f7e8") {
+      s14 = color
+  }
+  if(sec == "69e60667-fb5c-4b0c-8c96-7026ff136d47") {
+      s15 = color
+  }
+  if(sec == "5382750e-e0c8-44f9-82bf-8956238fe547") {
+      s16 = color
+  }
+  if(sec == "a963bd43-67e6-4a93-8ef2-21c3099b5a9e") {
+      s17 = color
+  }
+  if(sec == "ff0040ab-be2f-4647-b106-f7aa7722b63c") {
+      s18 = color
+  }
+  if(sec == "11f3160a-15e0-4980-9538-202ae4a5b28d") {
+      s19 = color
+  }
+  console.log('item: '+sec+' | color: '+color);
+}
+
+function linkToShare() {
+  if(s1 != '' && s1 != null) { se1 = '?s1='+s1; } else { se1 = ''; }
+  if(s2 != '' && s2 != null) { se2= '&s2='+s2; } else { se2 = ''; }
+  if(s3 != '' && s3 != null) { se3= '&s3='+s3; } else { se3 = ''; }
+  if(s4 != '' && s4 != null) { se4= '&s4='+s4; } else { se4 = ''; }
+  if(s5 != '' && s5 != null) { se5= '&s5='+s5; } else { se5 = ''; }
+  if(s6 != '' && s6 != null) { se6= '&s6='+s6; } else { se6 = ''; }
+  if(s7 != '' && s7 != null) { se7= '&s7='+s7; } else { se7 = ''; }
+  if(s8 != '' && s8 != null) { se8= '&s8='+s8; } else { se8 = ''; }
+  if(s9 != '' && s9 != null) { se9= '&s9='+s9; } else { se9 = ''; }
+  if(s10 != '' && s10 != null) { se10= '&s10='+s10; } else { se10 = ''; }
+  if(s11 != '' && s11 != null) { se11= '&s11='+s11; } else { se11 = ''; }
+  if(s12 != '' && s12 != null) { se12= '&s12='+s12; } else { se12 = ''; }
+  if(s13 != '' && s13 != null) { se13= '&s13='+s13; } else { se13 = ''; }
+  if(s14 != '' && s14 != null) { se14= '&s14='+s14; } else { se14 = ''; }
+  if(s15 != '' && s15 != null) { se15= '&s15='+s15; } else { se15 = ''; }
+  if(s16 != '' && s16 != null) { se16= '&s16='+s16; } else { se16 = ''; }
+  if(s17 != '' && s17 != null) { se17= '&s17='+s17; } else { se17 = ''; }
+  if(s18 != '' && s18 != null) { se18= '&s18='+s18; } else { se18 = ''; }
+  if(s19 != '' && s19 != null) { se19= '&s19='+s19; } else { se19 = ''; }
+  if(eng != '' && eng != null) { engn= '&eng='+eng; } else { engn = ''; }
+
+  shareLink = 'https://scruffydev.org/boat/'+se1+''+se2+''+se3+''+se4+''+se5+''+se6+''+se7+''+se8+''+se9+''+se10+''+se11+''+se12+''+se13+''+se14+''+se15+''+se16+''+se17+''+se18+''+se19+''+engn;
+  
+  sFacebook = document.getElementById("shareFacebook");
+  sFacebook.dataset.url = shareLink;
+  console.log(sFacebook.dataset.url); 
+
+  sTwitter = document.getElementById("shareTwitter");
+  sTwitter.dataset.url = shareLink;
+  console.log(sTwitter.dataset.url); 
+
+  sEmail = document.getElementById("shareEmail");
+  sEmail.dataset.url = shareLink;
+  console.log(sEmail.dataset.url); 
+
+  sHCB = document.getElementById("sendToHCB");
+  sHCB.dataset.url = shareLink;
+  console.log(sHCB.dataset.url); 
+  
+}
+
