@@ -16,7 +16,6 @@ var absoluteColor = '#000000';
 var colorWheel;
 var menuOptions = 'hide';
 
-// Selectable items:
 hull = 'b5066119-10ca-44d1-a77f-c5002f06ba35';
 waterLineStripe = '6574e541-908c-412d-8d53-859561456c1d';
 mercury450Set5 = '5b961360-8338-46fd-96be-efb55468ec58';
@@ -28,8 +27,6 @@ headrests = 'b5b01f63-b5ae-4ac1-965d-55b54b20f98d';
 chairs = '8c91b3b6-7862-4dd5-b1f2-aed2a0f6bbae';
 sleighSeatTableLower = '86d8aad1-46cf-4905-916f-ef4626d3c4ac';
 sleighSeatTableUpper = '3260bb8c-6d77-43eb-aacc-b0a82eb0ca75';
-
-// Non Selectable items:
 anchor = '08c96432-c3c6-4956-aba8-b5a96b19031f';
 baitWellGlass = '0fd7ca80-4fe3-449e-a9bc-8cdcd4c4dcc2';
 baitwell = '9b3efbe5-fe0e-4ae1-befe-24467670a495';
@@ -130,8 +127,6 @@ var success = function success(api) {
         }
         document.querySelector(".options").style.display = 'block';
         document.getElementById('hamburger-menu').style.transform = 'rotate(360deg)';
-
-
         getURLCodes();
         getURLEng();
 
@@ -140,17 +135,14 @@ var success = function success(api) {
         changeItemColor('hcbwhite', chairBase);
         changeItemColor('hcbwhite', consoleCabin);
         changeItemColor('hcbwhite', cabinDoor);
+        changeItemColor('designerWhite', sleighSeatTableLower);
+        changeItemColor('designerWhite', sleighSeatTableUpper);
+        
 
-        if (s10 != 'highGlossTeak' && s10 != 'deepTitanium' && s10 != 'grayOnyx' && s10 != 'naturalGray' && s10 != 'platinum' && s10 != 'rawTeak' && s10 != 'sahara') {
-          changeItemColor('designerWhite', sleighSeatTableLower);
-        }
-        // changeItemColor('designerWhite', sleighSeatTableUpper);
 
         console.log('s1: '+s1);
         console.log('s2: '+s2);
         console.log('s3: '+s3);
-        console.log('s9: '+s9);
-        console.log('s10: '+s10);
       });
 
       function getURLEng() {
@@ -185,8 +177,8 @@ var success = function success(api) {
       
         }
 
-        // New engines:
-
+// New engines:
+        
          //api.hide(720); // Mercury 600 default
          //api.hide(879); // Mercury 600 propeller default
 
@@ -235,94 +227,54 @@ var success = function success(api) {
             console.log("color: "+color);
             console.log("name: " + m.name + " " + m.id);
             console.log("itemId: "+itemId);
-
-            if(itemId == hatches || itemId == deckRing || itemId == chairBase || itemId == consoleCabin || itemId == cabinDoor) {
-              setThisSection = false;
-            } else {
-              setThisSection = true;
-            }
-
-
             if(color == 'cdcdcd') {
               m.channels.AlbedoPBR.color    = [0.6104955708078648, 0.6104955708078648, 0.6104955708078648];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'a4373e') {
               m.channels.AlbedoPBR.color    = [0.37867625092984036,0.03423020656508195,0.04455262731642138];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '39414c') {
               m.channels.AlbedoPBR.color    = [0.04091519690685319, 0.052860647023180246, 0.07227185068231748];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '5e5e5e') {
               m.channels.AlbedoPBR.color    = [0.1119324278369056, 0.1119324278369056, 0.1119324278369056];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '225a81') {
               m.channels.AlbedoPBR.color    = [0.01599629336550963, 0.1022417330881013, 0.21952619972926923];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '4691c0') {
               m.channels.AlbedoPBR.color    = [0.06124605423161761, 0.28314874042999194, 0.5271151257058131];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'bfb8aa') {
               m.channels.AlbedoPBR.color    = [0.5209955732043541, 0.4793201831008268, 0.4019777798321956];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '978270') {
               m.channels.AlbedoPBR.color    = [0.30946892281750854, 0.2232279573168085, 0.16202937563911096];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '65a4be') {
               m.channels.AlbedoPBR.color    = [0.13013647669036427, 0.3712376804741491, 0.5149176653765214];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '393939') {
               m.channels.AlbedoPBR.color    = [0.04091519690685319, 0.04091519690685319, 0.04091519690685319];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '546f7e') {
               m.channels.AlbedoPBR.color    = [0.08865558628577294, 0.15896083506088038, 0.20863687014525575];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '1381b0') {
               m.channels.AlbedoPBR.color    = [0.006512090792594473, 0.21952619972926923, 0.4341536361747489];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'daf0eb') {
               m.channels.AlbedoPBR.color    = [0.7011018919329731, 0.8713671191987973, 0.8307698767746546];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '67c7d9') {
               m.channels.AlbedoPBR.color    = [0.13563332965520566, 0.5711248294648731, 0.6938717612919899];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '8e8b83') {
               m.channels.AlbedoPBR.color    = [0.2704977910130658, 0.2581828529215958, 0.22696587351009836];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'e3ceb5') {
               m.channels.AlbedoPBR.color    = [0.7681511472475071, 0.6172065624196509, 0.4620769996544071];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '87d3dc') {
               m.channels.AlbedoPBR.color    = [0.24228112246555486, 0.6514056374198239, 0.7156935005064807];
             } else if(color == 'hcbwhite') {
@@ -330,66 +282,48 @@ var success = function success(api) {
                 m.channels.AlbedoPBR.texture.uid    = hcbwhite;
                 m.channels.AlbedoPBR.color = false;
                 console.log("hcbwhite: "+JSON.stringify(m.channels.AlbedoPBR.texture));
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'sahara') {
               console.log("before sahara: "+JSON.stringify(m.channels.AlbedoPBR.texture));
                 m.channels.AlbedoPBR.texture.uid    = sahara;
                 m.channels.AlbedoPBR.color = false;
                 console.log("sahara: "+JSON.stringify(m.channels.AlbedoPBR.texture));
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'deepTitanium') {
                 m.channels.AlbedoPBR.texture.uid    = deepTitanium;
                 m.channels.AlbedoPBR.color = false;
                 console.log("deepTitanium: "+m.channels.AlbedoPBR.texture.uid);
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'naturalGray') {
                 m.channels.AlbedoPBR.texture.uid    = naturalGray;
                 m.channels.AlbedoPBR.color = false;
                 console.log("naturalGray: "+m.channels.AlbedoPBR.texture.uid);
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'designerWhite') {
                 m.channels.AlbedoPBR.texture.uid    = designerWhite;
                 m.channels.AlbedoPBR.color = false;
                 console.log("designerWhite: "+m.channels.AlbedoPBR.texture.uid);
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'platinum') {
                 m.channels.AlbedoPBR.texture.uid    = platinum;
                 m.channels.AlbedoPBR.color = false;
                 console.log("platinum: "+m.channels.AlbedoPBR.texture.uid);
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'grayOnyx') {
                 m.channels.AlbedoPBR.texture.uid    = grayOnyx;
                 m.channels.AlbedoPBR.color = false;
                 console.log("grayOnyx: "+m.channels.AlbedoPBR.texture.uid);
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'highGlossTeak') {
                 m.channels.AlbedoPBR.texture.uid    = highGlossTeak;
                 m.channels.AlbedoPBR.color = false;
                 console.log("highGlossTeak: "+m.channels.AlbedoPBR.texture.uid);
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'rawTeak') {
                 m.channels.AlbedoPBR.texture.uid    = rawTeak;
                 m.channels.AlbedoPBR.color = false;
                 console.log("rawTeak: "+m.channels.AlbedoPBR.texture.uid);
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'Color Wheel'){
               m.channels.AlbedoPBR.color    = colorWheel;
              // console.log("colorWheel: "+m.channels.DiffuseColor.color);
@@ -403,9 +337,7 @@ var success = function success(api) {
               thisColor = '#'+color;
               sendColor(thisColor);
               m.channels.AlbedoPBR.color    = colorWheel;
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             }
             api.setMaterial(m);
           }
@@ -457,7 +389,7 @@ function getURLCodes() {
     console.log('s8: '+s8+' | section: '+section8)
   }
   if(s9 !== null) {
-    // Counters
+    // Chairs
     changeItemColor(s9, section9);
     console.log('s9: '+s9+' | section: '+section9)
     changeItemColor(s9, section10);
@@ -536,9 +468,9 @@ function getURLCodes() {
           hcbColor = "Color Wheel";
         }
 
-        // console.log("__section: "+i+" block: "+b);
-        // console.log('thisSection: ', thisSection);
-        // console.log('hcbColor: ', hcbColor);
+        console.log("__section: "+i+" block: "+b);
+        console.log('thisSection: ', thisSection);
+        console.log('hcbColor: ', hcbColor);
         changeItemColor(hcbColor, thisSection);
         if(thisSection == section7) {
           changeItemColor(hcbColor, secondSection);
@@ -573,10 +505,10 @@ function getURLCodes() {
           hcbColor = "rawTeak";
         }
 
-        // console.log("__block: "+b);
-        // console.log('hcbColor: ', hcbColor);
-        // console.log('thisSection-9: ', thisSection);
-        // console.log('secondSection-10: ', secondSection);
+        console.log("__block: "+b);
+        console.log('hcbColor: ', hcbColor);
+        console.log('thisSection-9: ', thisSection);
+        console.log('secondSection-10: ', secondSection);
         changeItemColor(hcbColor, thisSection);
         changeItemColor(hcbColor, secondSection);
 
@@ -719,9 +651,9 @@ function changeColor(section, block) {
   } else if(block == "block-26") {
     title = "Raw Teak";    
   }
-   // console.log("title: "+title);
-   // console.log("section: "+section);
-   // console.log("block: "+block);
+   console.log("title: "+title);
+   console.log("section: "+section);
+   console.log("block: "+block);
 
   document.querySelector(".color-header-section.color-header-"+section).innerHTML = title;
 
@@ -733,10 +665,10 @@ function changeColor(section, block) {
 }
 
 function changeBorderColor(section, block) {
-   // console.log("section: "+section+" | block: "+block);
+   console.log("section: "+section+" | block: "+block);
   var blocks = 19;
   for(let i = 1; i < blocks; i++) {
-    // console.log('start i: '+i);
+    console.log('start i: '+i);
     if(block == "block-"+i){
     document.querySelector(".color-block."+section+"."+block+"").style.borderColor = "white";
     } else {
@@ -745,23 +677,26 @@ function changeBorderColor(section, block) {
     if(absoluteColor != '#000000'){
       document.querySelector(".color-block.section-"+i+".block-18").style.backgroundColor = absoluteColor;
       /* document.querySelector("span.custom").style.color = absoluteColor; */
+      
     }
-    // console.log('end i: '+i);
+
+    console.log('end i: '+i);
   }
 }
 
 
 function changeCounterTopsBorderColor(block) {
-  // console.log("in counter block: "+block);
+  console.log("in counter block: "+block);
  var blocks = 27;
  for(let i = 19; i < blocks; i++) {
-   // console.log('start i: '+i);
+   console.log('start i: '+i);
    if(block == "block-"+i){
    document.querySelector(".color-block.section-9."+block+"").style.borderColor = "white";
    } else {
      document.querySelector(".color-block.section-9.block-"+i+"").style.borderColor = "#707070";
    }
-   // console.log('end i: '+i);
+
+   console.log('end i: '+i);
  }
 }
 
@@ -782,7 +717,7 @@ function openOptions() {
 
 
 function selectEngine(engine) {
-  // console.log('engine: '+engine);
+  console.log('engine: '+engine);
 var engines = 8;
   for(let i = 1; i < engines; i++) {
     if(engine == "engine-"+i){
@@ -957,13 +892,3 @@ function linkToShare() {
   
 }
 
-
-function showMobileIcons(view) {
-  if(view == 'show') {
-    document.querySelector(".in-mobile-header"+colorSectionClass+"").style.display = 'none';
-    document.querySelector(".in-mobile-icons"+colorSectionClass+"").style.display = 'inline-flex';
-  } else {
-    document.querySelector(".in-mobile-header"+colorSectionClass+"").style.display = 'inline-flex';
-    document.querySelector(".in-mobile-icons"+colorSectionClass+"").style.display = 'none';
-  }
-}

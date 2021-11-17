@@ -66,7 +66,19 @@ body {
   margin-bottom: 15px;
 }
 
-button {
+.mobile-header {
+  display: none;
+}
+
+.in-mobile-header {
+  display: none;
+}
+
+.in-mobile-icons {
+  display: none;
+}
+
+.button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -87,6 +99,32 @@ button {
   font-size: 22px;
   margin: 12px 10px 2px 2px;
   float: right;
+}
+.share-text {
+  font-size: 20px;
+  margin: 10px 10px 2px 2px;
+  float: right;
+  display: inline-flex;
+  font-weight: 700;
+}
+.buy {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  margin-top: 10px; /* Location of the box */
+  margin-right: 20px;
+  width: 100%; /* Full width */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+.buy-this-boat {
+  background-color: #f2e712;
+  padding: 20px;
+  border-radius: 4px;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 30px;
 }
 
 button.disabled {
@@ -226,10 +264,6 @@ img.item-icon.item-x-icon {
   margin-bottom: 8px;
 }
 
-#upholstery {
-  display: none;
-}
-
 #engines {
   display: none;
 }
@@ -240,8 +274,18 @@ img.item-icon.item-x-icon {
   cursor: pointer;
 }
 
-.item-title-7,
-.item-title-8 {
+.item-title-17,
+.item-title-18,
+.item-title-19,
+.item-title-20,
+.item-title-21,
+.item-title-22,
+.color-block-section-17,
+.color-block-section-18,
+.color-block-section-19,
+.color-block-section-20,
+.color-block-section-21,
+.color-block-section-22 {
   border-left: 10px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -261,7 +305,20 @@ li.color-block-section.color-block-section-5,
 li.color-block-section.color-block-section-6,
 li.color-block-section.color-block-section-7,
 li.color-block-section.color-block-section-8,
-li.color-block-section.color-block-section-9 {
+li.color-block-section.color-block-section-9,
+li.color-block-section.color-block-section-10,
+li.color-block-section.color-block-section-11,
+li.color-block-section.color-block-section-12,
+li.color-block-section.color-block-section-13,
+li.color-block-section.color-block-section-14,
+li.color-block-section.color-block-section-15,
+li.color-block-section.color-block-section-16,
+li.color-block-section.color-block-section-17,
+li.color-block-section.color-block-section-18,
+li.color-block-section.color-block-section-19,
+li.color-block-section.color-block-section-20,
+li.color-block-section.color-block-section-21,
+li.color-block-section.color-block-section-22 {
   display: none;
 }
 
@@ -373,54 +430,6 @@ li.color-block-section.color-block-section-9 {
   background-image: linear-gradient(130deg, #87d3dc, #1381b0);
   padding-top: 30px;
 }
-.block-19 {
-  background-image: url("https://scruffydev.org/boat/images/sahara.png");
-  width: 50px;
-  height: 50px;
-  padding-top: 30px;
-}
-.block-20 {
-  background-image: url("https://scruffydev.org/boat/images/deepTitanium.png");
-  width: 50px;
-  height: 50px;
-  padding-top: 30px;
-}
-.block-21 {
-  background-image: url("https://scruffydev.org/boat/images/naturalGray.png");
-  width: 50px;
-  height: 50px;
-  padding-top: 30px;
-}
-.block-22 {
-  background-image: url("https://scruffydev.org/boat/images/designerWhite.png");
-  width: 50px;
-  height: 50px;
-  padding-top: 30px;
-}
-.block-23 {
-  background-image: url("https://scruffydev.org/boat/images/platinum.png");
-  width: 50px;
-  height: 50px;
-  padding-top: 30px;
-}
-.block-24 {
-  background-image: url("https://scruffydev.org/boat/images/grayOnyx.png");
-  width: 50px;
-  height: 50px;
-  padding-top: 30px;
-}
-.block-25 {
-  background-image: url("https://scruffydev.org/boat/images/highGlossTeak.png");
-  width: 50px;
-  height: 50px;
-  padding-top: 30px;
-}
-.block-26 {
-  background-image: url("https://scruffydev.org/boat/images/rawTeak.png");
-  width: 50px;
-  height: 50px;
-  padding-top: 30px;
-}
 
 span.custom {
   font-size: 10px;
@@ -445,67 +454,8 @@ span.custom {
   margin-top: 67px;
 }
 
-/* Added Nov 17, 2021: */
-
-.share {
-  float: right;
-  margin-top: -69px;
-  margin-right: 15px;
-  cursor: pointer;
-}
-.share-text {
-  font-size: 20px;
-  margin: 10px 10px 2px 2px;
-  float: right;
-  display: inline-flex;
-  font-weight: 700;
-}
-.share img {
-  height: 50px;
-}
-
-.desktop-header {
-  /* display: none; */
-}
-
-.mobile-header {
+.hide-this {
   display: none;
-}
-
-.in-mobile-header {
-  /* display: none; */
-}
-
-.in-mobile-icons {
-  display: none;
-}
-
-.share-text {
-  font-size: 20px;
-  margin: 10px 10px 2px 2px;
-  float: right;
-  display: inline-flex;
-  font-weight: 700;
-}
-
-.buy {
-  display: block; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  margin-top: 10px; /* Location of the box */
-  margin-right: 20px;
-  width: 100%; /* Full width */
-  overflow: auto; /* Enable scroll if needed */
-}
-
-.buy-this-boat {
-  background-color: #f2e712;
-  padding: 20px;
-  border-radius: 4px;
-  color: #000;
-  font-size: 20px;
-  font-weight: bold;
-  margin-right: 30px;
 }
 
 /* Mobile */
@@ -525,14 +475,6 @@ span.custom {
     width: 100%;
   }
 
-  .options li {
-    background-color: #000;
-  }
-
-  .header {
-    display: none;
-  }
-
   .mobile-header {
     display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -544,12 +486,12 @@ span.custom {
     background-color: #fff;
   }
 
+
   .in-mobile-icons {
     display: none;
     height: 85px;
     width: 200%;
-    margin-top: -84px;
-    margin-right: -67%;
+    margin-top: -20px;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -559,10 +501,12 @@ span.custom {
     color: #000;
     background-color: #ffffff;
     font-size: 22px;
-    float: right;
+    float:right;
   }
 
   .in-mobile-header {
+    display: inline-flex;
+    margin-top: 16px;
     margin-right: 10px;
     justify-content: center;
     align-items: center;
@@ -575,10 +519,6 @@ span.custom {
     font-size: 22px;
   }
 
-  .share-btn {
-    margin-top: -50px;
-  }
-
   .desktop-header {
     display: none;
   }
@@ -589,11 +529,5 @@ span.custom {
 
   #api-frame {
     margin-top: -30%;
-  }
-  .flex-grid {
-    width: 21rem;
-  }
-  .color-block {
-    height: 33px;
   }
 }

@@ -1,12 +1,11 @@
 // Sketchfab Viewer API: Change Texture/material
 var version = '1.10.1';
-var uid = 'a9b07d15dbf2455d862acc49dd9c7170';
-// var uid = 'd99fa6f27adb4f208e85e08cd10b85d1';
+var uid = 'b02758619bc149639469c2d00ca9886a';
+/* var uid = 'fb3b94bde5d540888f25bc952715795b'; */
 var iframe = document.getElementById('api-frame');
 var client = new window.Sketchfab(version, iframe);
 var canvas = document.createElement('canvas');
 var ctx = canvas.getContext('2d');
-var ui_general_controls = 0;
 canvas.width = 2;
 canvas.height = 2;
 var myMaterials;
@@ -16,71 +15,25 @@ var absoluteColor = '#000000';
 var colorWheel;
 var menuOptions = 'hide';
 
-// Selectable items:
-hull = 'b5066119-10ca-44d1-a77f-c5002f06ba35';
-waterLineStripe = '6574e541-908c-412d-8d53-859561456c1d';
-mercury450Set5 = '5b961360-8338-46fd-96be-efb55468ec58';
-mercury600Set4 = '1fc2f607-946b-4b80-a93b-b8a5ccabcbc2';
-yamahaSet4 = 'a7980717-8cf6-42e9-9183-4273cac0dc93';
-frame = '180ca1ec-27a8-423f-92ec-b0f8880c955e';
-upholstery = 'ac3a1fa4-a2af-497a-a757-154f3d73008e';
-headrests = 'b5b01f63-b5ae-4ac1-965d-55b54b20f98d';
-chairs = '8c91b3b6-7862-4dd5-b1f2-aed2a0f6bbae';
-sleighSeatTableLower = '86d8aad1-46cf-4905-916f-ef4626d3c4ac';
-sleighSeatTableUpper = '3260bb8c-6d77-43eb-aacc-b0a82eb0ca75';
-
-// Non Selectable items:
-anchor = '08c96432-c3c6-4956-aba8-b5a96b19031f';
-baitWellGlass = '0fd7ca80-4fe3-449e-a9bc-8cdcd4c4dcc2';
-baitwell = '9b3efbe5-fe0e-4ae1-befe-24467670a495';
-cabinDoor = 'e9adfb4a-01d6-4f75-aeff-54af5062703d';
-chairBase = '0bd16511-d647-4647-b219-029b61d7f781';
-chairsStand = 'a536e779-d3b8-4901-800b-0a607a45fc1b';
-cleatGasscapPullsHawserHingesPoleHoldersHardware = '01761621-c2d8-40de-a37e-6099ea8b5f42';
-consoleCabin = '30190148-7daf-476b-8836-9b62fc41ea75';
-deckRing = '155e8a26-e2f4-4c54-befa-50c376581d58';
-hatches = '77f5914d-2326-4bcc-ba08-64c814366ce8';
-
-// Textures :
-hcbwhite = '4d9f35550a9e418bbd4868853c612c3b';
-designerWhite = '394deb1f98e147d99d5bdb8f85e8e22d';
-highGlossTeak = '77f6103dfbd841cea81d82ae9bc2bedf';
-deepTitanium = '7fac54f8e77149368238330a82e2b827';
-grayOnyx = 'd86881cd333441789cf1a4c95dee447a';
-naturalGray = '55f57a42806b4772abbea51551567a15';
-platinum = '723a81160be94bc08f76262fe5db6f79';
-rawTeak = '7b3acb2fb2f8457693b903ec086b0eef';
-sahara = '3457cc471aab465f9165939d2340c916';
-
-
-var section1 = hull;
-var section2 = waterLineStripe;
-var section3 = mercury600Set4;
-var section4 = mercury450Set5;
-var section5 = yamahaSet4;
-var section6 = frame;
-var section7 = upholstery;
-var section8 = headrests;
-var section9 = sleighSeatTableUpper;
-var section10 = sleighSeatTableLower;
-var section11 = chairs;
-var section12 = anchor;
-var section13 = baitWellGlass;
-var section14 = baitwell;
-var section15 = cabinDoor;
-var section16 = chairBase;
-var section17 = chairsStand;
-var section18 = cleatGasscapPullsHawserHingesPoleHoldersHardware;
-var section19 = consoleCabin;
-
-t1 = designerWhite;
-t2 = highGlossTeak;
-t3 = deepTitanium;
-t4 = grayOnyx;
-t5 = naturalGray;
-t6 = platinum;
-t7 = rawTeak;
-t8 = sahara;
+var section1 = "e4b2b759-dcc5-4195-8b5e-0dac90c156a7";
+var section2 = "37f570c1-048e-46a3-9d50-81f67436bcc7";
+var section3 = "6314f6ba-c25f-45a7-a57e-9ee19f72256b";
+var section4 = "1eb6c258-f3fe-423d-a67a-83f5d9126171";
+var section5 = "03fd4243-2fd5-4337-ac2e-edaf187df58e";
+var section6 = "116b70a0-b795-4e29-a3ad-ce8ad3cb128c";
+var section7 = "94213e24-87a6-457c-9f4a-a18536e05fc4";
+var section8 = "2ee94080-f45c-4312-968e-f19464eb78ac";
+var section9 = "3b479f2f-923b-445b-a4f3-0717c3af676e";
+var section10 = "adb5a729-f2b5-4071-9b23-6c0bb3d245e9";
+var section11 = "b44e1e0f-fefc-42d1-b0c6-3f6d20e893e3";
+var section12 = "37c386f0-5c4e-4f2a-ba52-2968fc1e08bc";
+var section13 = "be7d5667-cf0e-4683-8876-34e5eb63a4bf";
+var section14 = "cf5087c1-b755-4aa5-9ce4-198be6e6f7e8";
+var section15 = "69e60667-fb5c-4b0c-8c96-7026ff136d47";
+var section16 = "5382750e-e0c8-44f9-82bf-8956238fe547";
+var section17 = "a963bd43-67e6-4a93-8ef2-21c3099b5a9e";
+var section18 = "ff0040ab-be2f-4647-b106-f7aa7722b63c";
+var section19 = "11f3160a-15e0-4980-9538-202ae4a5b28d";
 
 
 var s1 = getParameterByName('s1');
@@ -126,270 +79,205 @@ var success = function success(api) {
         for (var i = 0; i < myMaterials.length; i++) {
           var m = myMaterials[i];
           textures[m.name] = m.channels.AlbedoPBR.texture;
-           console.log(m.name, m);
+          // console.log(m.name, m);
         }
         document.querySelector(".options").style.display = 'block';
         document.getElementById('hamburger-menu').style.transform = 'rotate(360deg)';
-
-
         getURLCodes();
         getURLEng();
 
-        changeItemColor('hcbwhite', hatches);
-        changeItemColor('hcbwhite', deckRing);
-        changeItemColor('hcbwhite', chairBase);
-        changeItemColor('hcbwhite', consoleCabin);
-        changeItemColor('hcbwhite', cabinDoor);
-
-        if (s10 != 'highGlossTeak' && s10 != 'deepTitanium' && s10 != 'grayOnyx' && s10 != 'naturalGray' && s10 != 'platinum' && s10 != 'rawTeak' && s10 != 'sahara') {
-          changeItemColor('designerWhite', sleighSeatTableLower);
-        }
-        // changeItemColor('designerWhite', sleighSeatTableUpper);
-
-        console.log('s1: '+s1);
-        console.log('s2: '+s2);
-        console.log('s3: '+s3);
-        console.log('s9: '+s9);
-        console.log('s10: '+s10);
+        // console.log('s1: '+s1);
+        // console.log('s2: '+s2);
+        // console.log('s3: '+s3);
       });
 
       function getURLEng() {
         console.log('eng: '+eng);
-        if(eng == '720') {
-          api.show(720); // Mercury 600 default 
-          api.show(879); // Mercury 600 propeller default
-          api.hide(761); // Mercury 450
-          api.hide(862); // Mercury 450 propeller
-          api.hide(691); // Yamaha
-          api.hide(896); // Yamaha propeller
-        };
-
-        if(eng == '761') {
-          api.hide(720); // Mercury 600 default 
-          api.hide(879); // Mercury 600 propeller default
-          api.show(761); // Mercury 450
-          api.show(862); // Mercury 450 propeller
-          api.hide(691); // Yamaha
-          api.hide(896); // Yamaha propeller
-        };
-
-        if(eng == '691') {
-          api.hide(720); // Mercury 600 default 
-          api.hide(879); // Mercury 600 propeller default
-          api.hide(761); // Mercury 450
-          api.hide(862); // Mercury 450 propeller
-          api.show(691); // Yamaha
-          api.show(896); // Yamaha propeller
-        };
-
-      
+          if(eng == '1317') {
+            
+            api.show(1317);
+            api.hide(1370);
+            api.hide(1889);
+            api.hide(2026);
+            api.hide(1555);
+            api.hide(1704);
+          };
+        
+          if(eng == '1370') {
+            api.hide(1317);
+            api.show(1370);
+            api.hide(1889);
+            api.hide(2026);
+            api.hide(1555);
+            api.hide(1704);
+              };
+        
+          if(eng == '1889') {
+            api.hide(1317);
+            api.hide(1370);
+            api.show(1889);
+            api.hide(2026);
+            api.hide(1555);
+            api.hide(1704);
+          };
+    
+          if(eng == '2026') {
+              api.hide(1317);
+              api.hide(1370);
+              api.hide(1889);
+              api.show(2026);
+              api.hide(1555);
+              api.hide(1704);
+            };
+    
+          if(eng == '1555') {
+              api.hide(1317);
+              api.hide(1370);
+              api.hide(1889);
+              api.hide(2026);
+              api.show(1555);
+              api.hide(1704);
+                };
+        
+            if(eng == '1704') {
+              api.hide(1317);
+              api.hide(1370);
+              api.hide(1889);
+              api.hide(2026);
+              api.hide(1555);
+              api.show(1704);
+              };
+        
         }
 
-        // New engines:
 
-         //api.hide(720); // Mercury 600 default
-         //api.hide(879); // Mercury 600 propeller default
+        api.hide(1317);
+        api.hide(1370);
+        api.show(1889);
+        api.hide(2026);
+        api.hide(1555);
+        api.hide(1704);
 
-        api.hide(691); // Yamaha
-        api.hide(896); // Yamaha propeller
-        
-        api.hide(761); // Mercury 450
-        api.hide(862); // Mercury 450 propeller
+  var id = 1889;
 
-  var id = 720;
-
-  document.querySelector('li.item-title.item-title-3').addEventListener('click', function() {
-    api.show(720); // Mercury 600 default 
-    api.show(879); // Mercury 600 propeller default
-    api.hide(761); // Mercury 450
-    api.hide(862); // Mercury 450 propeller
-    api.hide(691); // Yamaha
-    api.hide(896); // Yamaha propeller
-    eng = '720';
+  document.querySelector('li.item-title.item-title-14').addEventListener('click', function() {
+    api.show(1317);
+    api.hide(1370);
+    api.hide(1889);
+    api.hide(2026);
+    api.hide(1555);
+    api.hide(1704);
+    eng = '1317';
   });
 
-  document.querySelector('li.item-title.item-title-4').addEventListener('click', function() {
-    api.hide(720); // Mercury 600 default 
-    api.hide(879); // Mercury 600 propeller default
-    api.show(761); // Mercury 450
-    api.show(862); // Mercury 450 propeller
-    api.hide(691); // Yamaha
-    api.hide(896); // Yamaha propeller
-    eng = '761';
+  document.querySelector('li.item-title.item-title-15').addEventListener('click', function() {
+    api.hide(1317);
+    api.show(1370);
+    api.hide(1889);
+    api.hide(2026);
+    api.hide(1555);
+    api.hide(1704);
+    eng = '1370';
       });
 
-  document.querySelector('li.item-title.item-title-5').addEventListener('click', function() {
-    api.hide(720); // Mercury 600 default 
-    api.hide(879); // Mercury 600 propeller default
-    api.hide(761); // Mercury 450
-    api.hide(862); // Mercury 450 propeller
-    api.show(691); // Yamaha
-    api.show(896); // Yamaha propeller
-    eng = '691';
+  document.querySelector('li.item-title.item-title-16').addEventListener('click', function() {
+    api.hide(1317);
+    api.hide(1370);
+    api.show(1889);
+    api.hide(2026);
+    api.hide(1555);
+    api.hide(1704);
+    eng = '1889';
       });
 
-      function changeItemColor(color, itemId) {
+    document.querySelector('li.item-title.item-title-17').addEventListener('click', function() {
+      api.hide(1317);
+      api.hide(1370);
+      api.hide(1889);
+      api.show(2026);
+      api.hide(1555);
+      api.hide(1704);
+      eng = '2026';
+        });
+
+    document.querySelector('li.item-title.item-title-18').addEventListener('click', function() {
+      api.hide(1317);
+      api.hide(1370);
+      api.hide(1889);
+      api.hide(2026);
+      api.show(1555);
+      api.hide(1704);
+      eng = '1555';
+        });
+
+    document.querySelector('li.item-title.item-title-19').addEventListener('click', function() {
+      api.hide(1317);
+      api.hide(1370);
+      api.hide(1889);
+      api.hide(2026);
+      api.hide(1555);
+      api.show(1704);
+      eng = '1704';
+        });
+
+      function changeModelColor(color, itemId) {
         for (var i = 0; i < myMaterials.length; i++) {
           var m = myMaterials[i]; // here change only the channel you need to change
           if(m.id == itemId) {
             console.log("color: "+color);
             console.log("name: " + m.name + " " + m.id);
             console.log("itemId: "+itemId);
-
-            if(itemId == hatches || itemId == deckRing || itemId == chairBase || itemId == consoleCabin || itemId == cabinDoor) {
-              setThisSection = false;
-            } else {
-              setThisSection = true;
-            }
-
-
             if(color == 'cdcdcd') {
               m.channels.AlbedoPBR.color    = [0.6104955708078648, 0.6104955708078648, 0.6104955708078648];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'a4373e') {
               m.channels.AlbedoPBR.color    = [0.37867625092984036,0.03423020656508195,0.04455262731642138];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '39414c') {
               m.channels.AlbedoPBR.color    = [0.04091519690685319, 0.052860647023180246, 0.07227185068231748];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '5e5e5e') {
               m.channels.AlbedoPBR.color    = [0.1119324278369056, 0.1119324278369056, 0.1119324278369056];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '225a81') {
               m.channels.AlbedoPBR.color    = [0.01599629336550963, 0.1022417330881013, 0.21952619972926923];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '4691c0') {
               m.channels.AlbedoPBR.color    = [0.06124605423161761, 0.28314874042999194, 0.5271151257058131];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'bfb8aa') {
               m.channels.AlbedoPBR.color    = [0.5209955732043541, 0.4793201831008268, 0.4019777798321956];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '978270') {
               m.channels.AlbedoPBR.color    = [0.30946892281750854, 0.2232279573168085, 0.16202937563911096];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '65a4be') {
               m.channels.AlbedoPBR.color    = [0.13013647669036427, 0.3712376804741491, 0.5149176653765214];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '393939') {
               m.channels.AlbedoPBR.color    = [0.04091519690685319, 0.04091519690685319, 0.04091519690685319];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '546f7e') {
               m.channels.AlbedoPBR.color    = [0.08865558628577294, 0.15896083506088038, 0.20863687014525575];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '1381b0') {
               m.channels.AlbedoPBR.color    = [0.006512090792594473, 0.21952619972926923, 0.4341536361747489];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'daf0eb') {
               m.channels.AlbedoPBR.color    = [0.7011018919329731, 0.8713671191987973, 0.8307698767746546];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '67c7d9') {
               m.channels.AlbedoPBR.color    = [0.13563332965520566, 0.5711248294648731, 0.6938717612919899];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '8e8b83') {
               m.channels.AlbedoPBR.color    = [0.2704977910130658, 0.2581828529215958, 0.22696587351009836];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == 'e3ceb5') {
               m.channels.AlbedoPBR.color    = [0.7681511472475071, 0.6172065624196509, 0.4620769996544071];
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             } else if(color == '87d3dc') {
               m.channels.AlbedoPBR.color    = [0.24228112246555486, 0.6514056374198239, 0.7156935005064807];
-            } else if(color == 'hcbwhite') {
-              console.log("before hcbwhite: "+JSON.stringify(m.channels.AlbedoPBR.texture));
-                m.channels.AlbedoPBR.texture.uid    = hcbwhite;
-                m.channels.AlbedoPBR.color = false;
-                console.log("hcbwhite: "+JSON.stringify(m.channels.AlbedoPBR.texture));
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
-            } else if(color == 'sahara') {
-              console.log("before sahara: "+JSON.stringify(m.channels.AlbedoPBR.texture));
-                m.channels.AlbedoPBR.texture.uid    = sahara;
-                m.channels.AlbedoPBR.color = false;
-                console.log("sahara: "+JSON.stringify(m.channels.AlbedoPBR.texture));
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
-            } else if(color == 'deepTitanium') {
-                m.channels.AlbedoPBR.texture.uid    = deepTitanium;
-                m.channels.AlbedoPBR.color = false;
-                console.log("deepTitanium: "+m.channels.AlbedoPBR.texture.uid);
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
-            } else if(color == 'naturalGray') {
-                m.channels.AlbedoPBR.texture.uid    = naturalGray;
-                m.channels.AlbedoPBR.color = false;
-                console.log("naturalGray: "+m.channels.AlbedoPBR.texture.uid);
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
-            } else if(color == 'designerWhite') {
-                m.channels.AlbedoPBR.texture.uid    = designerWhite;
-                m.channels.AlbedoPBR.color = false;
-                console.log("designerWhite: "+m.channels.AlbedoPBR.texture.uid);
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
-            } else if(color == 'platinum') {
-                m.channels.AlbedoPBR.texture.uid    = platinum;
-                m.channels.AlbedoPBR.color = false;
-                console.log("platinum: "+m.channels.AlbedoPBR.texture.uid);
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
-            } else if(color == 'grayOnyx') {
-                m.channels.AlbedoPBR.texture.uid    = grayOnyx;
-                m.channels.AlbedoPBR.color = false;
-                console.log("grayOnyx: "+m.channels.AlbedoPBR.texture.uid);
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
-            } else if(color == 'highGlossTeak') {
-                m.channels.AlbedoPBR.texture.uid    = highGlossTeak;
-                m.channels.AlbedoPBR.color = false;
-                console.log("highGlossTeak: "+m.channels.AlbedoPBR.texture.uid);
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
-            } else if(color == 'rawTeak') {
-                m.channels.AlbedoPBR.texture.uid    = rawTeak;
-                m.channels.AlbedoPBR.color = false;
-                console.log("rawTeak: "+m.channels.AlbedoPBR.texture.uid);
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              // console.log("Caribeean Blue: "+m.channels.DiffuseColor.color);
             } else if(color == 'Color Wheel'){
               m.channels.AlbedoPBR.color    = colorWheel;
              // console.log("colorWheel: "+m.channels.DiffuseColor.color);
@@ -403,9 +291,7 @@ var success = function success(api) {
               thisColor = '#'+color;
               sendColor(thisColor);
               m.channels.AlbedoPBR.color    = colorWheel;
-              if(setThisSection === true) {
-                setSection(itemId, color);
-              }
+              setSection(itemId, color);
             }
             api.setMaterial(m);
           }
@@ -415,88 +301,170 @@ var success = function success(api) {
 
 function getURLCodes() {
   if(s1 !== null) {
-    // Hull
-    changeItemColor(s1, section1);
+    // Bait Well
+    changeModelColor(s1, section1);
     console.log('s1: '+s1+' | section: '+section1)
   }
   if(s2 !== null) {
-    // Water Line Stripe
-    changeItemColor(s2, section2);
+    // Cabin Door
+    changeModelColor(s2, section2);
     console.log('s2: '+s2+' | section: '+section2)
   }
   if(s3 !== null) {
-    // Mercury 600 set or 4
-    changeItemColor(s3, section3);
+    // Chair Base
+    changeModelColor(s3, section3);
     console.log('s3: '+s3+' | section: '+section3)
   }
   if(s4 !== null) {
-    // Mercury 450 set of 5
-    changeItemColor(s4, section4);
+    // Chairs
+    changeModelColor(s4, section4);
     console.log('s4: '+s4+' | section: '+section4)
   }
   if(s5 !== null) {
-    // Yamaha set of 4
-    changeItemColor(s5, section5);
+    // Console Cabin
+    changeModelColor(s5, section5);
     console.log('s5: '+s5+' | section: '+section5)
   }
   if(s6 !== null) {
-    // Frame
-    changeItemColor(s6, section6);
+    // Deck Ring
+    changeModelColor(s6, section6);
     console.log('s6: '+s6+' | section: '+section6)
   }
   if(s7 !== null) {
-    // Upholstery - Base color
-    changeItemColor(s7, section7);
+    // Floor Plank Liner
+    changeModelColor(s7, section7);
     console.log('s7: '+s7+' | section: '+section7)
-    changeItemColor(s7, section11);
-    console.log('s11: '+s11+' | section: '+section11)
   }
   if(s8 !== null) {
-    // Upholstery - Head rest
-    changeItemColor(s8, section8);
+    // Hard Top
+    setTimeout(() => {  
+      changeModelColor(s8, section8);
+  }, 5000);
     console.log('s8: '+s8+' | section: '+section8)
   }
   if(s9 !== null) {
-    // Counters
-    changeItemColor(s9, section9);
+    // Hull
+    changeModelColor(s9, section9);
     console.log('s9: '+s9+' | section: '+section9)
-    changeItemColor(s9, section10);
+  }
+  if(s10 !== null) {
+    // Liner
+    changeModelColor(s10, section10);
     console.log('s10: '+s10+' | section: '+section10)
+  }
+  if(s11 !== null) {
+    // Radar
+    changeModelColor(s11, section11);
+    console.log('s11: '+s11+' | section: '+section11)
+  }
+  if(s12 !== null) {
+    // Sleigh Seat
+    changeModelColor(s12, section12);
+    console.log('s12: '+s12+' | section: '+section12)
+  }
+  if(s13 !== null) {
+    // Upholstery
+    changeModelColor(s13, section13);
+    console.log('s13: '+s13+' | section: '+section13)
+  }
+  if(s14 !== null) {
+    // Yamaha Set 4
+    changeModelColor(s14, section14);
+    console.log('s14: '+s14+' | section: '+section14)
+  }
+  if(s15 !== null) {
+    // Yamaha Set 5
+    changeModelColor(s15, section15);
+    console.log('s15: '+s15+' | section: '+section15)
+  }
+  if(s16 !== null) {
+    // Mercedes 450 Set 4
+    changeModelColor(s16, section16);
+    console.log('s16: '+s16+' | section: '+section16)
+  }
+  if(s17 !== null) {
+    // Mercedes 450 Set 5
+    changeModelColor(s17, section17);
+    console.log('s17: '+s17+' | section: '+section17)
+  }
+  if(s18 !== null) {
+    // Mercedes 600 Set 4
+    changeModelColor(s18, section18);
+    console.log('s18: '+s18+' | section: '+section18)
+  }
+  if(s19 !== null) {
+    // Mercedes 600 Set 5
+    changeModelColor(s19, section19);
+    console.log('s19: '+s19+' | section: '+section19)
   }
 }
 
-  var sectionList = 9;
+  var sectionList = 20;
   var blockList = 19;
   for(let i = 1; i < sectionList; i++) {
   
   for(let b = 1; b < blockList; b++) {
+    // console.log("section: "+i+" block: "+b);
       document.querySelector('.color-block.section-'+i+'.block-'+b).addEventListener('click', function () {
         if(i == 1) {
-          // Hull
+          // Bait Well
           thisSection = section1;
         } else if(i == 2) {
-          // Water Line Stripe
+          // Cabin Door
           thisSection = section2;
         } else if(i == 3) {
-          // Mercury 600 set of 4
+          // Chair Base
           thisSection = section3;
         } else if(i == 4) {
-          // Mercury 450 set of 5
+          // Chairs
           thisSection = section4;
         } else if(i == 5) {
-          // Yamaha Set of 4
+          // Console Cabin
           thisSection = section5;
         } else if(i == 6) {
-          // Frame
+          // Deck Ring
           thisSection = section6;
         } else if(i == 7) {
-          // Upholstery Base color
+          // Floor Plank Liner
           thisSection = section7;
-          secondSection = section11;
         } else if(i == 8) {
-          // Upholstery - Head rest
+          // Hard Top
           thisSection = section8;
+        } else if(i == 9) {
+          // Hull
+          thisSection = section9;
+        } else if(i == 10) {
+          // Liner
+          thisSection = section10;
+        } else if(i == 11) {
+          // Radar
+          thisSection = section11;
+        } else if(i == 12) {
+          // Sleigh Seat
+          thisSection = section12;
+        } else if(i == 13) {
+          // Upholstery
+          thisSection = section13;
+        }  else if(i == 14) {
+          // Yamaha Set 4
+          thisSection = section14;
+        }  else if(i == 15) {
+          // Yamaha Set 5
+          thisSection = section15;
+        }  else if(i == 16) {
+          // Mercedes 450 Set 4
+          thisSection = section16;
+        }  else if(i == 17) {
+          // Mercedes 450 Set 5
+          thisSection = section17;
+        }  else if(i == 18) {
+          // Mercedes 600 Set 4
+          thisSection = section18;
+        }  else if(i == 19) {
+          // Mercedes 600 Set 5
+          thisSection = section19;
         }
+        
         
         if(b == 1) {
           hcbColor = "cdcdcd";
@@ -535,54 +503,11 @@ function getURLCodes() {
         } else if(b == 18){
           hcbColor = "Color Wheel";
         }
-
-        // console.log("__section: "+i+" block: "+b);
-        // console.log('thisSection: ', thisSection);
-        // console.log('hcbColor: ', hcbColor);
-        changeItemColor(hcbColor, thisSection);
-        if(thisSection == section7) {
-          changeItemColor(hcbColor, secondSection);
-        }
-
+        changeModelColor(hcbColor, thisSection);
       });
     }
-    
   }
-  var textureBlockList = 27;
-  for(let b = 19; b < textureBlockList; b++) {
-      document.querySelector('.color-block.section-9.block-'+b).addEventListener('click', function () {
 
-        thisSection = section9;
-        secondSection = section10;
-        
-        if(b == 19) {
-          hcbColor = "sahara";
-        } else if(b == 20) {
-          hcbColor = "deepTitanium";
-        } else if(b == 21) {
-          hcbColor = "naturalGray";
-        } else if(b == 22) {
-          hcbColor = "designerWhite";
-        } else if(b == 23) {
-          hcbColor = "platinum";
-        } else if(b == 24) {
-          hcbColor = "grayOnyx";
-        } else if(b == 25) {
-          hcbColor = "highGlossTeak";
-        } else if(b == 26) {
-          hcbColor = "rawTeak";
-        }
-
-        // console.log("__block: "+b);
-        // console.log('hcbColor: ', hcbColor);
-        // console.log('thisSection-9: ', thisSection);
-        // console.log('secondSection-10: ', secondSection);
-        changeItemColor(hcbColor, thisSection);
-        changeItemColor(hcbColor, secondSection);
-
-
-      });
-    }
       
     });
   });
@@ -619,7 +544,6 @@ var changedColor = '';
 var sectionXIcon = '';
 var sectionDownIcon = '';
 var showTheEngines = false;
-var showTheUpholstery = false;
 
 function showColors (elementClass, elementTitle, icon) {
   hideColors();
@@ -666,6 +590,7 @@ function hideColors() {
 }
 
 function changeColor(section, block) {
+  // console.log("block: "+block);
   if(block == "block-1") {
     title = "HCB White";
   } else if(block == "block-2") {
@@ -702,41 +627,17 @@ function changeColor(section, block) {
     title = "Caribbean Blue";
   } else if(block == "block-18") {
     title = "Color Wheel";    
-  } else if(block == "block-19") {
-    title = "Sahara";    
-  } else if(block == "block-20") {
-    title = "Deep Titanium";    
-  } else if(block == "block-21") {
-    title = "Natural Gray";    
-  } else if(block == "block-22") {
-    title = "Designer White";    
-  } else if(block == "block-23") {
-    title = "Platinum";    
-  } else if(block == "block-24") {
-    title = "Gray Onyx";    
-  } else if(block == "block-25") {
-    title = "High Gloss Teak";    
-  } else if(block == "block-26") {
-    title = "Raw Teak";    
   }
-   // console.log("title: "+title);
-   // console.log("section: "+section);
-   // console.log("block: "+block);
+  // console.log("title: "+title);
 
+  changeBorderColor(section, block)
   document.querySelector(".color-header-section.color-header-"+section).innerHTML = title;
-
-  if(section == "section-9") {
-    changeCounterTopsBorderColor(block);
-  } else {
-    changeBorderColor(section, block);
-  }
 }
 
 function changeBorderColor(section, block) {
-   // console.log("section: "+section+" | block: "+block);
+  // console.log("section: "+section+" | block: "+block);
   var blocks = 19;
   for(let i = 1; i < blocks; i++) {
-    // console.log('start i: '+i);
     if(block == "block-"+i){
     document.querySelector(".color-block."+section+"."+block+"").style.borderColor = "white";
     } else {
@@ -745,24 +646,9 @@ function changeBorderColor(section, block) {
     if(absoluteColor != '#000000'){
       document.querySelector(".color-block.section-"+i+".block-18").style.backgroundColor = absoluteColor;
       /* document.querySelector("span.custom").style.color = absoluteColor; */
+      
     }
-    // console.log('end i: '+i);
   }
-}
-
-
-function changeCounterTopsBorderColor(block) {
-  // console.log("in counter block: "+block);
- var blocks = 27;
- for(let i = 19; i < blocks; i++) {
-   // console.log('start i: '+i);
-   if(block == "block-"+i){
-   document.querySelector(".color-block.section-9."+block+"").style.borderColor = "white";
-   } else {
-     document.querySelector(".color-block.section-9.block-"+i+"").style.borderColor = "#707070";
-   }
-   // console.log('end i: '+i);
- }
 }
 
 function openOptions() {
@@ -782,7 +668,7 @@ function openOptions() {
 
 
 function selectEngine(engine) {
-  // console.log('engine: '+engine);
+  console.log('engine: '+engine);
 var engines = 8;
   for(let i = 1; i < engines; i++) {
     if(engine == "engine-"+i){
@@ -795,37 +681,21 @@ var engines = 8;
   }
 }
 
-function showUpholstery() {
-if(showTheUpholstery == false) {
-  // console.log("Show Upholstery");
-  document.querySelector("#upholstery").style.display = 'block';
-  document.querySelector(".item-icon.item-down-icon.item-down-icon-upholstery").style.display = 'none';
-  document.querySelector(".item-icon.item-x-icon.item-x-icon-upholstery").style.display = 'block';
-  showTheUpholstery = true;
-} else {
-  document.querySelector("#upholstery").style.display = 'none';
-  document.querySelector(".item-icon.item-down-icon.item-down-icon-upholstery").style.display = 'block';
-  document.querySelector(".item-icon.item-x-icon.item-x-icon-upholstery").style.display = 'none';
-  showTheUpholstery = false;
-}
-}
-
-
 function showEngines() {
-  if(showTheEngines == false) {
-    // console.log("Show engines");
-    document.querySelector("#engines").style.display = 'block';
-    document.querySelector(".item-icon.item-down-icon.item-down-icon-engines").style.display = 'none';
-    document.querySelector(".item-icon.item-x-icon.item-x-icon-engines").style.display = 'block';
-    showTheEngines = true;
-  } else {
-    document.querySelector("#engines").style.display = 'none';
-    document.querySelector(".item-icon.item-down-icon.item-down-icon-engines").style.display = 'block';
-    document.querySelector(".item-icon.item-x-icon.item-x-icon-engines").style.display = 'none';
-    showTheEngines = false;
-  }
-  }
-  
+if(showTheEngines == false) {
+  // console.log("Show engines");
+  document.querySelector("#engines").style.display = 'block';
+  document.querySelector(".item-icon.item-down-icon.item-down-icon-engines").style.display = 'none';
+  document.querySelector(".item-icon.item-x-icon.item-x-icon-engines").style.display = 'block';
+  showTheEngines = true;
+} else {
+  document.querySelector("#engines").style.display = 'none';
+  document.querySelector(".item-icon.item-down-icon.item-down-icon-engines").style.display = 'block';
+  document.querySelector(".item-icon.item-x-icon.item-x-icon-engines").style.display = 'none';
+  showTheEngines = false;
+}
+}
+
 function sendColor(color){
   //console.log("color: "+color);
   absoluteColor = color;
@@ -855,61 +725,61 @@ function getParameterByName(name, url = window.location.href) {
 }
 
 function setSection(sec, color) {
-  if(sec == hull) {
+  if(sec == "e4b2b759-dcc5-4195-8b5e-0dac90c156a7") {
     s1 = color
   }
-  if(sec == waterLineStripe) {
+  if(sec == "37f570c1-048e-46a3-9d50-81f67436bcc7") {
     s2 = color
   }
-  if(sec == mercury600Set4) {
+  if(sec == "6314f6ba-c25f-45a7-a57e-9ee19f72256b") {
       s3 = color
   }
-  if(sec == mercury450Set5) {
+  if(sec == "1eb6c258-f3fe-423d-a67a-83f5d9126171") {
       s4 = color
   }
-  if(sec == yamahaSet4) {
+  if(sec == "03fd4243-2fd5-4337-ac2e-edaf187df58e") {
       s5 = color
   }
-  if(sec == frame) {
+  if(sec == "116b70a0-b795-4e29-a3ad-ce8ad3cb128c") {
       s6 = color
   }
-  if(sec == upholstery) {
+  if(sec == "94213e24-87a6-457c-9f4a-a18536e05fc4") {
       s7 = color
   }
-  if(sec == headrests) {
+  if(sec == "2ee94080-f45c-4312-968e-f19464eb78ac") {
       s8 = color
   }
-  if(sec == sleighSeatTableUpper) {
+  if(sec == "3b479f2f-923b-445b-a4f3-0717c3af676e") {
       s9 = color
   }
-  if(sec == sleighSeatTableLower) {
+  if(sec == "adb5a729-f2b5-4071-9b23-6c0bb3d245e9") {
       s10 = color
   }
-  if(sec == chairs) {
+  if(sec == "b44e1e0f-fefc-42d1-b0c6-3f6d20e893e3") {
       s11 = color
   }
-  if(sec == anchor) {
+  if(sec == "37c386f0-5c4e-4f2a-ba52-2968fc1e08bc") {
       s12 = color
   }
-  if(sec == baitWellGlass) {
+  if(sec == "be7d5667-cf0e-4683-8876-34e5eb63a4bf") {
       s13 = color
   }
-  if(sec == baitwell) {
+  if(sec == "cf5087c1-b755-4aa5-9ce4-198be6e6f7e8") {
       s14 = color
   }
-  if(sec == cabinDoor) {
+  if(sec == "69e60667-fb5c-4b0c-8c96-7026ff136d47") {
       s15 = color
   }
-  if(sec == chairBase) {
+  if(sec == "5382750e-e0c8-44f9-82bf-8956238fe547") {
       s16 = color
   }
-  if(sec == chairsStand) {
+  if(sec == "a963bd43-67e6-4a93-8ef2-21c3099b5a9e") {
       s17 = color
   }
-  if(sec == cleatGasscapPullsHawserHingesPoleHoldersHardware) {
+  if(sec == "ff0040ab-be2f-4647-b106-f7aa7722b63c") {
       s18 = color
   }
-  if(sec == consoleCabin) {
+  if(sec == "11f3160a-15e0-4980-9538-202ae4a5b28d") {
       s19 = color
   }
   console.log('item: '+sec+' | color: '+color);
@@ -939,6 +809,7 @@ function linkToShare() {
 
   shareLink = 'https://scruffydev.org/boat/'+se1+''+se2+''+se3+''+se4+''+se5+''+se6+''+se7+''+se8+''+se9+''+se10+''+se11+''+se12+''+se13+''+se14+''+se15+''+se16+''+se17+''+se18+''+se19+''+engn;
   
+
   sFacebook = document.getElementById("shareFacebook");
   sFacebook.dataset.url = shareLink;
   console.log(sFacebook.dataset.url); 
@@ -957,6 +828,9 @@ function linkToShare() {
   
 }
 
+function goEmail() {
+  console.log('email');
+}
 
 function showMobileIcons(view) {
   if(view == 'show') {

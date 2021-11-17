@@ -1,0 +1,48 @@
+Menu Items:
+hull = '5099bb6f-3cdc-4dde-b733-2603b404098b';
+waterLineStripe = '1f318114-36da-4c72-8a28-fd71a350749f';
+mercury450Set5 = 'bc745ced-6dcb-4f42-89f8-98dc4bed7fa8';
+mercury600Set4 = '48b29923-f685-455a-a583-45b4625ed8d4';
+yamahaSet4 = 'f1416ff7-b4a5-4876-99ac-d328ab71d39a';
+frame = 'e676999c-c26c-406f-a8c8-ea346a533d98';
+upholstery = 'be6b320f-eec3-46a6-a268-f0dc6e08e152';
+headrests = '558a9121-e12a-44fd-bdd2-4fbfd8c41eb7';
+chair = 'bcaa6439-4882-49c5-b42c-926f390940fd';
+sleighSeatTableLower = '3678d555-37a3-462b-80aa-8f4cb5a7435e';
+sleighSeatTableUpper = '46c1983d-9f07-4291-b53e-cd71a66c26d3';
+
+
+Non Menu Items:
+anchor = '600cb2d1-0a98-4cf9-90ec-431dd5273a6b';
+baitWellGlass = '48dd2c16-3475-4475-8e60-f49165ff0314';
+baitwell = 'd3b3b913-e894-4592-a702-b0ecfe9536e4';
+cabinDoor = '87a87e77-56bd-45ca-a304-6c82484bd0c6';
+chairBase = 'bcaa6439-4882-49c5-b42c-926f390940fd';
+chairsStand = '5dd49357-fd0a-482d-a137-367ee27789b8';
+cleatGasscapPullsHawserHingesPoleHoldersHardware = '87d19b48-3235-4772-8bf0-34aa50cc2970';
+consoleCabin = '4e0fa194-4b02-4ecd-a43e-78b718888cd8';
+cupHolders = '0134f108-c4db-4fe2-bc75-3bb4a9c2e19a';
+deckRing = 'cf12a4bd-b2f3-4299-ba10-3e950b3e2341';
+faucets = '705d15c0-b7ca-4ad9-9a50-9986fdd5826e';
+floorPlankLiner = 'ffaa41b2-20a3-4efd-91e6-64cbeb97cadc';
+floorPlankLinerHatches = 'e88d6a34-60a3-4a3e-aed0-9c6a10e457e2';
+floorPlanks = 'fc36ff6c-26da-48d1-a25a-c128d936df0b';
+footRest = '1a5b6bf4-6df1-468e-9502-e27334059703';
+hardtop = '138f03fd-c716-4d5e-9e25-680e18fe5ef6';
+hatchPlanks = 'bab881e9-70e0-4694-ae03-a1a3400f52cc';
+hatches = 'e88d6a34-60a3-4a3e-aed0-9c6a10e457e2';
+helmScreens = 'fddb2ee5-fdc8-4ae8-a92b-0cf2c06223d7';
+joyStick = 'bec48472-831e-49f3-8ddf-acdace0c85a3';
+ladderBack = '83af1609-7a20-48f2-93a5-0631c8acde65';
+liner = 'e88d6a34-60a3-4a3e-aed0-9c6a10e457e2';
+mercury450Set5Propeller = '0e3297a7-82f6-4a54-bf59-1e5d740d472d';
+mercury600Set4Propeller = '96ec022a-284b-4fe4-ba80-7f4a01628cc0';
+radar = 'cf45cbea-2b4c-430e-9d46-84e90b017862';
+sleighSeat = 'a0ae38e9-8f16-435c-b0de-3040c7872f24';
+sleighSeatRail = '52c0d9fc-8cfe-405f-bd5e-e5911cfee6ca';
+steeringWheel = '1e019a6a-bd01-4ce3-a48b-6c88b93f86f4';
+throttle = 'cdbbc411-86ea-476c-8ae4-1fdfd1c4c356';
+tiltheim = '3772715a-eb72-43f6-8ce7-62081bcca790';
+
+windshield = '3c4bcc3d-b068-4590-93dd-5fcb461d615b';
+yamahaSet4Propeller = 'd9b255f4-f8ed-476a-9531-199620b33acc';
