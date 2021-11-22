@@ -126,7 +126,8 @@ var success = function success(api) {
         for (var i = 0; i < myMaterials.length; i++) {
           var m = myMaterials[i];
           textures[m.name] = m.channels.AlbedoPBR.texture;
-           console.log(m.name, m);
+          // console.log(m.name, m);
+          console.log(m.id, m);
         }
         document.querySelector(".options").style.display = 'block';
         document.getElementById('hamburger-menu').style.transform = 'rotate(360deg)';
@@ -218,6 +219,7 @@ var success = function success(api) {
     eng = '761';
       });
 
+
   document.querySelector('li.item-title.item-title-5').addEventListener('click', function() {
     api.hide(720); // Mercury 600 default 
     api.hide(879); // Mercury 600 propeller default
@@ -227,7 +229,13 @@ var success = function success(api) {
     api.show(896); // Yamaha propeller
     eng = '691';
       });
+        
 
+      document.querySelector('.no-color-block').addEventListener('click', function() {
+        api.hide(1384); // Water Stripe
+          });
+
+            
       function changeItemColor(color, itemId) {
         for (var i = 0; i < myMaterials.length; i++) {
           var m = myMaterials[i]; // here change only the channel you need to change
@@ -242,6 +250,9 @@ var success = function success(api) {
               setThisSection = true;
             }
 
+            if(itemId == waterLineStripe) {
+              api.show(1384); // water stripe
+            }
 
             if(color == 'cdcdcd') {
               m.channels.AlbedoPBR.color    = [0.6104955708078648, 0.6104955708078648, 0.6104955708078648];
@@ -619,6 +630,7 @@ var changedColor = '';
 var sectionXIcon = '';
 var sectionDownIcon = '';
 var showTheEngines = false;
+var showTheHull = false;
 var showTheUpholstery = false;
 
 function showColors (elementClass, elementTitle, icon) {
@@ -739,6 +751,10 @@ function changeBorderColor(section, block) {
     // console.log('start i: '+i);
     if(block == "block-"+i){
     document.querySelector(".color-block."+section+"."+block+"").style.borderColor = "white";
+      if(section == 'section-2') {
+        document.querySelector(".slash").style.borderBottomColor = "#707070";
+        document.querySelector(".no-color-block").style.borderColor = "#707070";
+      }
     } else {
       document.querySelector(".color-block."+section+".block-"+i+"").style.borderColor = "#707070";
     }
@@ -795,19 +811,42 @@ var engines = 8;
   }
 }
 
-function showUpholstery() {
-if(showTheUpholstery == false) {
-  // console.log("Show Upholstery");
-  document.querySelector("#upholstery").style.display = 'block';
-  document.querySelector(".item-icon.item-down-icon.item-down-icon-upholstery").style.display = 'none';
-  document.querySelector(".item-icon.item-x-icon.item-x-icon-upholstery").style.display = 'block';
-  showTheUpholstery = true;
-} else {
-  document.querySelector("#upholstery").style.display = 'none';
-  document.querySelector(".item-icon.item-down-icon.item-down-icon-upholstery").style.display = 'block';
-  document.querySelector(".item-icon.item-x-icon.item-x-icon-upholstery").style.display = 'none';
-  showTheUpholstery = false;
+function showHull() {
+  if(showTheHull == false) {
+    // console.log("Show Hull");
+    document.querySelector("#hull").style.display = 'block';
+    document.querySelector(".item-icon.item-down-icon.item-down-icon-hull").style.display = 'none';
+    document.querySelector(".item-icon.item-x-icon.item-x-icon-hull").style.display = 'block';
+    showTheHull = true;
+  } else {
+    document.querySelector("#hull").style.display = 'none';
+    document.querySelector(".item-icon.item-down-icon.item-down-icon-hull").style.display = 'block';
+    document.querySelector(".item-icon.item-x-icon.item-x-icon-hull").style.display = 'none';
+    showTheHull = false;
+  }
 }
+
+function noColor() { 
+  document.querySelector(".slash").style.borderBottomColor = "#a4373e";
+  document.querySelector(".no-color-block").style.borderColor = "#a4373e";
+  document.querySelector(".color-header-section.color-header-section-2").innerHTML = "No Color";
+  console.log('no color')
+}
+
+
+function showUpholstery() {
+  if(showTheUpholstery == false) {
+    // console.log("Show Upholstery");
+    document.querySelector("#upholstery").style.display = 'block';
+    document.querySelector(".item-icon.item-down-icon.item-down-icon-upholstery").style.display = 'none';
+    document.querySelector(".item-icon.item-x-icon.item-x-icon-upholstery").style.display = 'block';
+    showTheUpholstery = true;
+  } else {
+    document.querySelector("#upholstery").style.display = 'none';
+    document.querySelector(".item-icon.item-down-icon.item-down-icon-upholstery").style.display = 'block';
+    document.querySelector(".item-icon.item-x-icon.item-x-icon-upholstery").style.display = 'none';
+    showTheUpholstery = false;
+  }
 }
 
 
@@ -941,29 +980,30 @@ function linkToShare() {
   
   sFacebook = document.getElementById("shareFacebook");
   sFacebook.dataset.url = shareLink;
-  console.log(sFacebook.dataset.url); 
+  console.log('sFacebook: ', sFacebook.dataset.url); 
 
   sTwitter = document.getElementById("shareTwitter");
   sTwitter.dataset.url = shareLink;
-  console.log(sTwitter.dataset.url); 
+  console.log('sTwitter: ', sTwitter.dataset.url); 
 
   sEmail = document.getElementById("shareEmail");
   sEmail.dataset.url = shareLink;
-  console.log(sEmail.dataset.url); 
+  console.log('sEmail: ', sEmail.dataset.url); 
 
   sHCB = document.getElementById("sendToHCB");
   sHCB.dataset.url = shareLink;
-  console.log(sHCB.dataset.url); 
+  console.log('sHCB: ', sHCB.dataset.url); 
   
 }
 
 
 function showMobileIcons(view) {
   if(view == 'show') {
-    document.querySelector(".in-mobile-header"+colorSectionClass+"").style.display = 'none';
-    document.querySelector(".in-mobile-icons"+colorSectionClass+"").style.display = 'inline-flex';
+    document.querySelector(".in-mobile-header").style.display = 'none';
+    document.querySelector(".in-mobile-icons").style.display = 'inline-flex';
+    linkToShare();
   } else {
-    document.querySelector(".in-mobile-header"+colorSectionClass+"").style.display = 'inline-flex';
-    document.querySelector(".in-mobile-icons"+colorSectionClass+"").style.display = 'none';
+    document.querySelector(".in-mobile-header").style.display = 'inline-flex';
+    document.querySelector(".in-mobile-icons").style.display = 'none';
   }
 }

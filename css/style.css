@@ -226,6 +226,10 @@ img.item-icon.item-x-icon {
   margin-bottom: 8px;
 }
 
+#hull {
+  display: none;
+}
+
 #upholstery {
   display: none;
 }
@@ -275,6 +279,24 @@ li.color-block-section.color-block-section-9 {
   width: 16rem;
   margin-bottom: 5px;
 }
+
+.no-color-block {
+  float: right;
+  margin: -32px 22px 1px 1px;
+  height: 30px;
+  width: 33px;
+  border: 2px solid #707070;
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+.slash {
+  width: 41px;
+  height: 31px;
+  border-bottom: 2px solid #707070;
+  -webkit-transform: translateY(-13px) translateX(4px) rotate(42deg);
+  position: absolute;
+}
+
 .color-block {
   margin: 1px;
   height: 30px;
