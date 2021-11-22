@@ -40,6 +40,11 @@ cleatGasscapPullsHawserHingesPoleHoldersHardware = '01761621-c2d8-40de-a37e-6099
 consoleCabin = '30190148-7daf-476b-8836-9b62fc41ea75';
 deckRing = '155e8a26-e2f4-4c54-befa-50c376581d58';
 hatches = '77f5914d-2326-4bcc-ba08-64c814366ce8';
+floorPlanks = 'abd3c5c6-b0c5-4d15-adab-0f325c47b01b';
+floorPlankLiner = 'dd80971c-143a-49f1-80be-665b732ea4d7';
+fpl = 'hide'; // var for initial change
+hatchPlanks = 'ff9a4c30-5194-4b13-b20e-235a599a4e2b';
+floorPlankLinerHatches = '06c1608b-601a-4ab7-8af8-a62ed7c2920f';
 
 // Textures :
 hcbwhite = '4d9f35550a9e418bbd4868853c612c3b';
@@ -64,8 +69,8 @@ var section8 = headrests;
 var section9 = sleighSeatTableUpper;
 var section10 = sleighSeatTableLower;
 var section11 = chairs;
-var section12 = anchor;
-var section13 = baitWellGlass;
+var section12 = floorPlankLiner;
+var section13 = floorPlankLinerHatches;
 var section14 = baitwell;
 var section15 = cabinDoor;
 var section16 = chairBase;
@@ -127,7 +132,7 @@ var success = function success(api) {
           var m = myMaterials[i];
           textures[m.name] = m.channels.AlbedoPBR.texture;
           // console.log(m.name, m);
-          console.log(m.id, m);
+          console.log(m.name, m);
         }
         document.querySelector(".options").style.display = 'block';
         document.getElementById('hamburger-menu').style.transform = 'rotate(360deg)';
@@ -141,6 +146,11 @@ var success = function success(api) {
         changeItemColor('hcbwhite', chairBase);
         changeItemColor('hcbwhite', consoleCabin);
         changeItemColor('hcbwhite', cabinDoor);
+        changeItemColor('cdcdcd', floorPlankLiner);
+        changeItemColor('cdcdcd', floorPlankLinerHatches);
+        api.hide(516); 
+        api.hide(533);
+        api.hide(1384); // Water Stripe
 
         if (s10 != 'highGlossTeak' && s10 != 'deepTitanium' && s10 != 'grayOnyx' && s10 != 'naturalGray' && s10 != 'platinum' && s10 != 'rawTeak' && s10 != 'sahara') {
           changeItemColor('designerWhite', sleighSeatTableLower);
@@ -247,7 +257,7 @@ var success = function success(api) {
             console.log("name: " + m.name + " " + m.id);
             console.log("itemId: "+itemId);
 
-            if(itemId == hatches || itemId == deckRing || itemId == chairBase || itemId == consoleCabin || itemId == cabinDoor) {
+            if(itemId == hatches || itemId == deckRing || itemId == chairBase || itemId == consoleCabin || itemId == cabinDoor || itemId == floorPlanks || itemId == hatchPlanks) {
               setThisSection = false;
             } else {
               setThisSection = true;
@@ -256,6 +266,16 @@ var success = function success(api) {
             if(itemId == waterLineStripe) {
               api.show(1384); // water stripe
             }
+
+            if(fpl == 'show') {
+              api.show(516);
+              api.show(533);
+            } else if(fpl == 'hide') {
+              api.hide(516);
+              api.hide(533);
+            }
+
+            console.log('fpl: ', fpl);
 
             if(color == 'cdcdcd') {
               m.channels.AlbedoPBR.color    = [0.6104955708078648, 0.6104955708078648, 0.6104955708078648];
@@ -339,6 +359,14 @@ var success = function success(api) {
               }
             } else if(color == '87d3dc') {
               m.channels.AlbedoPBR.color    = [0.24228112246555486, 0.6514056374198239, 0.7156935005064807];
+              if(setThisSection === true) {
+                setSection(itemId, color);
+              }
+            } else if(color == '58331A') {
+              m.channels.AlbedoPBR.color    = [0.09758734714186242, 0.03310476657088505, 0.010329823029626938];
+              if(setThisSection === true) {
+                setSection(itemId, color);
+              }
             } else if(color == 'hcbwhite') {
               console.log("before hcbwhite: "+JSON.stringify(m.channels.AlbedoPBR.texture));
                 m.channels.AlbedoPBR.texture.uid    = hcbwhite;
@@ -477,6 +505,13 @@ function getURLCodes() {
     changeItemColor(s9, section10);
     console.log('s10: '+s10+' | section: '+section10)
   }
+  if(s12 !== null) {
+    // Floor Planks
+    changeItemColor(s12, section12);
+    console.log('s12: '+s12+' | section: '+section12)
+    changeItemColor(s12, section13);
+    console.log('s13: '+s13+' | section: '+section13)
+  }
 }
 
   var sectionList = 9;
@@ -594,9 +629,45 @@ function getURLCodes() {
         changeItemColor(hcbColor, thisSection);
         changeItemColor(hcbColor, secondSection);
 
-
       });
     }
+
+   
+  for(let b = 25; b < textureBlockList; b++) {
+    document.querySelector('.color-block.section-12.block-'+b).addEventListener('click', function () {
+      fpl = 'show';
+      thisSection = section12;
+      secondSection = section13;
+      
+      if(b == 25) {
+        hcbColor = "highGlossTeak";
+      } else if(b == 26) {
+        hcbColor = "rawTeak";
+      }
+
+      changeItemColor(hcbColor, floorPlanks);
+      changeItemColor(hcbColor, hatchPlanks);
+      changeItemColor('58331A', floorPlankLiner);
+      changeItemColor('58331A', floorPlankLinerHatches);
+
+    });
+  }
+  document.querySelector('.no-floor-block').addEventListener('click', function () {
+    fpl = 'show';
+    thisSection = section12;
+    secondSection = section13;
+
+    fpl = 'hide';
+    console.log('fpl: ', fpl);
+    console.log('floorPlankLiner: ', floorPlankLiner);
+    console.log('floorPlankLinerHatches: ', floorPlankLinerHatches);
+    changeItemColor('cdcdcd', floorPlankLiner);
+    changeItemColor('cdcdcd', floorPlankLinerHatches);
+
+  });
+
+
+
       
     });
   });
@@ -739,9 +810,11 @@ function changeColor(section, block) {
    // console.log("block: "+block);
 
   document.querySelector(".color-header-section.color-header-"+section).innerHTML = title;
-
+  
   if(section == "section-9") {
     changeCounterTopsBorderColor(block);
+  } else if(section == "section-12") {
+    changeFloorBorderColor(block);
   } else {
     changeBorderColor(section, block);
   }
@@ -779,6 +852,24 @@ function changeCounterTopsBorderColor(block) {
    document.querySelector(".color-block.section-9."+block+"").style.borderColor = "white";
    } else {
      document.querySelector(".color-block.section-9.block-"+i+"").style.borderColor = "#707070";
+   }
+   // console.log('end i: '+i);
+ }
+}
+
+
+
+function changeFloorBorderColor(block) {
+  // console.log("in counter block: "+block);
+ var blocks = 27;
+ for(let i = 25; i < blocks; i++) {
+   // console.log('start i: '+i);
+   if(block == "block-"+i){
+    document.querySelector(".color-block.section-9."+block+"").style.borderColor = "white";
+   } else {
+     document.querySelector(".color-block.section-9.block-"+i+"").style.borderColor = "#707070";
+     document.querySelector(".no-floor-block").style.borderColor = "#707070";
+     document.querySelector(".floor_slash").style.borderBottomColor = "#707070";
    }
    // console.log('end i: '+i);
  }
@@ -836,6 +927,11 @@ function noColor() {
   console.log('no color')
 }
 
+function noFloor() {
+  document.querySelector(".floor_slash").style.borderBottomColor = "#a4373e";
+  document.querySelector(".no-floor-block").style.borderColor = "#a4373e";
+  document.querySelector(".color-header-section.color-header-section-12").innerHTML = "No Floor Planks";
+}
 
 function showUpholstery() {
   if(showTheUpholstery == false) {

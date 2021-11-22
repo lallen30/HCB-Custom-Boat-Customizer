@@ -244,6 +244,11 @@ img.item-icon.item-x-icon {
   cursor: pointer;
 }
 
+.item-title-1,
+.item-title-2,
+.item-title-3,
+.item-title-4,
+.item-title-5,
 .item-title-7,
 .item-title-8 {
   border-left: 10px solid rgba(255, 255, 255, 0.2);
@@ -265,7 +270,8 @@ li.color-block-section.color-block-section-5,
 li.color-block-section.color-block-section-6,
 li.color-block-section.color-block-section-7,
 li.color-block-section.color-block-section-8,
-li.color-block-section.color-block-section-9 {
+li.color-block-section.color-block-section-9,
+li.color-block-section.color-block-section-12 {
   display: none;
 }
 
@@ -280,6 +286,24 @@ li.color-block-section.color-block-section-9 {
   margin-bottom: 5px;
 }
 
+.no-floor-block {
+  float: right;
+  width: 50px;
+  height: 50px;
+  padding-top: 30px;
+  border: 2px solid #a4373e;
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+.floor_slash {
+  height: 51px;
+  width: 66px;
+  border-bottom: 2px solid #a4373e;
+  -webkit-transform: translateY(-50px) translateX(7px) rotate(45deg);
+  position: absolute;
+}
+
 .no-color-block {
   float: right;
   margin: -32px 22px 1px 1px;
@@ -289,9 +313,10 @@ li.color-block-section.color-block-section-9 {
   cursor: pointer;
   background-color: #f1f1f1;
 }
+
 .slash {
-  width: 41px;
   height: 31px;
+  width: 41px;
   border-bottom: 2px solid #707070;
   -webkit-transform: translateY(-13px) translateX(4px) rotate(42deg);
   position: absolute;
