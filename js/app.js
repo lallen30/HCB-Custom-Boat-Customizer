@@ -233,6 +233,9 @@ var success = function success(api) {
 
       document.querySelector('.no-color-block').addEventListener('click', function() {
         api.hide(1384); // Water Stripe
+        for(var a = 1; a < 19; a++) {
+          document.querySelector(".color-block.section-2.block-"+a).style.borderColor = "#707070";
+        }
           });
 
             
