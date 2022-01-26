@@ -1,6 +1,7 @@
 // Sketchfab Viewer API: Change Texture/material
 var version = '1.10.1';
-var uid = '729c94df6280424fa613db4d0f890b40';
+// var uid = '729c94df6280424fa613db4d0f890b40';
+var uid = 'a9b07d15dbf2455d862acc49dd9c7170';
 var iframe = document.getElementById('api-frame');
 var client = new window.Sketchfab(version, iframe);
 var canvas = document.createElement('canvas');
@@ -16,56 +17,46 @@ var colorWheel;
 var menuOptions = 'hide';
 
 // Selectable items:
-hull = '25473fd0-9ae7-4fbe-8331-7e0e187b7f2d';
-waterLineStripe = '9c8b8596-e923-4101-aa58-04729f362bfc';
-
-mercury450Set5 = '655bca15-ea32-4507-932f-b80bab7a64d4';
-mercury450Set5Pinstripe = '2853487a-956d-4b24-8054-59c8a03dca7d';
-mercury450Set5Propellers = 'f1d88136-4d27-4d53-ad25-d4e59d77e348';
-
-mercury600Set4 = '5f6cb161-94f2-4e6b-aa98-6137782750a8';
-mercury600Set4Pinstripe = 'd92c770d-db03-49af-b0c2-02f40b908c4d';
-mercury600Set4Propellers = '24782ee1-ee86-4864-b786-d6fc05e2886f';
-
-yamahaSet4 = '529cfc33-47c2-4ec1-b9fb-a7492e39ec80';
-yamahaSet4Pinstripe = 'a34ce37b-cd8b-42fb-b4a1-30c70e0cdc69';
-yamahaSet4Propellers = '372e23ce-1550-4e99-a74d-966e55de42cf';
-
-frame = '6b643535-c57d-4616-8a6f-c82c68c61b25';
-upholstery = '7eecadfa-df17-48ef-9379-bd3fe8ce684d';
-headrests = '9da31931-5e86-4073-9700-8dc5ad7d3f6d';
-chairs = 'b73bf23c-0796-4357-8376-bb6601a8c25a';
-sleighSeatTableLower = '489db6aa-89b5-443b-9c75-babd5186a606';
-sleighSeatTableUpper = 'a342168d-e59e-45e7-990e-1a3e2c03ffd3';
+hull = 'b5066119-10ca-44d1-a77f-c5002f06ba35';
+waterLineStripe = '6574e541-908c-412d-8d53-859561456c1d';
+mercury450Set5 = '5b961360-8338-46fd-96be-efb55468ec58';
+mercury600Set4 = '1fc2f607-946b-4b80-a93b-b8a5ccabcbc2';
+yamahaSet4 = 'a7980717-8cf6-42e9-9183-4273cac0dc93';
+frame = '180ca1ec-27a8-423f-92ec-b0f8880c955e';
+upholstery = 'ac3a1fa4-a2af-497a-a757-154f3d73008e';
+headrests = 'b5b01f63-b5ae-4ac1-965d-55b54b20f98d';
+chairs = '8c91b3b6-7862-4dd5-b1f2-aed2a0f6bbae';
+sleighSeatTableLower = '86d8aad1-46cf-4905-916f-ef4626d3c4ac';
+sleighSeatTableUpper = '3260bb8c-6d77-43eb-aacc-b0a82eb0ca75';
 
 // Non Selectable items:
-anchor = 'dee02a99-2b3b-4a41-995d-951f372c2072';
-baitWellGlass = 'ecea1e39-0e0e-4864-b4f4-ed4113ab971b';
-baitwell = 'cd3e5f6a-b60e-4149-96c1-48ecaa377cb9';
-cabinDoor = 'fb4393dd-fc81-439e-a184-1f65dfd0538e';
-chairBase = 'cc22db14-c6c1-4c89-89e6-01721eea23c0';
-chairsStand = '58ea43bd-60d1-42b2-aca4-396ea4cf1f17';
+anchor = '08c96432-c3c6-4956-aba8-b5a96b19031f';
+baitWellGlass = '0fd7ca80-4fe3-449e-a9bc-8cdcd4c4dcc2';
+baitwell = '9b3efbe5-fe0e-4ae1-befe-24467670a495';
+cabinDoor = 'e9adfb4a-01d6-4f75-aeff-54af5062703d';
+chairBase = '0bd16511-d647-4647-b219-029b61d7f781';
+chairsStand = 'a536e779-d3b8-4901-800b-0a607a45fc1b';
 cleatGasscapPullsHawserHingesPoleHoldersHardware =
-  '2668e0e7-6bb0-4e75-a286-3dbdd61b95ee';
-consoleCabin = '844b7a4c-e482-4fb3-b6e0-8b8eb1ca6635';
-deckRing = '3bb144ff-4935-4d64-9397-d54ad5e73728';
-hatches = 'dc90c0a8-3b53-408e-ad70-48488670b49e';
-floorPlanks = '60a62055-7d34-449d-9b7c-3dc3866a880d';
-floorPlankLiner = '1a41ccf1-5358-41b1-aad7-088611dad7ae';
+  '01761621-c2d8-40de-a37e-6099ea8b5f42';
+consoleCabin = '30190148-7daf-476b-8836-9b62fc41ea75';
+deckRing = '155e8a26-e2f4-4c54-befa-50c376581d58';
+hatches = '77f5914d-2326-4bcc-ba08-64c814366ce8';
+floorPlanks = 'abd3c5c6-b0c5-4d15-adab-0f325c47b01b';
+floorPlankLiner = 'dd80971c-143a-49f1-80be-665b732ea4d7';
 fpl = 'hide'; // var for initial change
-hatchPlanks = '03a53f5c-be55-4fd4-abb3-3c5ae653d2d1';
-floorPlankLinerHatches = 'ae01e16f-88d6-4536-bb4e-6800d5d02dd7';
+hatchPlanks = 'ff9a4c30-5194-4b13-b20e-235a599a4e2b';
+floorPlankLinerHatches = '06c1608b-601a-4ab7-8af8-a62ed7c2920f';
 
-// Textures:
-hcbwhite = 'bfb4b7ae9b1648deb2c32cd7ad4b6688';
-designerWhite = 'b4ec9ee5e3e841daa0e7a4219262535a';
-highGlossTeak = '5548465b852c433b8f3ee0939e0f2b77';
-deepTitanium = '27489a5d00054bbdafe1109931ac9ffc';
-grayOnyx = '2713129de2e14194ab4a50d77b113770';
-naturalGray = '0d796e234122450a8178da3739d810bc';
-platinum = '500b628cda324f23a994ab3b5236eadc';
-rawTeak = 'fbc02c81ab204a089e14830cc0524538';
-sahara = '35d1447d2e894ce3a6d2b171f4038a5a';
+// Textures :
+hcbwhite = '4d9f35550a9e418bbd4868853c612c3b';
+designerWhite = '394deb1f98e147d99d5bdb8f85e8e22d';
+highGlossTeak = '77f6103dfbd841cea81d82ae9bc2bedf';
+deepTitanium = '7fac54f8e77149368238330a82e2b827';
+grayOnyx = 'd86881cd333441789cf1a4c95dee447a';
+naturalGray = '55f57a42806b4772abbea51551567a15';
+platinum = '723a81160be94bc08f76262fe5db6f79';
+rawTeak = '7b3acb2fb2f8457693b903ec086b0eef';
+sahara = '3457cc471aab465f9165939d2340c916';
 
 var section1 = hull;
 var section2 = waterLineStripe;
@@ -154,9 +145,9 @@ var success = function success(api) {
         changeItemColor('hcbwhite', cabinDoor);
         changeItemColor('cdcdcd', floorPlankLiner);
         changeItemColor('cdcdcd', floorPlankLinerHatches);
-        api.hide(2379);
-        api.hide(2397);
-        api.hide(3251); // Water Stripe
+        api.hide(516);
+        api.hide(533);
+        api.hide(1384); // Water Stripe
 
         if (
           s10 != 'highGlossTeak' &&
@@ -180,120 +171,87 @@ var success = function success(api) {
 
       function getURLEng() {
         console.log('eng: ' + eng);
-        if (eng == '2537') {
-          api.show(2537); // Mercury 600 default
-          api.show(2699); // Mercury 600 propeller default
-          api.show(2735); // Mercury 600 pinstripe default
-
-          api.hide(2579); // Mercury 450
-          api.hide(2681); // Mercury 450 propeller
-          api.hide(2771); // Mercury 450 pinstripe
-
-          api.hide(2507); // Yamaha
-          api.hide(2717); // Yamaha propeller
-          api.hide(2753); // Yamaha pinstripe
+        if (eng == '720') {
+          api.show(720); // Mercury 600 default
+          api.show(879); // Mercury 600 propeller default
+          api.hide(761); // Mercury 450
+          api.hide(862); // Mercury 450 propeller
+          api.hide(691); // Yamaha
+          api.hide(896); // Yamaha propeller
         }
 
-        if (eng == '2579') {
-          api.hide(2537); // Mercury 600 default
-          api.hide(2699); // Mercury 600 propeller default
-          api.hide(2735); // Mercury 600 pinstripe default
-
-          api.show(2579); // Mercury 450
-          api.show(2681); // Mercury 450 propeller
-          api.show(2771); // Mercury 450 pinstripe
-
-          api.hide(2507); // Yamaha
-          api.hide(2717); // Yamaha propeller
-          api.hide(2753); // Yamaha pinstripe
+        if (eng == '761') {
+          api.hide(720); // Mercury 600 default
+          api.hide(879); // Mercury 600 propeller default
+          api.show(761); // Mercury 450
+          api.show(862); // Mercury 450 propeller
+          api.hide(691); // Yamaha
+          api.hide(896); // Yamaha propeller
         }
 
-        if (eng == '2507') {
-          api.hide(2537); // Mercury 600 default
-          api.hide(2699); // Mercury 600 propeller default
-          api.hide(2735); // Mercury 600 pinstripe default
-
-          api.hide(2579); // Mercury 450
-          api.hide(2681); // Mercury 450 propeller
-          api.hide(2771); // Mercury 450 pinstripe
-
-          api.show(2507); // Yamaha
-          api.show(2717); // Yamaha propeller
-          api.show(2753); // Yamaha pinstripe
+        if (eng == '691') {
+          api.hide(720); // Mercury 600 default
+          api.hide(879); // Mercury 600 propeller default
+          api.hide(761); // Mercury 450
+          api.hide(862); // Mercury 450 propeller
+          api.show(691); // Yamaha
+          api.show(896); // Yamaha propeller
         }
       }
 
       // New engines:
 
-      //api.hide(2537); // Mercury 600 default
-      //api.hide(2699); // Mercury 600 propeller default
-      //api.hide(2735); // Mercury 600 pinstripe default
+      //api.hide(720); // Mercury 600 default
+      //api.hide(879); // Mercury 600 propeller default
 
-      api.hide(2507); // Yamaha
-      api.hide(2717); // Yamaha propeller
-      api.hide(2753); // Yamaha pinstripe
+      api.hide(691); // Yamaha
+      api.hide(896); // Yamaha propeller
 
-      api.hide(2579); // Mercury 450
-      api.hide(2681); // Mercury 450 propeller
-      api.hide(2771); // Mercury 450 pinstripe
+      api.hide(761); // Mercury 450
+      api.hide(862); // Mercury 450 propeller
 
-      var id = 2537;
+      var id = 720;
 
       document
         .querySelector('li.item-title.item-title-3')
         .addEventListener('click', function () {
-          api.show(2537); // Mercury 600 default
-          api.show(2699); // Mercury 600 propeller default
-          api.show(2735); // Mercury 600 pinstripe default
-
-          api.hide(2579); // Mercury 450
-          api.hide(2681); // Mercury 450 propeller
-          api.hide(2771); // Mercury 450 pinstripe
-
-          api.hide(2507); // Yamaha
-          api.hide(2717); // Yamaha propeller
-          api.hide(2753); // Yamaha pinstripe
-          eng = '2537';
+          api.show(720); // Mercury 600 default
+          api.show(879); // Mercury 600 propeller default
+          api.hide(761); // Mercury 450
+          api.hide(862); // Mercury 450 propeller
+          api.hide(691); // Yamaha
+          api.hide(896); // Yamaha propeller
+          eng = '720';
         });
 
       document
         .querySelector('li.item-title.item-title-4')
         .addEventListener('click', function () {
-          api.hide(2537); // Mercury 600 default
-          api.hide(2699); // Mercury 600 propeller default
-          api.hide(2735); // Mercury 600 pinstripe default
-
-          api.show(2579); // Mercury 450
-          api.show(2681); // Mercury 450 propeller
-          api.show(2771); // Mercury 450 pinstripe
-
-          api.hide(2507); // Yamaha
-          api.hide(2717); // Yamaha propeller
-          api.hide(2753); // Yamaha pinstripe
-          eng = '2579';
+          api.hide(720); // Mercury 600 default
+          api.hide(879); // Mercury 600 propeller default
+          api.show(761); // Mercury 450
+          api.show(862); // Mercury 450 propeller
+          api.hide(691); // Yamaha
+          api.hide(896); // Yamaha propeller
+          eng = '761';
         });
 
       document
         .querySelector('li.item-title.item-title-5')
         .addEventListener('click', function () {
-          api.hide(2537); // Mercury 600 default
-          api.hide(2699); // Mercury 600 propeller default
-          api.hide(2735); // Mercury 600 pinstripe default
-
-          api.hide(2579); // Mercury 450
-          api.hide(2681); // Mercury 450 propeller
-          api.hide(2771); // Mercury 450 pinstripe
-
-          api.show(2507); // Yamaha
-          api.show(2717); // Yamaha propeller
-          api.show(2753); // Yamaha pinstripe
-          eng = '2507';
+          api.hide(720); // Mercury 600 default
+          api.hide(879); // Mercury 600 propeller default
+          api.hide(761); // Mercury 450
+          api.hide(862); // Mercury 450 propeller
+          api.show(691); // Yamaha
+          api.show(896); // Yamaha propeller
+          eng = '691';
         });
 
       document
         .querySelector('.no-color-block')
         .addEventListener('click', function () {
-          api.hide(3251); // Water Stripe
+          api.hide(1384); // Water Stripe
           for (var a = 1; a < 19; a++) {
             document.querySelector(
               '.color-block.section-2.block-' + a
@@ -324,15 +282,15 @@ var success = function success(api) {
             }
 
             if (itemId == waterLineStripe) {
-              api.show(3251); // water stripe
+              api.show(1384); // water stripe
             }
 
             if (fpl == 'show') {
-              api.show(2379);
-              api.show(2397);
+              api.show(516);
+              api.show(533);
             } else if (fpl == 'hide') {
-              api.hide(2379);
-              api.hide(2397);
+              api.hide(516);
+              api.hide(533);
             }
 
             console.log('fpl: ', fpl);
