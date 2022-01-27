@@ -6,6 +6,8 @@ var client = new window.Sketchfab(version, iframe);
 var canvas = document.createElement('canvas');
 var ctx = canvas.getContext('2d');
 var ui_general_controls = 0;
+var ui_controls = 0;
+var ui_start = 0;
 canvas.width = 2;
 canvas.height = 2;
 var myMaterials;
@@ -86,6 +88,9 @@ var section16 = chairBase;
 var section17 = chairsStand;
 var section18 = cleatGasscapPullsHawserHingesPoleHoldersHardware;
 var section19 = consoleCabin;
+var section20 = mercury600Set4Pinstripe;
+var section21 = mercury450Set5Pinstripe;
+var section22 = yamahaSet4Pinstripe;
 
 t1 = designerWhite;
 t2 = highGlossTeak;
@@ -137,7 +142,6 @@ var success = function success(api) {
         for (var i = 0; i < myMaterials.length; i++) {
           var m = myMaterials[i];
           textures[m.name] = m.channels.AlbedoPBR.texture;
-          // console.log(m.name, m);
           console.log(m.name, m);
         }
         document.querySelector('.options').style.display = 'block';
@@ -240,7 +244,7 @@ var success = function success(api) {
       var id = 2537;
 
       document
-        .querySelector('li.item-title.item-title-3')
+        .querySelector('li.item-title.item-title-merc600')
         .addEventListener('click', function () {
           api.show(2537); // Mercury 600 default
           api.show(2699); // Mercury 600 propeller default
@@ -257,7 +261,7 @@ var success = function success(api) {
         });
 
       document
-        .querySelector('li.item-title.item-title-4')
+        .querySelector('li.item-title.item-title-merc450')
         .addEventListener('click', function () {
           api.hide(2537); // Mercury 600 default
           api.hide(2699); // Mercury 600 propeller default
@@ -274,7 +278,7 @@ var success = function success(api) {
         });
 
       document
-        .querySelector('li.item-title.item-title-5')
+        .querySelector('li.item-title.item-title-yamaha')
         .addEventListener('click', function () {
           api.hide(2537); // Mercury 600 default
           api.hide(2699); // Mercury 600 propeller default
@@ -297,6 +301,39 @@ var success = function success(api) {
           for (var a = 1; a < 19; a++) {
             document.querySelector(
               '.color-block.section-2.block-' + a
+            ).style.borderColor = '#707070';
+          }
+        });
+
+      document
+        .querySelector('.no-color-block-merc600')
+        .addEventListener('click', function () {
+          api.hide(2735); // Water Stripe
+          for (var a = 1; a < 19; a++) {
+            document.querySelector(
+              '.color-block.section-20.block-' + a
+            ).style.borderColor = '#707070';
+          }
+        });
+
+      document
+        .querySelector('.no-color-block-merc450')
+        .addEventListener('click', function () {
+          api.hide(2771); // Water Stripe
+          for (var a = 1; a < 19; a++) {
+            document.querySelector(
+              '.color-block.section-21.block-' + a
+            ).style.borderColor = '#707070';
+          }
+        });
+
+      document
+        .querySelector('.no-color-block-yamaha')
+        .addEventListener('click', function () {
+          api.hide(2753); // Water Stripe
+          for (var a = 1; a < 19; a++) {
+            document.querySelector(
+              '.color-block.section-22.block-' + a
             ).style.borderColor = '#707070';
           }
         });
@@ -325,6 +362,18 @@ var success = function success(api) {
 
             if (itemId == waterLineStripe) {
               api.show(3251); // water stripe
+            }
+
+            if (itemId == mercury600Set4Pinstripe) {
+              api.show(2735); // mercury600 stripe
+            }
+
+            if (itemId == mercury450Set5Pinstripe) {
+              api.show(2771); // mercury450 stripe
+            }
+
+            if (itemId == yamahaSet4Pinstripe) {
+              api.show(2753); // yamaha stripe
             }
 
             if (fpl == 'show') {
@@ -618,12 +667,21 @@ var success = function success(api) {
         }
       }
 
-      var sectionList = 9;
+      var sectionList = 12;
       var blockList = 19;
       for (let i = 1; i < sectionList; i++) {
         for (let b = 1; b < blockList; b++) {
+          if (i == 9) {
+            a = 20;
+          } else if (i == 10) {
+            a = 21;
+          } else if (i == 11) {
+            a = 22;
+          } else {
+            a = i;
+          }
           document
-            .querySelector('.color-block.section-' + i + '.block-' + b)
+            .querySelector('.color-block.section-' + a + '.block-' + b)
             .addEventListener('click', function () {
               if (i == 1) {
                 // Hull
@@ -650,6 +708,16 @@ var success = function success(api) {
               } else if (i == 8) {
                 // Upholstery - Head rest
                 thisSection = section8;
+              } else if (i == 9) {
+                // Mercury 600
+                thisSection = section20;
+                console.log('thisSection = section20');
+              } else if (i == 10) {
+                // Mercury 450
+                thisSection = section21;
+              } else if (i == 11) {
+                // Yamaha
+                thisSection = section22;
               }
 
               if (b == 1) {
@@ -804,6 +872,9 @@ var changedColor = '';
 var sectionXIcon = '';
 var sectionDownIcon = '';
 var showTheEngines = false;
+var showTheMerc600 = false;
+var showTheMerc450 = false;
+var showTheYamaha = false;
 var showTheHull = false;
 var showTheUpholstery = false;
 
@@ -948,7 +1019,7 @@ function changeColor(section, block) {
   } else {
     changeBorderColor(section, block);
   }
-}
+} // End function changeColor()
 
 function changeBorderColor(section, block) {
   // console.log("section: "+section+" | block: "+block);
@@ -959,9 +1030,31 @@ function changeBorderColor(section, block) {
       document.querySelector(
         '.color-block.' + section + '.' + block + ''
       ).style.borderColor = 'white';
+
       if (section == 'section-2') {
         document.querySelector('.slash').style.borderBottomColor = '#707070';
         document.querySelector('.no-color-block').style.borderColor = '#707070';
+      }
+
+      if (section == 'section-20') {
+        document.querySelector('.slash-merc600').style.borderBottomColor =
+          '#707070';
+        document.querySelector('.no-color-block-merc600').style.borderColor =
+          '#707070';
+      }
+
+      if (section == 'section-21') {
+        document.querySelector('.slash-merc450').style.borderBottomColor =
+          '#707070';
+        document.querySelector('.no-color-block-merc450').style.borderColor =
+          '#707070';
+      }
+
+      if (section == 'section-22') {
+        document.querySelector('.slash-yamaha').style.borderBottomColor =
+          '#707070';
+        document.querySelector('.no-color-block-yamaha').style.borderColor =
+          '#707070';
       }
     } else {
       document.querySelector(
@@ -976,7 +1069,7 @@ function changeBorderColor(section, block) {
     }
     // console.log('end i: '+i);
   }
-}
+} // End function changeBorderColor
 
 function changeCounterTopsBorderColor(block) {
   // console.log("in counter block: "+block);
@@ -1069,13 +1162,40 @@ function showHull() {
   }
 }
 
-function noColor() {
-  document.querySelector('.slash').style.borderBottomColor = '#a4373e';
-  document.querySelector('.no-color-block').style.borderColor = '#a4373e';
-  document.querySelector(
-    '.color-header-section.color-header-section-2'
-  ).innerHTML = 'No Color';
-  console.log('no color');
+function noColor(item) {
+  if (item == 'waterLineStripe') {
+    document.querySelector('.slash').style.borderBottomColor = '#a4373e';
+    document.querySelector('.no-color-block').style.borderColor = '#a4373e';
+    document.querySelector(
+      '.color-header-section.color-header-section-2'
+    ).innerHTML = 'No Color';
+  }
+  if (item == 'merc600') {
+    document.querySelector('.slash-merc600').style.borderBottomColor =
+      '#a4373e';
+    document.querySelector('.no-color-block-merc600').style.borderColor =
+      '#a4373e';
+    document.querySelector(
+      '.color-header-section.color-header-section-20'
+    ).innerHTML = 'No Color';
+  }
+  if (item == 'merc450') {
+    document.querySelector('.slash-merc450').style.borderBottomColor =
+      '#a4373e';
+    document.querySelector('.no-color-block-merc450').style.borderColor =
+      '#a4373e';
+    document.querySelector(
+      '.color-header-section.color-header-section-21'
+    ).innerHTML = 'No Color';
+  }
+  if (item == 'yamaha') {
+    document.querySelector('.slash-yamaha').style.borderBottomColor = '#a4373e';
+    document.querySelector('.no-color-block-yamaha').style.borderColor =
+      '#a4373e';
+    document.querySelector(
+      '.color-header-section.color-header-section-22'
+    ).innerHTML = 'No Color';
+  }
 }
 
 function noFloor() {
@@ -1129,6 +1249,120 @@ function showEngines() {
       '.item-icon.item-x-icon.item-x-icon-engines'
     ).style.display = 'none';
     showTheEngines = false;
+  }
+}
+
+function showMerc600() {
+  if (showTheMerc600 == false) {
+    document.querySelector('#merc600').style.display = 'block';
+    document.querySelector(
+      '.item-icon.item-down-icon.item-down-icon-merc600'
+    ).style.display = 'none';
+    document.querySelector(
+      '.item-icon.item-x-icon.item-x-icon-merc600'
+    ).style.display = 'block';
+    showTheMerc600 = true;
+    document.querySelector('#merc450').style.display = 'none';
+    document.querySelector(
+      '.item-icon.item-down-icon.item-down-icon-merc450'
+    ).style.display = 'block';
+    document.querySelector(
+      '.item-icon.item-x-icon.item-x-icon-merc450'
+    ).style.display = 'none';
+    showTheMerc450 = false;
+    document.querySelector('#yamaha').style.display = 'none';
+    document.querySelector(
+      '.item-icon.item-down-icon.item-down-icon-yamaha'
+    ).style.display = 'block';
+    document.querySelector(
+      '.item-icon.item-x-icon.item-x-icon-yamaha'
+    ).style.display = 'none';
+    showTheYamaha = false;
+  } else {
+    document.querySelector('#merc600').style.display = 'none';
+    document.querySelector(
+      '.item-icon.item-down-icon.item-down-icon-merc600'
+    ).style.display = 'block';
+    document.querySelector(
+      '.item-icon.item-x-icon.item-x-icon-merc600'
+    ).style.display = 'none';
+    showTheMerc600 = false;
+  }
+}
+
+function showMerc450() {
+  if (showTheMerc450 == false) {
+    document.querySelector('#merc450').style.display = 'block';
+    document.querySelector(
+      '.item-icon.item-down-icon.item-down-icon-merc450'
+    ).style.display = 'none';
+    document.querySelector(
+      '.item-icon.item-x-icon.item-x-icon-merc450'
+    ).style.display = 'block';
+    showTheMerc450 = true;
+    document.querySelector('#yamaha').style.display = 'none';
+    document.querySelector(
+      '.item-icon.item-down-icon.item-down-icon-yamaha'
+    ).style.display = 'block';
+    document.querySelector(
+      '.item-icon.item-x-icon.item-x-icon-yamaha'
+    ).style.display = 'none';
+    showTheYamaha = false;
+    document.querySelector('#merc600').style.display = 'none';
+    document.querySelector(
+      '.item-icon.item-down-icon.item-down-icon-merc600'
+    ).style.display = 'block';
+    document.querySelector(
+      '.item-icon.item-x-icon.item-x-icon-merc600'
+    ).style.display = 'none';
+    showTheMerc600 = false;
+  } else {
+    document.querySelector('#merc450').style.display = 'none';
+    document.querySelector(
+      '.item-icon.item-down-icon.item-down-icon-merc450'
+    ).style.display = 'block';
+    document.querySelector(
+      '.item-icon.item-x-icon.item-x-icon-merc450'
+    ).style.display = 'none';
+    showTheMerc450 = false;
+  }
+}
+
+function showYamaha() {
+  if (showTheYamaha == false) {
+    document.querySelector('#yamaha').style.display = 'block';
+    document.querySelector(
+      '.item-icon.item-down-icon.item-down-icon-yamaha'
+    ).style.display = 'none';
+    document.querySelector(
+      '.item-icon.item-x-icon.item-x-icon-yamaha'
+    ).style.display = 'block';
+    showTheYamaha = true;
+    document.querySelector('#merc600').style.display = 'none';
+    document.querySelector(
+      '.item-icon.item-down-icon.item-down-icon-merc600'
+    ).style.display = 'block';
+    document.querySelector(
+      '.item-icon.item-x-icon.item-x-icon-merc600'
+    ).style.display = 'none';
+    showTheMerc600 = false;
+    document.querySelector('#merc450').style.display = 'none';
+    document.querySelector(
+      '.item-icon.item-down-icon.item-down-icon-merc450'
+    ).style.display = 'block';
+    document.querySelector(
+      '.item-icon.item-x-icon.item-x-icon-merc450'
+    ).style.display = 'none';
+    showTheMerc450 = false;
+  } else {
+    document.querySelector('#yamaha').style.display = 'none';
+    document.querySelector(
+      '.item-icon.item-down-icon.item-down-icon-yamaha'
+    ).style.display = 'block';
+    document.querySelector(
+      '.item-icon.item-x-icon.item-x-icon-yamaha'
+    ).style.display = 'none';
+    showTheYamaha = false;
   }
 }
 
@@ -1367,19 +1601,19 @@ function linkToShare() {
 
   sFacebook = document.getElementById('shareFacebook');
   sFacebook.dataset.url = shareLink;
-  console.log('sFacebook: ', sFacebook.dataset.url);
+  // console.log('sFacebook: ', sFacebook.dataset.url);
 
   sTwitter = document.getElementById('shareTwitter');
   sTwitter.dataset.url = shareLink;
-  console.log('sTwitter: ', sTwitter.dataset.url);
+  // console.log('sTwitter: ', sTwitter.dataset.url);
 
   sEmail = document.getElementById('shareEmail');
   sEmail.dataset.url = shareLink;
-  console.log('sEmail: ', sEmail.dataset.url);
+  // console.log('sEmail: ', sEmail.dataset.url);
 
   sHCB = document.getElementById('sendToHCB');
   sHCB.dataset.url = shareLink;
-  console.log('sHCB: ', sHCB.dataset.url);
+  // console.log('sHCB: ', sHCB.dataset.url);
 }
 
 function showMobileIcons(view) {

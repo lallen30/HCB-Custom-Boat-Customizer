@@ -240,7 +240,10 @@ img.item-icon.item-x-icon {
   display: none;
 }
 
-#engines {
+#engines,
+#merc600,
+#merc450,
+#yamaha {
   display: none;
 }
 
@@ -252,12 +255,21 @@ img.item-icon.item-x-icon {
 
 .item-title-1,
 .item-title-2,
-.item-title-3,
-.item-title-4,
-.item-title-5,
+.item-title-merc600,
+.item-title-merc450,
+.item-title-yamaha,
 .item-title-7,
 .item-title-8 {
   border-left: 10px solid rgba(255, 255, 255, 0.2);
+}
+
+.item-title-3,
+.item-title-4,
+.item-title-5,
+.item-title-20,
+.item-title-21,
+.item-title-22 {
+  border-left: 20px solid rgba(255, 255, 255, 0.2);
 }
 
 .color-block-section {
@@ -277,7 +289,10 @@ li.color-block-section.color-block-section-6,
 li.color-block-section.color-block-section-7,
 li.color-block-section.color-block-section-8,
 li.color-block-section.color-block-section-9,
-li.color-block-section.color-block-section-12 {
+li.color-block-section.color-block-section-12,
+li.color-block-section.color-block-section-20,
+li.color-block-section.color-block-section-21,
+li.color-block-section.color-block-section-22 {
   display: none;
 }
 
@@ -310,7 +325,10 @@ li.color-block-section.color-block-section-12 {
   position: absolute;
 }
 
-.no-color-block {
+.no-color-block,
+.no-color-block-merc600,
+.no-color-block-merc450,
+.no-color-block-yamaha {
   float: right;
   margin: -32px 22px 1px 1px;
   height: 30px;
@@ -320,7 +338,10 @@ li.color-block-section.color-block-section-12 {
   background-color: #f1f1f1;
 }
 
-.slash {
+.slash,
+.slash-merc600,
+.slash-merc450,
+.slash-yamaha {
   height: 31px;
   width: 41px;
   border-bottom: 2px solid #a4373e;

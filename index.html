@@ -98,7 +98,7 @@
       
         <li class="color-block-section color-block-section-2">
           <div class="color-header-section color-header-section-2">Choose a Color</div>
-          <div onclick="noColor()" class="no-color-block">
+          <div onclick="noColor('waterLineStripe')" class="no-color-block">
             <div class="slash"></div>
           </div>
           <div class="flex-grid"> 
@@ -138,7 +138,14 @@
 
       <div id="engines">
       
-      <li class="item-title item-title-3" onclick="showColors('color-block-section-3', 'item-title-3', 'icon-3');">Quad (4) Mercury 600
+      <li class="item-title item-title-merc600" onclick="showMerc600();">Quad (4) Mercury 600
+        <img class="item-icon item-down-icon item-down-icon-merc600" src="./images/down_arrow.png" />
+        <img class="item-icon item-x-icon item-x-icon-merc600" src="./images/x-icon.png" />
+      </li>
+
+      <div id="merc600">
+
+      <li class="item-title item-title-3" onclick="showColors('color-block-section-3', 'item-title-3', 'icon-3');">Engine color
         <img class="item-icon item-down-icon item-down-icon-3" src="./images/down_arrow.png" />
         <img class="item-icon item-x-icon item-x-icon-3" src="./images/x-icon.png" />
       </li>
@@ -171,7 +178,53 @@
         </div>
       </li>
       
-      <li class="item-title item-title-4" onclick="showColors('color-block-section-4', 'item-title-4', 'icon-4');">Quint (5) 450 Mercury
+      <li class="item-title item-title-20" onclick="showColors('color-block-section-20', 'item-title-20', 'icon-20');">Pinstripes color
+        <img class="item-icon item-down-icon item-down-icon-20" src="./images/down_arrow.png" />
+        <img class="item-icon item-x-icon item-x-icon-20" src="./images/x-icon.png" />
+      </li>
+      
+        <li class="color-block-section color-block-section-20">
+          <div class="color-header-section color-header-section-20">Choose a Color</div>
+          <div onclick="noColor('merc600')" class="no-color-block-merc600">
+            <div class="slash-merc600"></div>
+          </div>
+          <div class="flex-grid"> 
+            <div class="color-block section-20 block-1" onclick="changeColor('section-20','block-1')"></div>
+            <div class="color-block section-20 block-2" onclick="changeColor('section-20','block-2')"></div>
+            <div class="color-block section-20 block-3" onclick="changeColor('section-20','block-3')"></div>
+            <div class="color-block section-20 block-4" onclick="changeColor('section-20','block-4')"></div>
+            <div class="color-block section-20 block-5" onclick="changeColor('section-20','block-5')"></div>
+            <div class="color-block section-20 block-6" onclick="changeColor('section-20','block-6')"></div>
+          </div>
+          <div class="flex-grid"> 
+            <div class="color-block section-20 block-7" onclick="changeColor('section-20','block-7')"></div>
+            <div class="color-block section-20 block-8" onclick="changeColor('section-20','block-8')"></div>
+            <div class="color-block section-20 block-9" onclick="changeColor('section-20','block-9')"></div>
+            <div class="color-block section-20 block-10" onclick="changeColor('section-20','block-10')"></div>
+            <div class="color-block section-20 block-11" onclick="changeColor('section-20','block-11')"></div>
+            <div class="color-block section-20 block-12" onclick="changeColor('section-20','block-12')"></div>
+          </div>
+          <div class="flex-grid"> 
+            <div class="color-block section-20 block-13" onclick="changeColor('section-20','block-13')"></div>
+            <div class="color-block section-20 block-14" onclick="changeColor('section-20','block-14')"></div>
+            <div class="color-block section-20 block-15" onclick="changeColor('section-20','block-15')"></div>
+            <div class="color-block section-20 block-16" onclick="changeColor('section-20','block-16')"></div>
+            <div class="color-block section-20 block-17" onclick="changeColor('section-20','block-17')"></div>
+            <div class="color-block section-20 block-18 colorpicker" onclick="changeColor('section-20','block-18')"><span class="custom">Custom</span></div>
+          </div>
+        </li>
+
+      </div>
+
+      
+      <li class="item-title item-title-merc450" onclick="showMerc450();">Quint (5) 450 Mercury
+        <img class="item-icon item-down-icon item-down-icon-merc450" src="./images/down_arrow.png" />
+        <img class="item-icon item-x-icon item-x-icon-merc450" src="./images/x-icon.png" />
+      </li>
+
+      <div id="merc450">
+
+      <li class="item-title item-title-4" onclick="showColors('color-block-section-4', 'item-title-4', 'icon-4');">Engine color
         <img class="item-icon item-down-icon item-down-icon-4" src="./images/down_arrow.png" />
         <img class="item-icon item-x-icon item-x-icon-4" src="./images/x-icon.png" />
       </li>
@@ -204,7 +257,53 @@
         </div>
       </li>
       
-      <li class="item-title item-title-5" onclick="showColors('color-block-section-5', 'item-title-5', 'icon-5');">Quad (4) 425 Yamaha
+      <li class="item-title item-title-21" onclick="showColors('color-block-section-21', 'item-title-21', 'icon-21');">Pinstripes color
+        <img class="item-icon item-down-icon item-down-icon-21" src="./images/down_arrow.png" />
+        <img class="item-icon item-x-icon item-x-icon-21" src="./images/x-icon.png" />
+      </li>
+      
+        <li class="color-block-section color-block-section-21">
+          <div class="color-header-section color-header-section-21">Choose a Color</div>
+          <div onclick="noColor('merc450')" class="no-color-block-merc450">
+            <div class="slash-merc450"></div>
+          </div>
+          <div class="flex-grid"> 
+            <div class="color-block section-21 block-1" onclick="changeColor('section-21','block-1')"></div>
+            <div class="color-block section-21 block-2" onclick="changeColor('section-21','block-2')"></div>
+            <div class="color-block section-21 block-3" onclick="changeColor('section-21','block-3')"></div>
+            <div class="color-block section-21 block-4" onclick="changeColor('section-21','block-4')"></div>
+            <div class="color-block section-21 block-5" onclick="changeColor('section-21','block-5')"></div>
+            <div class="color-block section-21 block-6" onclick="changeColor('section-21','block-6')"></div>
+          </div>
+          <div class="flex-grid"> 
+            <div class="color-block section-21 block-7" onclick="changeColor('section-21','block-7')"></div>
+            <div class="color-block section-21 block-8" onclick="changeColor('section-21','block-8')"></div>
+            <div class="color-block section-21 block-9" onclick="changeColor('section-21','block-9')"></div>
+            <div class="color-block section-21 block-10" onclick="changeColor('section-21','block-10')"></div>
+            <div class="color-block section-21 block-11" onclick="changeColor('section-21','block-11')"></div>
+            <div class="color-block section-21 block-12" onclick="changeColor('section-21','block-12')"></div>
+          </div>
+          <div class="flex-grid"> 
+            <div class="color-block section-21 block-13" onclick="changeColor('section-21','block-13')"></div>
+            <div class="color-block section-21 block-14" onclick="changeColor('section-21','block-14')"></div>
+            <div class="color-block section-21 block-15" onclick="changeColor('section-21','block-15')"></div>
+            <div class="color-block section-21 block-16" onclick="changeColor('section-21','block-16')"></div>
+            <div class="color-block section-21 block-17" onclick="changeColor('section-21','block-17')"></div>
+            <div class="color-block section-21 block-18 colorpicker" onclick="changeColor('section-21','block-18')"><span class="custom">Custom</span></div>
+          </div>
+        </li>
+      </div>
+
+      
+      <li class="item-title item-title-yamaha" onclick="showYamaha();">Quad (4) 425 Yamaha
+        <img class="item-icon item-down-icon item-down-icon-yamaha" src="./images/down_arrow.png" />
+        <img class="item-icon item-x-icon item-x-icon-yamaha" src="./images/x-icon.png" />
+      </li>
+
+      <div id="yamaha">
+      
+      
+      <li class="item-title item-title-5" onclick="showColors('color-block-section-5', 'item-title-5', 'icon-5');">Engine color
         <img class="item-icon item-down-icon item-down-icon-5" src="./images/down_arrow.png" />
         <img class="item-icon item-x-icon item-x-icon-5" src="./images/x-icon.png" />
       </li>
@@ -236,6 +335,43 @@
           <div class="color-block section-5 block-18 colorpicker" onclick="changeColor('section-5','block-18')"><span class="custom">Custom</span></div>
         </div>
       </li>
+      
+      <li class="item-title item-title-22" onclick="showColors('color-block-section-22', 'item-title-22', 'icon-22');">Pinstripes color
+        <img class="item-icon item-down-icon item-down-icon-22" src="./images/down_arrow.png" />
+        <img class="item-icon item-x-icon item-x-icon-22" src="./images/x-icon.png" />
+      </li>
+      
+        <li class="color-block-section color-block-section-22">
+          <div class="color-header-section color-header-section-22">Choose a Color</div>
+          <div onclick="noColor('yamaha')" class="no-color-block-yamaha">
+            <div class="slash-yamaha"></div>
+          </div>
+          <div class="flex-grid"> 
+            <div class="color-block section-22 block-1" onclick="changeColor('section-22','block-1')"></div>
+            <div class="color-block section-22 block-2" onclick="changeColor('section-22','block-2')"></div>
+            <div class="color-block section-22 block-3" onclick="changeColor('section-22','block-3')"></div>
+            <div class="color-block section-22 block-4" onclick="changeColor('section-22','block-4')"></div>
+            <div class="color-block section-22 block-5" onclick="changeColor('section-22','block-5')"></div>
+            <div class="color-block section-22 block-6" onclick="changeColor('section-22','block-6')"></div>
+          </div>
+          <div class="flex-grid"> 
+            <div class="color-block section-22 block-7" onclick="changeColor('section-22','block-7')"></div>
+            <div class="color-block section-22 block-8" onclick="changeColor('section-22','block-8')"></div>
+            <div class="color-block section-22 block-9" onclick="changeColor('section-22','block-9')"></div>
+            <div class="color-block section-22 block-10" onclick="changeColor('section-22','block-10')"></div>
+            <div class="color-block section-22 block-11" onclick="changeColor('section-22','block-11')"></div>
+            <div class="color-block section-22 block-12" onclick="changeColor('section-22','block-12')"></div>
+          </div>
+          <div class="flex-grid"> 
+            <div class="color-block section-22 block-13" onclick="changeColor('section-22','block-13')"></div>
+            <div class="color-block section-22 block-14" onclick="changeColor('section-22','block-14')"></div>
+            <div class="color-block section-22 block-15" onclick="changeColor('section-22','block-15')"></div>
+            <div class="color-block section-22 block-16" onclick="changeColor('section-22','block-16')"></div>
+            <div class="color-block section-22 block-17" onclick="changeColor('section-22','block-17')"></div>
+            <div class="color-block section-22 block-18 colorpicker" onclick="changeColor('section-22','block-18')"><span class="custom">Custom</span></div>
+          </div>
+        </li>
+      </div>
 
       </div>
       
