@@ -292,7 +292,8 @@ li.color-block-section.color-block-section-9,
 li.color-block-section.color-block-section-12,
 li.color-block-section.color-block-section-20,
 li.color-block-section.color-block-section-21,
-li.color-block-section.color-block-section-22 {
+li.color-block-section.color-block-section-22,
+li.color-block-section.color-block-section-23 {
   display: none;
 }
 
@@ -494,6 +495,16 @@ li.color-block-section.color-block-section-22 {
   width: 50px;
   height: 50px;
   padding-top: 30px;
+}
+
+.no-color-block-ladderBack {
+  float: right;
+  margin: -34px 22px 1px 1px;
+  height: 30px;
+  width: 33px;
+  border: 1px solid #707070;
+  cursor: pointer;
+  background-image: url('https://scruffydev.org/boat/images/highGlossTeak.png');
 }
 
 span.custom {
