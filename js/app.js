@@ -18,7 +18,7 @@ var absoluteColor = '#000000';
 var colorWheel;
 var menuOptions = 'hide';
 
-// Selectable items:
+// Set up variables:
 hull = '39eae0b6-8f75-4436-93b4-202924177120';
 waterLineStripe = '0e2f8bcd-ee74-488c-981c-cfb2799dae6d';
 
@@ -43,7 +43,6 @@ ladderBack2 = '00772ebd-1f86-46b9-8bd0-8d72b94ad8f3'; // api id: 3209
 sleighSeatTableLower = '54fefe43-36ce-472e-aa30-02621fa0f33c';
 sleighSeatTableUpper = 'f9d0f8d6-7f29-4917-a053-cca349385078';
 
-// Non Selectable items:
 anchor = '33bc279e-78d0-4784-a4bc-512f1821beef';
 baitWellGlass = 'c76226a7-b15d-4340-b01c-ce03f42253fa';
 baitwell = 'e117be2b-459e-4a5d-a388-f649791a48aa';
@@ -54,11 +53,12 @@ cleatGasscapPullsHawserHingesPoleHoldersHardware =
   '23a20555-148d-4a6f-9abe-a3b5a38be1a0';
 consoleCabin = 'adf88ebe-edd9-4e51-b6e7-f6366c00e7d2';
 deckRing = '67650208-2664-482b-8793-6f81ee0f30f9';
-hatches = '992a467f-35c4-4887-b387-4b6a905e90fb';
-floorPlanks = 'de40118a-b8f2-4fc1-9d3c-63995ac3da50';
-floorPlankLiner = '3a8000bb-27bc-406a-8407-500984d4f04e';
+
 fpl = 'hide'; // var for initial change
-hatchPlanks = 'b85b645b-f61c-430f-8e17-965d870e2e1e';
+hatches = '992a467f-35c4-4887-b387-4b6a905e90fb';
+floorPlanks = 'de40118a-b8f2-4fc1-9d3c-63995ac3da50'; // api id: 2495
+floorPlankLiner = '3a8000bb-27bc-406a-8407-500984d4f04e';
+hatchPlanks = 'b85b645b-f61c-430f-8e17-965d870e2e1e'; // api id: 2513
 floorPlankLinerHatches = '92cee2e9-617a-4ce6-99c4-d80c9e4dd7a1';
 
 // Textures:
@@ -124,6 +124,10 @@ var s16 = getParameterByName('s16');
 var s17 = getParameterByName('s17');
 var s18 = getParameterByName('s18');
 var s19 = getParameterByName('s19');
+var s20 = getParameterByName('s20');
+var s21 = getParameterByName('s21');
+var s22 = getParameterByName('s22');
+var s23 = getParameterByName('s23');
 var eng = getParameterByName('eng');
 
 var getColorAsTextureURL = function getColorAsTextureURL(color) {
@@ -155,6 +159,7 @@ var success = function success(api) {
         getURLCodes();
         getURLEng();
 
+        // Default settings:
         changeItemColor('hcbwhite', hatches);
         changeItemColor('hcbwhite', deckRing);
         changeItemColor('hcbwhite', chairBase);
@@ -165,6 +170,7 @@ var success = function success(api) {
         api.hide(2495); // Floor Planks
         api.hide(2513); // Hatch Planks
         api.hide(3385); // Water line Stripe
+        api.hide(3173); // ladderback
 
         if (
           s10 != 'highGlossTeak' &&
@@ -177,7 +183,6 @@ var success = function success(api) {
         ) {
           changeItemColor('designerWhite', sleighSeatTableLower);
         }
-        // changeItemColor('designerWhite', sleighSeatTableUpper);
 
         console.log('s1: ' + s1);
         console.log('s2: ' + s2);
@@ -231,9 +236,6 @@ var success = function success(api) {
         }
       }
 
-      api.hide(3173); // ladderback
-      // api.hide(3209); // ladderback2
-
       api.hide(2623); // Yamaha
       api.hide(2833); // Yamaha propeller
       api.hide(2869); // Yamaha pinstripe
@@ -244,6 +246,7 @@ var success = function success(api) {
 
       var id = 2653;
 
+      // Show/Hide engine when menu item selected:
       document
         .querySelector('li.item-title.item-title-merc600')
         .addEventListener('click', function () {
@@ -296,17 +299,6 @@ var success = function success(api) {
         });
 
       document
-        .querySelector('.no-color-block')
-        .addEventListener('click', function () {
-          api.hide(3385); // Water Stripe
-          for (var a = 1; a < 19; a++) {
-            document.querySelector(
-              '.color-block.section-2.block-' + a
-            ).style.borderColor = '#707070';
-          }
-        });
-
-      document
         .querySelector('.no-color-block-merc600')
         .addEventListener('click', function () {
           api.hide(2851); // merc600 Stripe
@@ -318,23 +310,9 @@ var success = function success(api) {
         });
 
       document
-        .querySelector('.no-color-block-ladderBack')
-        .addEventListener('click', function () {
-          // changeItemColor('hcbwhite', ladderBack);
-          api.hide(3173);
-          api.show(3209);
-          console.log('teak set');
-          for (var a = 1; a < 19; a++) {
-            document.querySelector(
-              '.color-block.section-23.block-' + a
-            ).style.borderColor = '#707070';
-          }
-        });
-
-      document
         .querySelector('.no-color-block-merc450')
         .addEventListener('click', function () {
-          api.hide(2887); // Water Stripe
+          api.hide(2887); // merc450 Stripe
           for (var a = 1; a < 19; a++) {
             document.querySelector(
               '.color-block.section-21.block-' + a
@@ -345,10 +323,36 @@ var success = function success(api) {
       document
         .querySelector('.no-color-block-yamaha')
         .addEventListener('click', function () {
-          api.hide(2869); // Water Stripe
+          api.hide(2869); // yamaha Stripe
           for (var a = 1; a < 19; a++) {
             document.querySelector(
               '.color-block.section-22.block-' + a
+            ).style.borderColor = '#707070';
+          }
+        });
+
+      // Hide Water Stripe when menu item selected:
+      document
+        .querySelector('.no-color-block')
+        .addEventListener('click', function () {
+          api.hide(3385); // Water Stripe
+          for (var a = 1; a < 19; a++) {
+            document.querySelector(
+              '.color-block.section-2.block-' + a
+            ).style.borderColor = '#707070';
+          }
+        });
+
+      // Show/Hide ladderBack when menu item selected:
+      document
+        .querySelector('.no-color-block-ladderBack')
+        .addEventListener('click', function () {
+          api.hide(3173); // ladderBack
+          api.show(3209); // ladderBack2
+          console.log('teak set');
+          for (var a = 1; a < 19; a++) {
+            document.querySelector(
+              '.color-block.section-23.block-' + a
             ).style.borderColor = '#707070';
           }
         });
@@ -389,6 +393,11 @@ var success = function success(api) {
 
             if (itemId == yamahaSet4Pinstripe) {
               api.show(2869); // yamaha stripe
+            }
+
+            if (itemId == ladderBack) {
+              api.show(3173);
+              api.hide(3209);
             }
 
             if (fpl == 'show') {
@@ -525,6 +534,7 @@ var success = function success(api) {
                 0.09758734714186242, 0.03310476657088505, 0.010329823029626938,
               ];
               if (setThisSection === true) {
+                console.log('-------------------------', itemId);
                 setSection(itemId, color);
               }
             } else if (color == 'hcbwhite') {
@@ -679,9 +689,33 @@ var success = function success(api) {
           console.log('s12: ' + s12 + ' | section: ' + section12);
           changeItemColor(s12, section13);
           console.log('s13: ' + s13 + ' | section: ' + section13);
+          fpl = 'show';
+          api.show(2495);
+          api.show(2513);
+        }
+        if (s20 !== null) {
+          // Merc 600 pinstripe
+          changeItemColor(s20, section20);
+          console.log('s20: ' + s20 + ' | section: ' + section20);
+        }
+        if (s21 !== null) {
+          // Merc 450 pinstripe
+          changeItemColor(s21, section21);
+          console.log('s21: ' + s21 + ' | section: ' + section21);
+        }
+        if (s22 !== null) {
+          // Yamaha pinstripe
+          changeItemColor(s22, section22);
+          console.log('s22: ' + s22 + ' | section: ' + section22);
+        }
+        if (s23 !== null) {
+          // Ladderback
+          changeItemColor(s23, section23);
+          console.log('s23: ' + s23 + ' | section: ' + section23);
         }
       }
 
+      // This section creates a loop of all the sections and blocks:
       var sectionList = 13;
       var blockList = 19;
       for (let i = 1; i < sectionList; i++) {
@@ -697,6 +731,8 @@ var success = function success(api) {
           } else {
             a = i;
           }
+
+          // This is where the color block is clicked and sets the section and color
           document
             .querySelector('.color-block.section-' + a + '.block-' + b)
             .addEventListener('click', function () {
@@ -736,53 +772,52 @@ var success = function success(api) {
                 // Yamaha
                 thisSection = section22;
               } else if (i == 12) {
-                // ladderback
+                // ladderBack
                 thisSection = section23;
-                api.show(3173);
-                api.hide(3209);
               }
 
               if (b == 1) {
-                hcbColor = 'cdcdcd';
+                hcbColor = 'cdcdcd'; // HCB WHITE
               } else if (b == 2) {
-                hcbColor = 'a4373e';
+                hcbColor = 'a4373e'; // VIPER RED
               } else if (b == 3) {
-                hcbColor = '39414c';
+                hcbColor = '39414c'; // NAVY
               } else if (b == 4) {
-                hcbColor = '5e5e5e';
+                hcbColor = '5e5e5e'; // DESTROYER
               } else if (b == 5) {
-                hcbColor = '225a81';
+                hcbColor = '225a81'; // MEDITERRANEAN BLUE
               } else if (b == 6) {
-                hcbColor = '4691c0';
+                hcbColor = '4691c0'; // ADMIRAL BLUE
               } else if (b == 7) {
-                hcbColor = 'bfb8aa';
+                hcbColor = 'bfb8aa'; // SAND
               } else if (b == 8) {
-                hcbColor = '978270';
+                hcbColor = '978270'; // BRONZE
               } else if (b == 9) {
-                hcbColor = '65a4be';
+                hcbColor = '65a4be'; // SKY BLUE
               } else if (b == 10) {
-                hcbColor = '393939';
+                hcbColor = '393939'; // JET BLACK
               } else if (b == 11) {
-                hcbColor = '546f7e';
+                hcbColor = '546f7e'; // STEEL BLUE
               } else if (b == 12) {
-                hcbColor = '1381b0';
+                hcbColor = '1381b0'; // JET STREAM BLUE
               } else if (b == 13) {
-                hcbColor = 'daf0eb';
+                hcbColor = 'daf0eb'; // AQUA MIST
               } else if (b == 14) {
-                hcbColor = '67c7d9';
+                hcbColor = '67c7d9'; // BIMINI BLUE
               } else if (b == 15) {
-                hcbColor = '8e8b83';
+                hcbColor = '8e8b83'; // STORM GRAY
               } else if (b == 16) {
-                hcbColor = 'e3ceb5';
+                hcbColor = 'e3ceb5'; // SAN MATEO
               } else if (b == 17) {
-                hcbColor = '87d3dc';
+                hcbColor = '87d3dc'; // CARIBBEAN BLUE
               } else if (b == 18) {
-                hcbColor = 'Color Wheel';
+                hcbColor = 'Color Wheel'; // Custom color
               }
 
               // console.log("__section: "+i+" block: "+b);
               // console.log('thisSection: ', thisSection);
               // console.log('hcbColor: ', hcbColor);
+
               changeItemColor(hcbColor, thisSection);
               if (thisSection == section7) {
                 changeItemColor(hcbColor, secondSection);
@@ -1026,10 +1061,8 @@ function changeColor(section, block) {
   } else if (block == 'block-26') {
     title = 'Raw Teak';
   }
-  // console.log("title: "+title);
-  // console.log("section: "+section);
-  // console.log("block: "+block);
 
+  // Set color title to selected color block:
   document.querySelector(
     '.color-header-section.color-header-' + section
   ).innerHTML = title;
@@ -1117,17 +1150,16 @@ function changeCounterTopsBorderColor(block) {
 }
 
 function changeFloorBorderColor(block) {
-  // console.log("in counter block: "+block);
   var blocks = 27;
   for (let i = 25; i < blocks; i++) {
     // console.log('start i: '+i);
     if (block == 'block-' + i) {
       document.querySelector(
-        '.color-block.section-9.' + block + ''
+        '.color-block.section-12.' + block + ''
       ).style.borderColor = 'white';
     } else {
       document.querySelector(
-        '.color-block.section-9.block-' + i + ''
+        '.color-block.section-12.block-' + i + ''
       ).style.borderColor = '#707070';
       document.querySelector('.no-floor-block').style.borderColor = '#707070';
       document.querySelector('.floor_slash').style.borderBottomColor =
@@ -1229,6 +1261,7 @@ function noColor(item) {
     document.querySelector(
       '.color-header-section.color-header-section-23'
     ).innerHTML = 'Teak';
+    s23 = null;
   }
 }
 
@@ -1462,128 +1495,122 @@ function setSection(sec, color) {
   if (sec == chairs) {
     s11 = color;
   }
-  if (sec == anchor) {
+  if (sec == floorPlankLinerHatches) {
+    // floorPlanks floorPlankLiner floorPlankLinerHatches
     s12 = color;
+    // s12 = '58331A';
   }
-  if (sec == baitWellGlass) {
-    s13 = color;
+  if (sec == mercury600Set4Pinstripe) {
+    s20 = color;
   }
-  if (sec == baitwell) {
-    s14 = color;
+  if (sec == mercury450Set5Pinstripe) {
+    s21 = color;
   }
-  if (sec == cabinDoor) {
-    s15 = color;
+  if (sec == yamahaSet4Pinstripe) {
+    s22 = color;
   }
-  if (sec == chairBase) {
-    s16 = color;
-  }
-  if (sec == chairsStand) {
-    s17 = color;
-  }
-  if (sec == cleatGasscapPullsHawserHingesPoleHoldersHardware) {
-    s18 = color;
-  }
-  if (sec == consoleCabin) {
-    s19 = color;
+  if (sec == ladderBack) {
+    s23 = color;
   }
   console.log('item: ' + sec + ' | color: ' + color);
 }
 
 function linkToShare() {
   if (s1 != '' && s1 != null) {
+    // Hull
     se1 = '?s1=' + s1;
   } else {
-    se1 = '';
+    se1 = '?s1=cdcdcd';
   }
   if (s2 != '' && s2 != null) {
+    // waterLineStripe
     se2 = '&s2=' + s2;
   } else {
-    se2 = '';
+    se2 = '&s2=cdcdcd';
   }
   if (s3 != '' && s3 != null) {
+    // mercury600Set4
     se3 = '&s3=' + s3;
   } else {
     se3 = '';
   }
   if (s4 != '' && s4 != null) {
+    // mercury450Set5
     se4 = '&s4=' + s4;
   } else {
     se4 = '';
   }
   if (s5 != '' && s5 != null) {
+    // yamahaSet4
     se5 = '&s5=' + s5;
   } else {
     se5 = '';
   }
   if (s6 != '' && s6 != null) {
+    // Frame
     se6 = '&s6=' + s6;
   } else {
     se6 = '';
   }
   if (s7 != '' && s7 != null) {
+    // upholstery
     se7 = '&s7=' + s7;
   } else {
     se7 = '';
   }
   if (s8 != '' && s8 != null) {
+    // Headrest
     se8 = '&s8=' + s8;
   } else {
     se8 = '';
   }
   if (s9 != '' && s9 != null) {
+    // sleighSeatTableUpper
     se9 = '&s9=' + s9;
   } else {
     se9 = '';
   }
   if (s10 != '' && s10 != null) {
+    // sleighSeatTableLower
     se10 = '&s10=' + s10;
   } else {
     se10 = '';
   }
   if (s11 != '' && s11 != null) {
+    // Chairs
     se11 = '&s11=' + s11;
   } else {
     se11 = '';
   }
   if (s12 != '' && s12 != null) {
+    // floorPlanks
     se12 = '&s12=' + s12;
   } else {
     se12 = '';
   }
-  if (s13 != '' && s13 != null) {
-    se13 = '&s13=' + s13;
+  if (s20 != '' && s20 != null) {
+    // mercury600Set4Pinstripe
+    se20 = '&s20=' + s20;
   } else {
-    se13 = '';
+    se20 = '';
   }
-  if (s14 != '' && s14 != null) {
-    se14 = '&s14=' + s14;
+  if (s21 != '' && s21 != null) {
+    // mercury450Set5Pinstripe
+    se21 = '&s21=' + s21;
   } else {
-    se14 = '';
+    se21 = '';
   }
-  if (s15 != '' && s15 != null) {
-    se15 = '&s15=' + s15;
+  if (s22 != '' && s22 != null) {
+    // yamahaSet4Pinstripe
+    se22 = '&s22=' + s22;
   } else {
-    se15 = '';
+    se22 = '';
   }
-  if (s16 != '' && s16 != null) {
-    se16 = '&s16=' + s16;
+  if (s23 != '' && s23 != null) {
+    // ladderBack
+    se23 = '&s23=' + s23;
   } else {
-    se16 = '';
-  }
-  if (s17 != '' && s17 != null) {
-    se17 = '&s17=' + s17;
-  } else {
-    se17 = '';
-  }
-  if (s18 != '' && s18 != null) {
-    se18 = '&s18=' + s18;
-  } else {
-    se18 = '';
-  }
-  if (s19 != '' && s19 != null) {
-    se19 = '&s19=' + s19;
-  } else {
-    se19 = '';
+    se23 = '';
   }
   if (eng != '' && eng != null) {
     engn = '&eng=' + eng;
@@ -1617,19 +1644,13 @@ function linkToShare() {
     '' +
     se12 +
     '' +
-    se13 +
+    se20 +
     '' +
-    se14 +
+    se21 +
     '' +
-    se15 +
+    se22 +
     '' +
-    se16 +
-    '' +
-    se17 +
-    '' +
-    se18 +
-    '' +
-    se19 +
+    se23 +
     '' +
     engn;
 
