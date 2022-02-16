@@ -896,7 +896,29 @@ var success = function success(api) {
         });
     });
   });
-};
+
+  document.getElementById('screenshot').addEventListener('click', function () {
+    const doc = new jsPDF({
+      orientation: 'landscape',
+    });
+    // doc.text('Hello world!', 10, 10);
+    // doc.save('a4.pdf');
+
+    api.getScreenShot(800, 800, 'image/png', function (err, result) {
+      // var anchor = document.createElement('a');
+      // anchor.href = result;
+      // anchor.download = 'screenshot.png';
+      // anchor.innerHTML = '<img width="100" height="100" src=' + result + '>';
+      // document.getElementById('controls').appendChild(anchor);
+
+      doc.setFontSize(33);
+      doc.setFillColor('#000000', 0, 0, 0);
+      doc.rect(0, 0, 1080, 1950, 'F');
+      doc.addImage(result, 'png', 40, 0);
+      doc.save('my-yacht.pdf');
+    });
+  });
+}; // End Success function
 
 client.init(uid, {
   success: success,
