@@ -1,7 +1,6 @@
 // Sketchfab Viewer API: Change Texture/material
 var version = '1.10.1';
-var uid = '9e2bc6ec4c34446d96dde9bb3960cd96';
-// var uid = 'bca81697510448fba0f8b9c8025aebe8'; 53
+var uid = '500c293e10a0479086c0b7e498df1331';
 var iframe = document.getElementById('api-frame');
 var client = new window.Sketchfab(version, iframe);
 var canvas = document.createElement('canvas');
@@ -19,58 +18,53 @@ var colorWheel;
 var menuOptions = 'hide';
 
 // Set up variables:
-hull = '39eae0b6-8f75-4436-93b4-202924177120';
-waterLineStripe = '0e2f8bcd-ee74-488c-981c-cfb2799dae6d';
+hull = '1ba457ad-981e-48aa-b627-deb7fdfab20e';
+waterLineStripe = '1bb8f037-7180-49c0-b1bb-d92bfb3251eb';
 
-mercury450Set5 = '6119ce75-51a5-4564-b944-d7247491f74c';
-mercury450Set5Pinstripe = 'f04c7411-0647-4508-be46-649383d74e4c';
-mercury450Set5Propellers = 'a17b0470-b6f6-4f8b-81f1-54d795435611';
+mercury450Set5 = 'a470d9fd-9caf-4592-b552-88c5b46c9f8e'; // Set of 4
+mercury450Set5Pinstripe = '8c76f1eb-99f3-4549-932f-f8a6c1338fd2';
+mercury450Set5Propellers = 'cd79fb1f-79b4-4650-bd54-8ce5c6675bea';
 
-mercury600Set4 = 'af1c47db-7f4a-4f63-9d9c-cc7530897712';
-mercury600Set4Pinstripe = 'd87ba08d-7cad-4e2c-916c-36b84c38367c';
-mercury600Set4Propellers = '08e30db6-fa2b-44b3-a9da-837971f7af09';
+mercury600Set4 = 'a779e6d3-2cf4-440d-8a7d-8984b2da8119';
+mercury600Set4Pinstripe = '22897b03-7e9f-493c-a74f-ebc46dc3bfec';
+mercury600Set4Propellers = '14b04b9c-b294-483b-a718-c17fc51ee95f';
 
-yamahaSet4 = '7fb4f88f-d641-42bf-8aea-361e2f19e33b';
-yamahaSet4Pinstripe = '51986009-7638-4b26-8355-21602d65ca91';
-yamahaSet4Propellers = 'ee864a61-aded-4d42-b0fc-a37ddf3533b0';
+yamahaSet4 = '1193c158-c6e5-4c58-8a05-4352961b2e10';
+yamahaSet4Pinstripe = 'ef9c2ee1-56a3-42ed-9b0e-90d78f3b4892';
+yamahaSet4Propellers = '09a8d358-b3a3-4c3e-a633-55a1038970ee';
 
-frame = '67f9c76b-ee7e-4c9b-9871-ae85d8c3ba9d';
-upholstery = '9c19140d-329e-40a3-811d-a2331432eacd';
-headrests = 'fc4ba877-5f51-4971-9962-0adcfec19b88';
-chairs = 'a8f60f92-ce5f-4639-9599-49c6e6155e34';
-ladderBack = '5023e572-3f97-4deb-9c95-0666b47a4618'; // api id: 3173
-ladderBack2 = '00772ebd-1f86-46b9-8bd0-8d72b94ad8f3'; // api id: 3209
-sleighSeatTableLower = '54fefe43-36ce-472e-aa30-02621fa0f33c';
-sleighSeatTableUpper = 'f9d0f8d6-7f29-4917-a053-cca349385078';
+frame = '67bb72dc-1bdc-4976-b35d-fb6df082019e'; // Tower
+// frame = 'a7499cc9-ed3e-40ae-b756-91de1a02ad6d'; // Hard Top
+upholstery = 'cef4b941-bab8-461c-aea2-0a66366d45cd';
+headrests = 'ccba6d92-4675-4d0b-a94c-98e7cc642745';
+chairs = '5e0089d9-55a0-40ed-9612-42afa7eb955e';
+ladderBack = '1e070b4c-e289-40b0-a61f-572a90b3b737'; // api id: 193
+ladderBack2 = 'c9969427-41f7-4b00-ad1e-c8d59cfd17bb'; // api id: 1359
+//sleighSeatTableLower = 'change';
+sleighSeatTableUpper = 'c7f94f98-9ad5-417b-88c4-09ee0696f254';
 
-anchor = '33bc279e-78d0-4784-a4bc-512f1821beef';
-baitWellGlass = 'c76226a7-b15d-4340-b01c-ce03f42253fa';
-baitwell = 'e117be2b-459e-4a5d-a388-f649791a48aa';
-cabinDoor = '6dbdb4d7-0b3c-4913-b501-c163d4db46e6';
-chairBase = 'f089832f-0f30-48c7-88db-7a70998f4229';
-chairsStand = '88907ff1-5318-488a-8374-b6efbdefd21e';
-cleatGasscapPullsHawserHingesPoleHoldersHardware =
-  '23a20555-148d-4a6f-9abe-a3b5a38be1a0';
-consoleCabin = 'adf88ebe-edd9-4e51-b6e7-f6366c00e7d2';
-deckRing = '67650208-2664-482b-8793-6f81ee0f30f9';
+consoleCabin = 'fd5a34b9-eeaf-4f7e-9d08-e114142d72fb';
+deckRing = 'a2b07b43-6c7f-44e9-8ac4-12dfa13abb17';
+baitwell = '844ea253-16d4-4596-ac45-3c1e00515d97';
+cabinDoor = 'e76f009a-1657-4434-88e7-ff07d4ba9fa0';
 
 fpl = 'hide'; // var for initial change
-hatches = '992a467f-35c4-4887-b387-4b6a905e90fb';
-floorPlanks = 'de40118a-b8f2-4fc1-9d3c-63995ac3da50'; // api id: 2495
-floorPlankLiner = '3a8000bb-27bc-406a-8407-500984d4f04e';
-hatchPlanks = 'b85b645b-f61c-430f-8e17-965d870e2e1e'; // api id: 2513
-floorPlankLinerHatches = '92cee2e9-617a-4ce6-99c4-d80c9e4dd7a1';
+//hatches = 'change';
+floorPlanks = '1bf54557-0280-4bec-98ce-1f9c59204e63'; // api id: 748
+floorPlankLiner = '811deeff-338c-4a92-845a-389d2f5a4dc0';
+//hatchPlanks = 'change'; // api id: 2513
+//floorPlankLinerHatches = 'change';
 
 // Textures:
-hcbwhite = '9a83f2b96d3541fa9be8650dc4d6e656';
-designerWhite = '74c7eac322f049198410a7f1169110a2';
-highGlossTeak = 'bd5481820f7045f3ba41c2560275cd5d';
-deepTitanium = '09255ff0ae8143799590415f1f92bc54';
-grayOnyx = 'a7a6f8f6bd1a43aa90f49f1b29189154';
-naturalGray = '82ab805cec6545ca831d3ffdf55e86fb';
-platinum = 'cc3ca5aede754546b152a13d18c39779';
-rawTeak = '65ba2956921a46829db2e41ccac3b7ab';
-sahara = 'a51b1f4de9b64f51879a257024fe3c4d';
+hcbwhite = '50a42adc99f84f86b3ba8342fcdcad2f';
+designerWhite = '70373fd291b4408b9bfcc8df6602bddc';
+highGlossTeak = 'fa298aabcd994bdda869e0dd77428aec';
+deepTitanium = '57daf0a28ed740e6a610797c95b6ff1a';
+grayOnyx = '214cf6aafb4944ae9b7d80f5f8c0b0ad';
+naturalGray = '02bbcba573d349cdb10da844b347f5c7';
+platinum = '3b57b0466690472faf7ab2c5b5db8684';
+rawTeak = '9a8861a4ca6b48c6bdbb391e7333ee49';
+sahara = '580d344a9f864c1ba75fa7b715699534';
 
 var section1 = hull;
 var section2 = waterLineStripe;
@@ -81,15 +75,15 @@ var section6 = frame;
 var section7 = upholstery;
 var section8 = headrests;
 var section9 = sleighSeatTableUpper;
-var section10 = sleighSeatTableLower;
+// var section10 = sleighSeatTableLower;
 var section11 = chairs;
 var section12 = floorPlankLiner;
-var section13 = floorPlankLinerHatches;
+//var section13 = floorPlankLinerHatches;
 var section14 = baitwell;
 var section15 = cabinDoor;
-var section16 = chairBase;
-var section17 = chairsStand;
-var section18 = cleatGasscapPullsHawserHingesPoleHoldersHardware;
+//var section16 = chairBase;
+//var section17 = chairsStand;
+//var section18 = cleatGasscapPullsHawserHingesPoleHoldersHardware;
 var section19 = consoleCabin;
 var section20 = mercury600Set4Pinstripe;
 var section21 = mercury450Set5Pinstripe;
@@ -160,17 +154,17 @@ var success = function success(api) {
         getURLEng();
 
         // Default settings:
-        changeItemColor('hcbwhite', hatches);
+        //changeItemColor('hcbwhite', hatches);
         changeItemColor('hcbwhite', deckRing);
-        changeItemColor('hcbwhite', chairBase);
+        //changeItemColor('hcbwhite', chairBase);
         changeItemColor('hcbwhite', consoleCabin);
         changeItemColor('hcbwhite', cabinDoor);
         changeItemColor('cdcdcd', floorPlankLiner);
-        changeItemColor('cdcdcd', floorPlankLinerHatches);
-        api.hide(2495); // Floor Planks
-        api.hide(2513); // Hatch Planks
-        api.hide(3385); // Water line Stripe
-        api.hide(3173); // ladderback
+        //changeItemColor('cdcdcd', floorPlankLinerHatches);
+        api.hide(748); // Floor Planks
+        //api.hide(2513); // Hatch Planks
+        api.hide(1376); // Water line Stripe
+        api.hide(193); // ladderback
 
         if (
           s10 != 'highGlossTeak' &&
@@ -181,7 +175,7 @@ var success = function success(api) {
           s10 != 'rawTeak' &&
           s10 != 'sahara'
         ) {
-          changeItemColor('designerWhite', sleighSeatTableLower);
+          // changeItemColor('designerWhite', sleighSeatTableLower);
         }
 
         console.log('s1: ' + s1);
@@ -193,115 +187,115 @@ var success = function success(api) {
 
       function getURLEng() {
         console.log('eng: ' + eng);
-        if (eng == '2653') {
-          api.show(2653); // Mercury 600 default
-          api.show(2815); // Mercury 600 propeller default
-          api.show(2851); // Mercury 600 pinstripe default
+        if (eng == '627') {
+          api.show(627); // Mercury 600 default
+          api.show(656); // Mercury 600 propeller default
+          api.show(1342); // Mercury 600 pinstripe default
 
-          api.hide(2695); // Mercury 450
-          api.hide(2797); // Mercury 450 propeller
-          api.hide(2887); // Mercury 450 pinstripe
+          api.hide(528); // Mercury 450
+          api.hide(593); // Mercury 450 propeller
+          api.hide(610); // Mercury 450 pinstripe
 
-          api.hide(2623); // Yamaha
+          api.hide(673); // Yamaha
           api.hide(2833); // Yamaha propeller
-          api.hide(2869); // Yamaha pinstripe
+          api.hide(731); // Yamaha pinstripe
         }
 
-        if (eng == '2695') {
-          api.hide(2653); // Mercury 600 default
-          api.hide(2815); // Mercury 600 propeller default
-          api.hide(2851); // Mercury 600 pinstripe default
+        if (eng == '528') {
+          api.hide(627); // Mercury 600 default
+          api.hide(656); // Mercury 600 propeller default
+          api.hide(1342); // Mercury 600 pinstripe default
 
-          api.show(2695); // Mercury 450
-          api.show(2797); // Mercury 450 propeller
-          api.show(2887); // Mercury 450 pinstripe
+          api.show(528); // Mercury 450
+          api.show(593); // Mercury 450 propeller
+          api.show(610); // Mercury 450 pinstripe
 
-          api.hide(2623); // Yamaha
+          api.hide(673); // Yamaha
           api.hide(2833); // Yamaha propeller
-          api.hide(2869); // Yamaha pinstripe
+          api.hide(731); // Yamaha pinstripe
         }
 
-        if (eng == '2623') {
-          api.hide(2653); // Mercury 600 default
-          api.hide(2815); // Mercury 600 propeller default
-          api.hide(2851); // Mercury 600 pinstripe default
+        if (eng == '673') {
+          api.hide(627); // Mercury 600 default
+          api.hide(656); // Mercury 600 propeller default
+          api.hide(1342); // Mercury 600 pinstripe default
 
-          api.hide(2695); // Mercury 450
-          api.hide(2797); // Mercury 450 propeller
-          api.hide(2887); // Mercury 450 pinstripe
+          api.hide(528); // Mercury 450
+          api.hide(593); // Mercury 450 propeller
+          api.hide(610); // Mercury 450 pinstripe
 
-          api.show(2623); // Yamaha
+          api.show(673); // Yamaha
           api.show(2833); // Yamaha propeller
-          api.show(2869); // Yamaha pinstripe
+          api.show(731); // Yamaha pinstripe
         }
       }
 
-      api.hide(2623); // Yamaha
+      api.hide(673); // Yamaha
       api.hide(2833); // Yamaha propeller
-      api.hide(2869); // Yamaha pinstripe
+      api.hide(731); // Yamaha pinstripe
 
-      api.hide(2695); // Mercury 450
-      api.hide(2797); // Mercury 450 propeller
-      api.hide(2887); // Mercury 450 pinstripe
+      api.hide(528); // Mercury 450
+      api.hide(593); // Mercury 450 propeller
+      api.hide(610); // Mercury 450 pinstripe
 
-      var id = 2653;
+      var id = 627;
 
       // Show/Hide engine when menu item selected:
       document
         .querySelector('li.item-title.item-title-merc600')
         .addEventListener('click', function () {
-          api.show(2653); // Mercury 600 default
-          api.show(2815); // Mercury 600 propeller default
-          api.show(2851); // Mercury 600 pinstripe default
+          api.show(627); // Mercury 600 default
+          api.show(656); // Mercury 600 propeller default
+          api.show(1342); // Mercury 600 pinstripe default
 
-          api.hide(2695); // Mercury 450
-          api.hide(2797); // Mercury 450 propeller
-          api.hide(2887); // Mercury 450 pinstripe
+          api.hide(528); // Mercury 450
+          api.hide(593); // Mercury 450 propeller
+          api.hide(610); // Mercury 450 pinstripe
 
-          api.hide(2623); // Yamaha
+          api.hide(673); // Yamaha
           api.hide(2833); // Yamaha propeller
-          api.hide(2869); // Yamaha pinstripe
-          eng = '2653';
+          api.hide(731); // Yamaha pinstripe
+          eng = '627';
         });
 
       document
         .querySelector('li.item-title.item-title-merc450')
         .addEventListener('click', function () {
-          api.hide(2653); // Mercury 600 default
-          api.hide(2815); // Mercury 600 propeller default
-          api.hide(2851); // Mercury 600 pinstripe default
+          api.hide(627); // Mercury 600 default
+          api.hide(656); // Mercury 600 propeller default
+          api.hide(1342); // Mercury 600 pinstripe default
 
-          api.show(2695); // Mercury 450
-          api.show(2797); // Mercury 450 propeller
-          api.show(2887); // Mercury 450 pinstripe
+          api.show(528); // Mercury 450
+          api.show(593); // Mercury 450 propeller
+          api.show(610); // Mercury 450 pinstripe
 
-          api.hide(2623); // Yamaha
+          api.hide(673); // Yamaha
           api.hide(2833); // Yamaha propeller
-          api.hide(2869); // Yamaha pinstripe
-          eng = '2695';
+          api.hide(731); // Yamaha pinstripe
+          eng = '528';
         });
 
       document
         .querySelector('li.item-title.item-title-yamaha')
         .addEventListener('click', function () {
-          api.hide(2653); // Mercury 600 default
-          api.hide(2815); // Mercury 600 propeller default
-          api.hide(2851); // Mercury 600 pinstripe default
+          api.hide(627); // Mercury 600 default
+          api.hide(656); // Mercury 600 propeller default
+          api.hide(1342); // Mercury 600 pinstripe default
 
-          api.hide(2695); // Mercury 450
-          api.hide(2797); // Mercury 450 propeller
-          api.hide(2887); // Mercury 450 pinstripe
+          api.hide(528); // Mercury 450
+          api.hide(593); // Mercury 450 propeller
+          api.hide(610); // Mercury 450 pinstripe
 
-          api.show(2623); // Yamaha
+          api.show(673); // Yamaha
           api.show(2833); // Yamaha propeller
-          api.show(2869); // Yamaha pinstripe
-          eng = '2623';
+          api.show(731); // Yamaha pinstripe
+          eng = '673';
         });
 
       document
         .querySelector('.no-color-block-merc600')
         .addEventListener('click', function () {
-          api.hide(2851); // merc600 Stripe
+          api.hide(1342); // merc600 Stripe
           for (var a = 1; a < 19; a++) {
             document.querySelector(
               '.color-block.section-20.block-' + a
@@ -312,7 +306,7 @@ var success = function success(api) {
       document
         .querySelector('.no-color-block-merc450')
         .addEventListener('click', function () {
-          api.hide(2887); // merc450 Stripe
+          api.hide(610); // merc450 Stripe
           for (var a = 1; a < 19; a++) {
             document.querySelector(
               '.color-block.section-21.block-' + a
@@ -323,7 +317,7 @@ var success = function success(api) {
       document
         .querySelector('.no-color-block-yamaha')
         .addEventListener('click', function () {
-          api.hide(2869); // yamaha Stripe
+          api.hide(731); // yamaha Stripe
           for (var a = 1; a < 19; a++) {
             document.querySelector(
               '.color-block.section-22.block-' + a
@@ -335,7 +329,7 @@ var success = function success(api) {
       document
         .querySelector('.no-color-block')
         .addEventListener('click', function () {
-          api.hide(3385); // Water Stripe
+          api.hide(1376); // Water Stripe
           for (var a = 1; a < 19; a++) {
             document.querySelector(
               '.color-block.section-2.block-' + a
@@ -347,8 +341,8 @@ var success = function success(api) {
       document
         .querySelector('.no-color-block-ladderBack')
         .addEventListener('click', function () {
-          api.hide(3173); // ladderBack
-          api.show(3209); // ladderBack2
+          api.hide(193); // ladderBack
+          api.show(1359); // ladderBack2
           console.log('teak set');
           for (var a = 1; a < 19; a++) {
             document.querySelector(
@@ -366,13 +360,13 @@ var success = function success(api) {
             console.log('itemId: ' + itemId);
 
             if (
-              itemId == hatches ||
+              //itemId == hatches ||
               itemId == deckRing ||
-              itemId == chairBase ||
+              //itemId == chairBase ||
               itemId == consoleCabin ||
               itemId == cabinDoor ||
-              itemId == floorPlanks ||
-              itemId == hatchPlanks
+              itemId == floorPlanks
+              //itemId == hatchPlanks
             ) {
               setThisSection = false;
             } else {
@@ -380,32 +374,32 @@ var success = function success(api) {
             }
 
             if (itemId == waterLineStripe) {
-              api.show(3385); // water stripe
+              api.show(1376); // water stripe
             }
 
             if (itemId == mercury600Set4Pinstripe) {
-              api.show(2851); // mercury600 stripe
+              api.show(1342); // mercury600 stripe
             }
 
             if (itemId == mercury450Set5Pinstripe) {
-              api.show(2887); // mercury450 stripe
+              api.show(610); // mercury450 stripe
             }
 
             if (itemId == yamahaSet4Pinstripe) {
-              api.show(2869); // yamaha stripe
+              api.show(731); // yamaha stripe
             }
 
             if (itemId == ladderBack) {
-              api.show(3173);
-              api.hide(3209);
+              api.show(193);
+              api.hide(1359);
             }
 
             if (fpl == 'show') {
-              api.show(2495);
-              api.show(2513);
+              api.show(748); // Floor Planks
+              // api.show(2513); // Hatch Planks
             } else if (fpl == 'hide') {
-              api.hide(2495);
-              api.hide(2513);
+              api.hide(748); // Floor Planks
+              // api.hide(2513); // Hatch Planks
             }
 
             console.log('fpl: ', fpl);
@@ -680,17 +674,17 @@ var success = function success(api) {
           // Counters
           changeItemColor(s9, section9);
           console.log('s9: ' + s9 + ' | section: ' + section9);
-          changeItemColor(s9, section10);
-          console.log('s10: ' + s10 + ' | section: ' + section10);
+          // changeItemColor(s9, section10);
+          // console.log('s10: ' + s10 + ' | section: ' + section10);
         }
         if (s12 !== null) {
           // Floor Planks
           changeItemColor(s12, section12);
           console.log('s12: ' + s12 + ' | section: ' + section12);
-          changeItemColor(s12, section13);
-          console.log('s13: ' + s13 + ' | section: ' + section13);
+          // changeItemColor(s12, section13);
+          // console.log('s13: ' + s13 + ' | section: ' + section13);
           fpl = 'show';
-          api.show(2495);
+          api.show(748);
           api.show(2513);
         }
         if (s20 !== null) {
@@ -831,7 +825,7 @@ var success = function success(api) {
           .querySelector('.color-block.section-9.block-' + b)
           .addEventListener('click', function () {
             thisSection = section9;
-            secondSection = section10;
+            //secondSection = section10;
 
             if (b == 19) {
               hcbColor = 'sahara';
@@ -851,10 +845,6 @@ var success = function success(api) {
               hcbColor = 'rawTeak';
             }
 
-            // console.log("__block: "+b);
-            // console.log('hcbColor: ', hcbColor);
-            // console.log('thisSection-9: ', thisSection);
-            // console.log('secondSection-10: ', secondSection);
             changeItemColor(hcbColor, thisSection);
             changeItemColor(hcbColor, secondSection);
           });
@@ -866,7 +856,7 @@ var success = function success(api) {
           .addEventListener('click', function () {
             fpl = 'show';
             thisSection = section12;
-            secondSection = section13;
+            //secondSection = section13;
 
             if (b == 25) {
               hcbColor = 'highGlossTeak';
@@ -875,9 +865,9 @@ var success = function success(api) {
             }
 
             changeItemColor(hcbColor, floorPlanks);
-            changeItemColor(hcbColor, hatchPlanks);
+            //changeItemColor(hcbColor, hatchPlanks);
             changeItemColor('58331A', floorPlankLiner);
-            changeItemColor('58331A', floorPlankLinerHatches);
+            //changeItemColor('58331A', floorPlankLinerHatches);
           });
       }
       document
@@ -885,18 +875,40 @@ var success = function success(api) {
         .addEventListener('click', function () {
           fpl = 'show';
           thisSection = section12;
-          secondSection = section13;
+          //secondSection = section13;
 
           fpl = 'hide';
           console.log('fpl: ', fpl);
           console.log('floorPlankLiner: ', floorPlankLiner);
-          console.log('floorPlankLinerHatches: ', floorPlankLinerHatches);
+          //console.log('floorPlankLinerHatches: ', floorPlankLinerHatches);
           changeItemColor('cdcdcd', floorPlankLiner);
-          changeItemColor('cdcdcd', floorPlankLinerHatches);
+          //changeItemColor('cdcdcd', floorPlankLinerHatches);
         });
     });
   });
-};
+
+  document.getElementById('screenshot').addEventListener('click', function () {
+    const doc = new jsPDF({
+      orientation: 'landscape',
+    });
+    // doc.text('Hello world!', 10, 10);
+    // doc.save('a4.pdf');
+
+    api.getScreenShot(800, 800, 'image/png', function (err, result) {
+      // var anchor = document.createElement('a');
+      // anchor.href = result;
+      // anchor.download = 'screenshot.png';
+      // anchor.innerHTML = '<img width="100" height="100" src=' + result + '>';
+      // document.getElementById('controls').appendChild(anchor);
+
+      doc.setFontSize(33);
+      doc.setFillColor('#000000', 0, 0, 0);
+      doc.rect(0, 0, 1080, 1950, 'F');
+      doc.addImage(result, 'png', 40, 0);
+      doc.save('my-yacht.pdf');
+    });
+  });
+}; // End Success function
 
 client.init(uid, {
   success: success,
@@ -1489,17 +1501,21 @@ function setSection(sec, color) {
   if (sec == sleighSeatTableUpper) {
     s9 = color;
   }
+  /*
   if (sec == sleighSeatTableLower) {
     s10 = color;
   }
+  */
   if (sec == chairs) {
     s11 = color;
   }
-  if (sec == floorPlankLinerHatches) {
+
+  if (sec == floorPlankLiner) {
     // floorPlanks floorPlankLiner floorPlankLinerHatches
     s12 = color;
     // s12 = '58331A';
   }
+
   if (sec == mercury600Set4Pinstripe) {
     s20 = color;
   }
@@ -1619,7 +1635,7 @@ function linkToShare() {
   }
 
   shareLink =
-    'https://scruffydev.org/boat/' +
+    'https://scruffydev.org/42/' +
     se1 +
     '' +
     se2 +
@@ -1669,6 +1685,10 @@ function linkToShare() {
   sHCB = document.getElementById('sendToHCB');
   sHCB.dataset.url = shareLink;
   // console.log('sHCB: ', sHCB.dataset.url);
+}
+
+function printPDF() {
+  console.log('pdf printing...');
 }
 
 function showMobileIcons(view) {

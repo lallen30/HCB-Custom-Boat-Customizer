@@ -10,14 +10,17 @@
     <script src="js/html5kellycolorpicker.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
     <script src="https://kit.fontawesome.com/cc3c14bc5c.js" crossorigin="anonymous"></script>
-    <title>Sueños 53</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+    <script src="js/dom-to-image/dist/"></script>
+    <title>Lujo 42</title>
 </head>
-<body>
+<body id="capture">
 <div class="header">
   <div class="hamburgerIcon" onclick="openOptions();"><img id="hamburger-menu" src="./images/hamburger.png" /></div>
   <div class="logo"><a href="https://hcbyachts.com/"><img src="https://hcbyachts.com/wp-content/uploads/2018/05/hcb_standard_oval.png" /></a></div>
-
+  
   <div onmouseenter="linkToShare()" class="share">
+    <button id="screenshot"><i class="fas fa-file-pdf"></i></button>
     <button id="shareFacebook" class="button desktop-header" data-sharer="facebook" data-hashtag="HCBYachts" data-url=""><i class="fab fa-facebook-square"></i></button>
     <button id="shareTwitter" class="button desktop-header" data-sharer="twitter" data-title="Check out my customized yacht!" data-hashtags="HCBYachts" data-url=""><i class="fab fa-twitter"></i></button>
     <button id="shareEmail" class="button desktop-header" data-sharer="email" data-title="Check out my customized yacht!" data-url="" data-subject="Check out my custom created yacht!" data-to=""><i class="fas fa-envelope"></i></button>
@@ -138,7 +141,7 @@
 
       <div id="engines">
       
-      <li class="item-title item-title-merc600" onclick="showMerc600();">Quad (4) Mercury 600
+      <li class="item-title item-title-merc600" onclick="showMerc600();">Tri (3) Mercury 600
         <img class="item-icon item-down-icon item-down-icon-merc600" src="./images/down_arrow.png" />
         <img class="item-icon item-x-icon item-x-icon-merc600" src="./images/x-icon.png" />
       </li>
@@ -217,7 +220,7 @@
       </div>
 
       
-      <li class="item-title item-title-merc450" onclick="showMerc450();">Quint (5) 450 Mercury
+      <li class="item-title item-title-merc450" onclick="showMerc450();">Quad (4) 450 Mercury
         <img class="item-icon item-down-icon item-down-icon-merc450" src="./images/down_arrow.png" />
         <img class="item-icon item-x-icon item-x-icon-merc450" src="./images/x-icon.png" />
       </li>
@@ -559,8 +562,12 @@
   </div>
 
     <div class="iframe-container">
-        <iframe title="Sketchfab Viewer" src="" id="api-frame"></iframe>
-     </div>
+      <iframe title="Sketchfab Viewer" src="" id="api-frame"></iframe>
+    </div>
+</div>
+
+<div class="controls" id="controls">
+ <pre id="Info"></pre>
 </div>
 
 <script>
